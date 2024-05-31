@@ -1,0 +1,9 @@
+footer {
+    background-image: linear-gradient(#ffdab9, #f08080);
+    padding-bottom: 16px;
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: inherit;
+  }

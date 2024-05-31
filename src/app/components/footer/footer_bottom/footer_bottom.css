@@ -1,0 +1,108 @@
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+  }
+  .footer-bottom-content {
+    width: 96%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .info-footer ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 30px;
+    margin: 0;
+    /* font-weight: light; */
+    color: #750505;
+  }
+  
+  .info-footer ul li:hover {
+    text-decoration: underline;
+    font-weight: bolder;
+    cursor: pointer;
+  }
+  
+  .reserved-footer {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  .reserved-footer p {
+    font-size: 24px;
+    color: #750505;
+    margin: 0;
+  }
+  /*---*/
+  .socials {
+    display: flex;
+    gap: 60px;
+  }
+
+  .fb a {
+    content: url("../../../../../img/footer/fb_sepia.svg");
+  }
+  
+  .fb:hover a {
+    content: url("../../../../../img/footer/fb_color.svg");
+  }
+  
+  .ig a {
+    content: url("../../../../../img/footer/inst_sepia.svg");
+  }
+  
+  .ig:hover a {
+    content: url("../../../../../img/footer/inst_color.svg");
+  }
+  
+  .tw a {
+    content: url("../../../../../img/footer/tw_sepia.svg");
+  }
+  
+  .tw:hover a {
+    content: url("../../../../../img/footer/tw_color.svg");
+  }
+  
+  .in a {
+    content: url("../../../../../img/footer/in_sepia.svg");
+  }
+  
+  .in:hover a {
+    content: url("../../../../../img/footer/in_color.svg");
+  }
+  
+  /* .fb a {
+    content: url("../../../img/footer/fb_sepia.svg");
+  }
+  
+  .fb:hover a {
+    content: url("../../../img/footer/fb_color.svg");
+  }
+  
+  .ig a {
+    content: url("../../../img/footer/inst_sepia.svg");
+  }
+  
+  .ig:hover a {
+    content: url("../../../img/footer/inst_color.svg");
+  }
+  
+  .tw a {
+    content: url("../../../img/footer/tw_sepia.svg");
+  }
+  
+  .tw:hover a {
+    content: url("../../../img/footer/tw_color.svg");
+  }
+  
+  .in a {
+    content: url("../../../img/footer/in_sepia.svg");
+  }
+  
+  .in:hover a {
+    content: url("../../../img/footer/in_color.svg");
+  } */

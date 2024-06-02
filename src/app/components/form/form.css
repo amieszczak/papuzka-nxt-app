@@ -1,0 +1,143 @@
+.page-o3 {
+    width: 96%;
+  }
+  
+  .contact {
+    width: 1792px;
+    height: 1267px;
+    color: #861616;
+    background-color: #f4978e;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid #a13131;
+    border-radius: 50px;
+    -webkit-box-shadow: 0px 10px 4px 0px rgba(66, 68, 90, 0.25);
+    -moz-box-shadow: 0px 10px 4px 0px rgba(66, 68, 90, 0.25);
+    box-shadow: 0px 10px 4px 0px rgba(66, 68, 90, 0.25);
+  }
+  
+  .contact-info {
+    float: left;
+    width: 664px;
+    margin-left: 64px;
+    text-align: center;
+  }
+  
+  .contact-info p {
+    text-align: justify;
+  }
+  
+  .contact-fields {
+    width: 864px;
+    float: left;
+    margin-left: 64px;
+  }
+  
+  .f1 {
+    width: 400px;
+    height: 64px;
+    border: 2px solid #750505;
+    border-radius: 10px;
+    background-color: #ffdab9;
+  }
+  
+  .contact-fields input {
+    display: block;
+  }
+  .contact-fields label {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .field-1 {
+    float: left;
+  }
+  .field-2 {
+    float: right;
+  }
+  .field-3 {
+    float: left;
+  }
+  .field-4 {
+    float: right;
+  }
+  .field-5 {
+    clear: both;
+  }
+  
+  .f5 {
+    width: 864px;
+    height: 750px;
+    border: 2px solid #750505;
+    border-radius: 10px;
+    background-color: #ffdab9;
+  }
+  .contact-button input {
+    width: 864px;
+    height: 82px;
+    background-color: #ad3d3d;
+    border: 1px solid #ffdab9;
+    border-radius: 10px;
+    font-size: 46px;
+    color: #ffdab9;
+    margin-top: 64px;
+  }
+
+  @media(max-width: 1400px) {
+    .page-o3 {
+        font-size: 18px;
+        width: 100vw;
+        position: static;
+        display: flex;
+      }
+      .contact {
+        margin-top: 10%;
+        /*    width: 33ch;
+        height: 100ch;  */
+        display: flex;
+        flex-direction: column;
+      }
+    
+      .contact-info {
+        width: 80%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    
+      .contact-fields {
+        display: flex;
+        /* flex-flow: column wrap; */
+        flex-direction: column;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+      }
+      .f1 {
+        width: 40ch;
+        height: 5ch;
+      }
+      .f5 {
+        margin-top: 5ch;
+        width: 40ch;
+        height: 50ch;
+        display: flex;
+        justify-content: center;
+      }
+    
+      /* .contact-button {
+        height: 1ch;
+        margin-top: 0;
+      } */
+      .contact-button input {
+        font-size: 1em;
+        width: 27ch;
+        height: 5ch;
+        margin: 0;
+      }
+      .contact-fields label {
+        font-size: 16px;
+      }
+  }

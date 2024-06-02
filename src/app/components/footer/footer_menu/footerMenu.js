@@ -2,7 +2,7 @@ import './footer_menu.css';
 
 export default function FooterMenu() {
     return (
-        <div class="footer-menu">
+        <div className="footer-menu">
           <ul>
             <li><a href="#">OFERTA</a></li>
             <li><a href="#">O NAS</a></li>

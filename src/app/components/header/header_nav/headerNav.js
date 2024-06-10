@@ -21,8 +21,7 @@ export default function HeaderNav() {
             <Link href="offer_2">TERAPIA LOGOPEDYCZNA</Link>
             <Link href="offer_3">TUS (TRENING UMIEJĘTNOŚCI SPOŁECZNYCH)</Link>
             <Link href="offer_4">TERAPIA RĘKI</Link>
-            <Link href="offer_5">WYSTAWIENIE PISEMNEJ OPINII</Link>
-          
+            <Link href="offer_5">WYSTAWIENIE PISEMNEJ OPINII</Link>      
         </div>
         </div>
         <div className="main-menu-section">

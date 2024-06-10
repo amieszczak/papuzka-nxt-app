@@ -1,5 +1,6 @@
 import './offer_1.css';
-import { ContactForm } from '../components/form/form.js';
+import  ContactForm  from '../components/form/form.js'; //export default - bez bracket - jedna rzecz eksportowana 
+/* import ContactForm from "./components/form/form.js";  */
 
 export default function Offer_1() {
     return (
@@ -187,6 +188,7 @@ export default function Offer_1() {
             </section>
           </div>
         </article>
+        <ContactForm/>
         </>
     );
 }

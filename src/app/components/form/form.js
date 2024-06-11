@@ -1,26 +1,25 @@
-import './form.css';
+import "./form.css";
 
 export default function ContactForm() {
   return (
     <>
-      <article>
+      <article className="form-container">
         <div className="page-o3">
           <div className="contact">
             <div className="contact-info">
               <h2>FORMULARZ KONTAKTOWY</h2>
-
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                eleifend condimentum hendrerit. Phasellus vel mauris pellentesque enim
-                rutrum commodo. Suspendisse viverra tellus et felis pharetra
-                tristique. Phasellus vestibulum sapien nec consequat ornare. Sed in
-                posuere urna. Duis eleifend volutpat nulla in maximus. Donec auctor
-                sodales sapien ac tincidunt.
+                eleifend condimentum hendrerit. Phasellus vel mauris
+                pellentesque enim rutrum commodo. Suspendisse viverra tellus et
+                felis pharetra tristique. Phasellus vestibulum sapien nec
+                consequat ornare. Sed in posuere urna. Duis eleifend volutpat
+                nulla in maximus. Donec auctor sodales sapien ac tincidunt.
               </p>
             </div>
 
             <form className="contact-fields">
-              <div className='info-fields-row'>
+              <div className="info-fields-row">
                 <div className="field-1 info-field">
                   <label htmlFor="f1">IMIĘ</label>
                   <input className="f1" type="text" />
@@ -30,7 +29,7 @@ export default function ContactForm() {
                   <input className="f1" type="text" />
                 </div>
               </div>
-              <div className='info-fields-row'>
+              <div className="info-fields-row">
                 <div className="field-3 info-field">
                   <label htmlFor="f1">E-MAIL</label>
                   <input className="f1" type="text" />
@@ -52,7 +51,5 @@ export default function ContactForm() {
         </div>
       </article>
     </>
-  )
+  );
 }
-
-

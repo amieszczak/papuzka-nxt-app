@@ -1,0 +1,32 @@
+.carousel-container {
+    display: flex;
+    justify-content: center;
+}
+
+.therapist-carousel {
+    width: 96%;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 24px;
+}
+
+.therapist-photo {
+    width: 400px;
+    height: 292px;
+    border: 3px solid #f4978e;
+    border-radius: 50px;
+    flex-basis: 15%;
+  }
+  
+  .therapist-photo:last-child {
+    margin-right: 0;
+  }
+  .specialist-photo {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+  }

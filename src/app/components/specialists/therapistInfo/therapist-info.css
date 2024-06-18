@@ -1,0 +1,12 @@
+.spec-info {
+    margin-left: 64px;
+    width: 800px;
+  }
+  
+  .spec-info h2 {
+    text-align: center;
+  }
+  
+  .spec-info p {
+    text-align: justify;
+  }

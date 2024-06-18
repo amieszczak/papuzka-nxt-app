@@ -1,0 +1,142 @@
+.page-o2 {
+    bottom: 1900px;
+    width: 100%;
+    /*   height: 1160px; */
+    margin-left: auto;
+    margin-right: auto;
+    color: #ad3d3d;
+  }
+  
+  .page-o2 section h1 {
+    text-align: center;
+  }
+  
+  .specialist-photo img {
+    width: 400px;
+    height: 292px;
+    display: inline-block;
+    margin-left: 32px;
+    margin-right: 32px;
+    border: 3px solid #f4978e;
+    border-radius: 50px;
+    flex-basis: 15%;
+  }
+  .specialist-photo img:last-child {
+    margin-right: 0;
+  }
+  .specialist-photo {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  
+  /*---------------------------------------*/
+  
+  .spec-info {
+    float: left;
+    margin-left: 64px;
+    width: 800px;
+  }
+  
+  .spec-info h2 {
+    text-align: center;
+  }
+  
+  .spec-info p {
+    text-align: justify;
+  }
+  
+  /*---------------------------------------*/
+  
+  .submit-section {
+    float: left;
+    margin-left: 64px;
+    margin-top: 64px;
+  }
+  
+  .calendar {
+    background-color: #f4978e;
+    width: 464px;
+    height: 398px;
+    border: 3px solid #861616;
+    border-radius: 50px;
+    margin-bottom: 150px;
+    position: relative;
+  }
+  .month {
+    width: 90%;
+    font-size: 24px;
+    position: absolute;
+    left: 5%;
+    right: 5%;
+  }
+  
+  .month h2 {
+    text-align: center;
+    border-bottom: 1px solid #861616;
+    padding-bottom: 25px;
+    margin-bottom: 0;
+    font-size: 24px;
+  }
+  
+  .month table tr td {
+    font-size: 24px;
+    padding-right: 20px;
+    padding-top: 19px;
+  }
+  
+  .submit-section input {
+    background-color: #ffdab9;
+    border: 3px solid #ad3d3d;
+    border-radius: 50px;
+    width: 463px;
+    height: 63px;
+    color: #ad3d3d;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .day {
+    float: left;
+    background-color: #f8ad9d;
+    width: 400px;
+    height: 611px;
+    margin-left: 64px;
+    border: 3px solid #942424;
+    border-radius: 50px;
+  }
+  
+  .day-content {
+    margin-top: 23px;
+  }
+  
+  .hour {
+    height: 45px;
+    position: relative;
+  }
+  
+  .reservation {
+    position: absolute;
+    bottom: 0;
+    font-size: 24px;
+    float: left;
+    height: 20px;
+    margin-left: 32px;
+    width: 81px;
+    padding-bottom: 10px;
+    background-color: #f4978e;
+    border-radius: 40px;
+    text-align: center;
+  }
+  .reservation-field {
+    float: right;
+    width: 223px;
+    border-bottom: 1px solid #942424;
+    height: 100%;
+    margin-right: 32px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  /*---------------------------------------*/

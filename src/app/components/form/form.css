@@ -1,0 +1,289 @@
+.form-container {
+  display: flex;
+  justify-content: center;
+}
+
+.page-o3 {
+  width: 96%;
+}
+
+.contact {
+  width: 100%;
+  /* height: 80vh; */
+  color: #861616;
+  background-color: #f4978e;
+  border: 3px solid #a13131;
+  border-radius: 50px;
+  -webkit-box-shadow: 0px 10px 4px 0px rgba(66, 68, 90, 0.25);
+  -moz-box-shadow: 0px 10px 4px 0px rgba(66, 68, 90, 0.25);
+  box-shadow: 0px 10px 4px 0px rgba(66, 68, 90, 0.25);
+  display: flex;
+  padding: 48px;
+  margin: 24px 0;
+  gap: 64px;
+}
+
+.contact-info {
+  width: 50%;
+  text-align: center;
+}
+
+.contact-info p {
+  text-align: justify;
+  margin-top: 24px;
+}
+
+.contact-fields {
+  width: 50%;
+  /*   display: flex;
+    flex-direction: column;
+    gap: 24px; */
+}
+
+.info-fields-row {
+  display: flex;
+  gap: 20px;
+}
+
+.f1 {
+  width: 100%;
+  height: 64px;
+  border: 2px solid #750505;
+  border-radius: 10px;
+  background-color: #ffdab9;
+}
+
+.contact-fields input {
+  display: block;
+}
+.contact-fields label {
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.info-field {
+  width: 50%;
+}
+
+input,
+textarea {
+  width: 100%;
+  font-size: 24px;
+  color: #750505;
+}
+
+.f5 {
+  width: 100%;
+  min-height: 250px;
+  border: 2px solid #750505;
+  border-radius: 10px;
+  background-color: #ffdab9;
+}
+.contact-button input {
+  width: 100%;
+  height: 82px;
+  background-color: #ad3d3d;
+  border: 1px solid #ffdab9;
+  border-radius: 10px;
+  font-size: 48px;
+  color: #ffdab9;
+  margin-top: 24px;
+}
+
+@media (max-width: 1600px) {
+  .contact {
+    padding: 42px;
+    border-radius: 48px;
+  }
+
+  .contact-button input {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 1500px) {
+  .contact {
+    padding: 36px;
+    border-radius: 44px;
+  }
+
+  .contact-button input {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .contact {
+    padding: 32px;
+    border-radius: 40px;
+  }
+
+  .page-o3 {
+  }
+  .contact {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    gap: 0;
+  }
+
+  .contact-info {
+    width: 80%;
+    text-align: center;
+  }
+
+  .contact-info p {
+    font-size: 24px;
+  }
+
+  .contact-fields {
+    display: flex;
+    /* flex-flow: column wrap; */
+    flex-direction: column;
+    align-items: center;
+    /* margin-left: auto;
+        margin-right: auto; */
+    width: 90%;
+  }
+
+  .f1 {
+    height: 60px;
+  }
+
+  .info-fields-row {
+    width: 100%;
+  }
+
+  .f5 {
+    width: 100%;
+  }
+
+  .field-5 {
+    width: 100%;
+  }
+
+  .contact-button input {
+    font-size: 30px;
+    width: 27ch; /* ?? */
+    height: 5ch;
+    margin-top: 18px;
+  }
+  .contact-fields label {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .contact {
+    padding: 28px;
+    border-radius: 36px;
+  }
+
+  .contact-info {
+    width: 90%;
+  }
+
+  .contact-info p {
+    font-size: 20px;
+  }
+
+  .contact-fields {
+    width: 90%;
+  }
+
+  .info-field {
+    height: 85px;
+  }
+
+  .f1 {
+    height: 56px;
+  }
+
+  .contact-button input {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 992px) {
+  .contact {
+    padding: 24px;
+    border-radius: 32px;
+  }
+
+  .contact-info {
+    width: 95%;
+  }
+
+  .f1 {
+    height: 52px;
+  }
+
+  .info-field {
+    height: 85px;
+  }
+
+  .contact-button input {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact {
+    padding: 20px;
+    border-radius: 28px;
+  }
+
+  .contact-info {
+    width: 100%;
+  }
+
+  .contact-info p {
+    font-size: 18px;
+  }
+
+  .info-fields-row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .info-field {
+    width: 100%;
+  }
+
+  .f1 {
+    height: 48px;
+  }
+
+  .contact-button input {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact {
+    padding: 16px;
+    border-radius: 24px;
+  }
+
+  .f1 {
+    height: 44px;
+  }
+}
+
+@media (max-width: 450px) {
+  .contact {
+    padding: 12px;
+    border-radius: 20px;
+  }
+
+  .f1 {
+    height: 40px;
+  }
+}
+
+@media (max-width: 400px) {
+  .contact {
+    padding: 8px;
+  }
+}

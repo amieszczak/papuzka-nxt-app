@@ -2,7 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "./components/header/header.js";
 import Footer from "./components/footer/footer.js";
-import Specialists from "./components/specialists/specialists.js";
+import ContactForm from "./components/form/form.js";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,10 +15,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-      <Header/>
-      {children}
-      <Specialists/>
-      <Footer/></body>
+      <Header/>{children}
+      <ContactForm/>
+      <Footer/>
+      </body>
     </html>
   );
 }

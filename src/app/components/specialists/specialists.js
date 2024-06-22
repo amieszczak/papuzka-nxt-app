@@ -1,35 +1,34 @@
-import './specialists.css';
-import TherapistInfo from './therapistInfo/therapistInfo.js';
-import Carousel from './photoCarousel/carousel.js';
-import Calendar from './calendar/calendar.js';
-import FreeConsultationsButton from './freeConsultationsButton/freeConsultationsButton.js';
-import Diary from './diary/diary.js';
+import "./specialists.css";
+import TherapistInfo from "./therapistInfo/therapistInfo.js";
+import Carousel from "./photoCarousel/carousel.js";
+import Calendar from "./calendar/calendar.js";
+import FreeConsultationsButton from "./freeConsultationsButton/freeConsultationsButton.js";
+import Diary from "./diary/diary.js";
 
 export default function Specialists() {
-    return (
-        <>
-            <article>
-                <div className="page-o2">
-                    <section>
-                    <h1>SPRAWDŹ DOSTĘPNOŚĆ NASZYCH SPECJALISTÓW</h1>
+  return (
+    <>
+      <article>
+        <div className="page-o2">
+          <section>
+            <h1>SPRAWDŹ DOSTĘPNOŚĆ NASZYCH SPECJALISTÓW</h1>
 
-                    <Carousel/>
-                    <TherapistInfo/>
-                    
-                    <div className="submit-section">
-                        <div className="hor">
-                            <Calendar/>
+            <Carousel />
+            
 
-                        <div>
-                           <FreeConsultationsButton/>
-                        </div>
-                        </div>
-                            <Diary/>
-
+            <div className="submit-section">
+                <TherapistInfo />
+                <div className="date-section">
+                    <div className="calendar-submit">
+                        <Calendar />
+                        <FreeConsultationsButton />
                     </div>
-                    </section>
+                    <Diary />                
                 </div>
-                </article>
-        </>
-    )
+            </div>
+          </section>
+        </div>
+      </article>
+    </>
+  );
 }

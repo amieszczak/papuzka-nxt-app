@@ -18,6 +18,10 @@
     display: flex;
     gap: 50px;
   }
+
+  .menu-offer {
+    position: relative;
+  }
   
   .offer-dropdown {
     display: flex;
@@ -30,9 +34,10 @@
     z-index: 100;
     margin-top: 6px;
     position: absolute;
-    top: 400px;
+    top: 0x; 
     transform: translateY(-50%) scaleY(0);
     transition: 0.5s;
+    width: 450%;
   }
   
   .offer-dropdown a {
@@ -115,6 +120,8 @@
       transform: translateY(-50%) scaleY(0);
       transition: 0.5s;
     }
+
+    
   
     nav.main-menu-active .menu {
       transform: translateY(0) scaleY(1);

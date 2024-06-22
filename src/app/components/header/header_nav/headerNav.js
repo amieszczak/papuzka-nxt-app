@@ -2,10 +2,8 @@
 import "./header_nav.css";
 import activeMenu from './functions/activeMenu.js';
 import menuOffer from './functions/menuOffer.js'
-/* import { BrowserRouter, Routes, Route } from "react-router-dom"; */
-/* import Layout from "../../pages/Layout.js"; */
 import Link from 'next/link';
-
+import { MenuStructure } from '../../../data/data.js';
 
 
 export default function HeaderNav() {
@@ -13,24 +11,61 @@ export default function HeaderNav() {
   return (
     <nav>
       <div className="header-toggle" onClick={activeMenu}></div>
-      <div className="menu">
-      <div className="main-menu-section menu-offer" onClick={menuOffer}>
-        <a href="#">OFERTA</a>
-        <div className="offer-dropdown">
-            <Link href="offer_1">KONSULTACJA LOGOPEDYCZNA</Link>
-            <Link href="offer_2">TERAPIA LOGOPEDYCZNA</Link>
-            <Link href="offer_3">TUS (TRENING UMIEJĘTNOŚCI SPOŁECZNYCH)</Link>
-            <Link href="offer_4">TERAPIA RĘKI</Link>
-            <Link href="offer_5">WYSTAWIENIE PISEMNEJ OPINII</Link>      
+        <div className="menu">
+          {MenuStructure.map(item => {
+            if(item.offerPages) {
+              return (
+                <div key={item.id} className={item.class} onClick={menuOffer}>
+                  <Link href={item.href}>{item.title}</Link>
+                  <div key={item.subId} className={item.subClass}>
+                    {item.offerPages.map(offerItem => {
+                      return (
+                        <Link href={offerItem.href}>{offerItem.title}</Link>
+                      )
+                    })}
+                  </div>
+                </div>
+              )
+            } else {
+              return (
+                <div key={item.id} className={item.class}>
+                  <Link href={item.href}>{item.title}</Link>
+                </div>
+              )
+            }
+          })}
         </div>
-        </div>
-        <div className="main-menu-section">
-          <Link href="#">O NAS</Link>
-        </div>
-        <div className="main-menu-section menu-contact">
-          <Link href="#">KONTAKT</Link>
-        </div>
-      </div>
     </nav>
   );
 }
+
+
+/* {MenuStructure.filter(mainMenuItem => {
+  if(mainMenuItem.offerPages) {
+    return(
+      <div key={mainMenuItem.id} className={mainMenuItem.class}>
+        <Link href={mainMenuItem.href}>{mainMenuItem.title}</Link>
+      </div>
+  )}
+})} */
+
+{/* <nav>
+<div className="header-toggle" onClick={activeMenu}></div>
+  <div className="menu">
+    <div className="main-menu-section menu-offer" onClick={menuOffer}>
+      <a href="#">OFERTA</a>
+      <div className="offer-dropdown">
+          {MenuStructure.map(menuItem => { return (
+            <Link key={menuItem.id} href={menuItem.href}>{menuItem.title}</Link>
+          )
+          })}
+      </div>
+    </div>
+    <div className="main-menu-section">
+      <Link href="#">O NAS</Link>
+    </div>
+    <div className="main-menu-section menu-contact">
+      <Link href="#">KONTAKT</Link>
+    </div>
+  </div>
+</nav> */}

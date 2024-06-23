@@ -3,7 +3,7 @@ import "./header_nav.css";
 import activeMenu from './functions/activeMenu.js';
 import menuOffer from './functions/menuOffer.js'
 import Link from 'next/link';
-import { MenuStructure } from '../../../data/data.js';
+import { MenuStructure } from '../../../data/menuData/menuData.js';
 
 
 export default function HeaderNav() {

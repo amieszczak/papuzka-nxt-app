@@ -5,7 +5,6 @@ import menuOffer from './functions/menuOffer.js'
 import Link from 'next/link';
 import { MenuStructure } from '../../../data/menuData/menuData.js';
 
-
 export default function HeaderNav() {
 
   return (
@@ -20,7 +19,7 @@ export default function HeaderNav() {
                   <div key={item.subId} className={item.subClass}>
                     {item.offerPages.map(offerItem => {
                       return (
-                        <Link href={offerItem.href}>{offerItem.title}</Link>
+                        <Link key={offerItem.id} href={offerItem.href}>{offerItem.title}</Link>
                       )
                     })}
                   </div>

@@ -5,25 +5,35 @@
 
 .therapist-carousel {
     width: 96%;
+    height: 292px;
     overflow: hidden;
+    position: relative;
 }
 
 .carousel-track {
-    display: flex;
+    display: inline-flex;
     gap: 24px;
+    position: absolute;
 }
 
-.therapist-photo {
+.therapist-photo-container {
+    min-width: 400px;
     width: 400px;
     height: 292px;
     border: 3px solid #f4978e;
     border-radius: 50px;
-    flex-basis: 15%;
+    overflow: hidden;
+    position: relative;
+}
+
+.therapist-photo {
+    width: 100%;
+    height: 100%;  
+    object-fit: cover;
+    object-position: top;
   }
-  
-  .therapist-photo:last-child {
-    margin-right: 0;
-  }
+
+
   .specialist-photo {
     display: flex;
     flex-wrap: wrap;

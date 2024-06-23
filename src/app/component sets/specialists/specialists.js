@@ -5,9 +5,11 @@ import Carousel from "./photoCarousel/carousel.js";
 import FreeConsultationsButton from "../../components/freeConsultationsButton/freeConsultationsButton.js";
 import Diary from "../../components/diary/diary.js";
 
-console.log('dskfjgh');
+
+
 
 export default function Specialists() {
+  
   return (
     <>
       <article>

@@ -1,5 +1,5 @@
 import './offer_2.css';
-import { Contact } from '../components/contact/contact.js'
+import { Contact } from '../component sets/contact/contact.js'
 
 export default function Offer_2() {
     return (

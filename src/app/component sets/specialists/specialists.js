@@ -1,9 +1,9 @@
 import "./specialists.css";
 import TherapistInfo from "./therapistInfo/therapistInfo.js";
 import Carousel from "./photoCarousel/carousel.js";
-import Calendar from "./calendar/calendar.js";
-import FreeConsultationsButton from "./freeConsultationsButton/freeConsultationsButton.js";
-import Diary from "./diary/diary.js";
+import Calendar from "../../components/calendar/calendar.js";
+import FreeConsultationsButton from "../../components/freeConsultationsButton/freeConsultationsButton.js";
+import Diary from "../../components/diary/diary.js";
 
 export default function Specialists() {
   return (

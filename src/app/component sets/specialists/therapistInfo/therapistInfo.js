@@ -1,5 +1,7 @@
 import './therapist-info.css';
+/* import { SpecialistsData } from '@/app/data/SpecialistsData/specialistsData.js'; */
 
+/* console.log(SpecialistsData); */
 
 export default function TherapistInfo() {
     return (

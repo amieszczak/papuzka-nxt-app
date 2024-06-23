@@ -1,7 +1,7 @@
 import './therapist-info.css';
-/* import { SpecialistsData } from '@/app/data/SpecialistsData/specialistsData.js'; */
+import { SpecialistsData } from '@/app/data/SpecialistsData/specialistsData.js';
 
-/* console.log(SpecialistsData); */
+console.log('dkfvk');
 
 export default function TherapistInfo() {
     return (

@@ -4,4 +4,4 @@ const SpecialistsData = [
     { id: 3, name: 'Angelika Łuzna', description: 'logopedka, terapeutka miofunkcjonalna, terapeutka kinesiotapingu w logopedii, pracuje z dziećmi z opóźnionym rozwojem mowy oraz z wadami wymowy' },
 ]
 
-/* export { SpecialistsData }; */
+export { SpecialistsData };

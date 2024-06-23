@@ -1,5 +1,6 @@
 import './offer_2.css';
 
+
 export default function Offer_2() {
     return (
         <>

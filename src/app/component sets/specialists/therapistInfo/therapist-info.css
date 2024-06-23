@@ -1,0 +1,18 @@
+.spec-info {
+  width: 50%;
+}
+
+.spec-info h2 {
+  text-align: center;
+}
+
+.spec-info p {
+  text-align: justify;
+}
+
+@media(max-width: 1400px) {
+
+  .spec-info {
+    width: 100%;
+  }
+}

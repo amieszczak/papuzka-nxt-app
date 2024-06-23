@@ -1,0 +1,10 @@
+.submit-section input {
+    background-color: #ffdab9;
+    border: 3px solid #ad3d3d;
+    border-radius: 50px;
+    width: 463px;
+    height: 63px;
+    color: #ad3d3d;
+    font-size: 18px;
+    cursor: pointer;
+  }

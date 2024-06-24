@@ -1,35 +1,17 @@
 import "./offer_1.css";
 import ContactForm from "../components/form/form.js";
-/* import ContactForm from "./components/form/form.js";  */
+import Template_1 from "../component sets/PageTemplate/template_1/template_1.js";
+import { Offer1Template1Data } from "../data/SubpageContent/offer_1/template_1/offer_1_template_1_content.js";
+
+
 
 export default function Offer_1() {
+  
   return (
     <>
       <article>
-        <div className="page-o1">
-          <section className="page-o1-section-01">
-            <div className="middle-page-text">
-              <h1>KONSULTACJA LOGOPEDYCZNA</h1>
-              <p>
-                Konsultacja logopedyczna to spotkanie w celu skontrolowania mowy
-                dziecka i zadania pytań terapeucie odnośnie jego rozwoju.
-                Zostaje na niej przeprowadzony wywiad z rodzicem lub opiekunem
-                oraz badanie dziecka. Jest to pierwszy krok przed rozpoczęciem
-                terapii, który umożliwi wspólne omówienie dalszych działań.
-              </p>
-            </div>
-          </section>
-
-          <section className="page-o1-section-02">
-            <div className="page-o1-photo">
-              <img
-                className="category-photo"
-                src="img/03_page_o1/Rectangle 21.png"
-              />
-              <div className="book-button">REZERWUJ</div>
-            </div>
-          </section>
-        </div>
+        
+        <Template_1 pageTitle={Offer1Template1Data.pageTitle} entryInformation={Offer1Template1Data.entryInformation} photoSrc={Offer1Template1Data.photoSrc}/>
 
         <div className="page-o1-offer-1">
           <section>

@@ -1,19 +1,26 @@
 import "./offer_1.css";
 import ContactForm from "../components/form/form.js";
-import Template_1 from "../component sets/PageTemplate/template_1/template_1.js";
+import Template_1 from "../componentSets/PageTemplate/template_1/template_1.js";
 import { Offer1Template1Data } from "../data/SubpageContent/offer_1/template_1/offer_1_template_1_content.js";
-
-
+import ListTemplate from "../componentSets/PageTemplate/list_template/list_template.js";
+import { Offer1ListTemplate } from "../data/SubpageContent/offer_1/template_2/offer_1_list_template.js";
 
 export default function Offer_1() {
-  
   return (
     <>
       <article>
-        
-        <Template_1 pageTitle={Offer1Template1Data.pageTitle} entryInformation={Offer1Template1Data.entryInformation} photoSrc={Offer1Template1Data.photoSrc}/>
+        <Template_1
+          pageTitle={Offer1Template1Data.pageTitle}
+          entryInformation={Offer1Template1Data.entryInformation}
+          photoSrc={Offer1Template1Data.photoSrc}
+        />
 
         <div className="page-o1-offer-1">
+          //list template
+          <ListTemplate
+            title={Offer1ListTemplate.title}
+            list={Offer1ListTemplate.list}
+          />
           <section>
             <h2>
               Rodzicu! Niezwłocznie udaj się do logopedy, jeśli Twoje dziecko:
@@ -168,3 +175,42 @@ export default function Offer_1() {
     </>
   );
 }
+
+/* list Template
+
+<section>
+<h2>
+  Rodzicu! Niezwłocznie udaj się do logopedy, jeśli Twoje dziecko:
+</h2>
+
+<ul>
+  <li>w wieku 6. miesięcy nie gaworzy</li>
+  <li>
+    po ukończeniu 1 roku życia nie wypowiada sylab oraz pojedynczych
+    słów
+  </li>
+  <li>
+    podejrzewasz, że nie rozumie wydawanych przez Ciebie poleceń
+  </li>
+  <li>
+    w wieku 2 lat nie mówi prostych słów np. mama, baba, tata, dada
+  </li>
+  <li>między 2. a 3. rokiem życia nie wypowiada prostych zdań</li>
+  <li>
+    w wieku 3 lat nie wymawia którejkolwiek z samogłosek ustnych: a,
+    o, e, i, y
+  </li>
+  <li>
+    w wieku 4 lat nie potrafi opowiedzieć historyjki obrazkowej,
+    wypowiada proste słowa lub równoważniki zdań, zniekształca
+    wyrazy, nie wypowiada głosek:k, g, l, ś, ź, ć, dź, s, z, c, dz,
+    gdy zamiast głoski f, w, wymawia p, b, h,zamienia g na k, oraz
+    zamiast r mówi j
+  </li>
+  <li>
+    między 5. a 6. rokiem życia nie wypowiada następujących
+    głosek:l, s, z, c, dz, ś, ź, ć, dź, k, g, ą, ę oraz gdy
+    przestawia sylaby w obrębie wyrazu, lub skraca wyrazy.
+  </li>
+</ul>
+</section> */

@@ -14,14 +14,3 @@ const Offer1ListTemplate = {
 
 export { Offer1ListTemplate };
 
-
-/* list: [
-    'w wieku 6. miesięcy nie gaworzy',
-    'po ukończeniu 1 roku życia nie wypowiada sylab oraz pojedynczych słów',
-    'podejrzewasz, że nie rozumie wydawanych przez Ciebie poleceń',
-    'w wieku 2 lat nie mówi prostych słów np. mama, baba, tata, dada',
-    'między 2. a 3. rokiem życia nie wypowiada prostych zdań',
-    'w wieku 3 lat nie wymawia którejkolwiek z samogłosek ustnych: a, o, e, i, y',
-    'w wieku 4 lat nie potrafi opowiedzieć historyjki obrazkowej, wypowiada proste słowa lub równoważniki zdań, zniekształca wyrazy, nie wypowiad głosek:k, g, l, ś, ź, ć, dź, s, z, c, dz, gdy zamiast głoski f, w, wymawia p, b, h,zamienia g na k, oraz zamiast r mówi j',
-    'między 5. a 6. rokiem życia nie wypowiada następujących głosek:l, s, z, c, dz, ś, ź, ć, dź, k, g, ą, ę oraz gdy przestawia sylaby w obrębie wyrazu, lub skraca wyrazy.'
-] */

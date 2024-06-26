@@ -1,18 +1,21 @@
 import "./offer_1.css";
 import ContactForm from "../components/form/form.js";
-import Template_1 from "../componentSets/PageTemplate/template_1/template_1.js";
-import { Offer1Template1Data } from "../data/SubpageContent/offer_1/template_1/offer_1_template_1_content.js";
+import OfferPageEntry from "../componentSets/PageTemplate/OfferPageEntry/OfferPageEntry.js";
+import { Offer1EntryData } from "../data/SubpageContent/offer_1/entryData/offer1EntryData.js";
 import ListTemplate from "../componentSets/PageTemplate/list_template/list_template.js";
 import { Offer1ListTemplate } from "../data/SubpageContent/offer_1/template_2/offer_1_list_template.js";
+import Image from "next/image";
+
 
 export default function Offer_1() {
+  
   return (
     <>
       <article>
-        <Template_1
-          pageTitle={Offer1Template1Data.pageTitle}
-          entryInformation={Offer1Template1Data.entryInformation}
-          photoSrc={Offer1Template1Data.photoSrc}
+        <OfferPageEntry
+          pageTitle={Offer1EntryData.pageTitle}
+          entryInformation={Offer1EntryData.entryInformation}
+          photoSrc={Offer1EntryData.photoSrc}
         />
 
         <div className="page-o1-offer-1">
@@ -21,6 +24,7 @@ export default function Offer_1() {
             title={Offer1ListTemplate.title}
             list={Offer1ListTemplate.list}
           />
+
           <section>
             <h2>
               Rodzicu! Niezwłocznie udaj się do logopedy, jeśli Twoje dziecko:

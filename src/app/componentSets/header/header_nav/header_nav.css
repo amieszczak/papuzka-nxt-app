@@ -34,7 +34,7 @@
     z-index: 100;
     margin-top: 6px;
     position: absolute;
-    top: 0x; 
+    top: 64px; 
     transform: translateY(-50%) scaleY(0);
     transition: 0.5s;
     width: 450%;
@@ -57,6 +57,7 @@
   }
   
   @media (max-width: 1400px) {
+    
   
     nav {
       display: flex;

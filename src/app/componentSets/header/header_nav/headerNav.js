@@ -20,7 +20,7 @@ export default function HeaderNav() {
                   <div key={item.subId} className={item.subClass}>
                     {item.offerPages.map(offerItem => {
                       return (
-                        <Link href={offerItem.href}>{offerItem.title}</Link>
+                        <Link key={offerItem.id} href={offerItem.href}>{offerItem.title}</Link>
                       )
                     })}
                   </div>
@@ -69,3 +69,5 @@ export default function HeaderNav() {
     </div>
   </div>
 </nav> */}
+
+

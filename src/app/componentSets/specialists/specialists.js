@@ -1,11 +1,12 @@
 import "./specialists.css";
 import TherapistInfo from "./therapistInfo/therapistInfo.js";
 import Carousel from "./photoCarousel/carousel.js";
-import Calendar from "../../components/calendar/calendar.js";
+/* import Calendar from "../../components/calendar/calendar.js"; */
 import FreeConsultationsButton from "../../components/freeConsultationsButton/freeConsultationsButton.js";
 import Diary from "../../components/diary/diary.js";
 
 export default function Specialists() {
+  
   return (
     <>
       <article>
@@ -14,17 +15,16 @@ export default function Specialists() {
             <h1>SPRAWDŹ DOSTĘPNOŚĆ NASZYCH SPECJALISTÓW</h1>
 
             <Carousel />
-            
 
             <div className="submit-section">
-                <TherapistInfo />
-                <div className="date-section">
-                    <div className="calendar-submit">
-                        <Calendar />
-                        <FreeConsultationsButton />
-                    </div>
-                    <Diary />                
+              <TherapistInfo />
+              <div className="date-section">
+                <div className="calendar-submit">
+                  {/* <Calendar /> */}
+                  <FreeConsultationsButton />
                 </div>
+                <Diary />
+              </div>
             </div>
           </section>
         </div>

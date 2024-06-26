@@ -1,11 +1,15 @@
-import './offer_2.css';
-import Template_1 from "../componentSets/PageTemplate/template_1/template_1.js";
-import { Offer2Template1Data } from '../data/SubpageContent/offer_2/template_1/offer_2_template_1_content.js';
+import "./offer_2.css";
+import OfferPageEntry from "../componentSets/PageTemplate/OfferPageEntry/OfferPageEntry.js";
+import { Offer2EntryData } from "../data/SubpageContent/offer_2/entryData/offer2EntryData.js";
 
 export default function Offer_2() {
   return (
     <>
-    <Template_1 pageTitle={Offer2Template1Data.pageTitle} entryInformation={Offer2Template1Data.entryInformation} photoSrc={Offer2Template1Data.photoSrc}/>
+      <OfferPageEntry
+        pageTitle={Offer2EntryData.pageTitle}
+        entryInformation={Offer2EntryData.entryInformation}
+        photoSrc={Offer2EntryData.photoSrc}
+      />
       <article>
         <div className="page_o1">
           <section className="west">

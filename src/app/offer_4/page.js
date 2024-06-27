@@ -1,11 +1,20 @@
 import "./offer_4.css";
+import OfferPageEntry from "../componentSets/PageTemplate/OfferPageEntry/OfferPageEntry.js";
+import { Offer4EntryData } from "../data/SubpageContent/offer_4/entryData/offer4EntryData.js";
+
 
 export default function Offer_4() {
   return (
     <>
       <article>
-        <div className="page_o1">
-          <section>
+
+            <OfferPageEntry
+                    pageTitle={Offer4EntryData.pageTitle}
+                    entryInformation={Offer4EntryData.entryInformation}
+                    photoSrc={Offer4EntryData.photoSrc}
+            />
+        <div>  {/* className="page_o1" */}
+          {/* <section>
             <div className="entry-text">
               <h1>TERAPIA RĘKI</h1>
 
@@ -18,7 +27,7 @@ export default function Offer_4() {
                 samodzielności w podstawowych czynnościach życia codziennego.
               </p>
             </div>
-          </section>
+          </section> */}
 
           <section className="east">
             <div className="page-o1-photo">

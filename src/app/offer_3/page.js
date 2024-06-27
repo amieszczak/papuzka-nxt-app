@@ -1,26 +1,24 @@
 import "./offer_3.css";
+import OfferPageEntry from "../componentSets/PageTemplate/OfferPageEntry/OfferPageEntry.js";
+import { Offer3EntryData } from "../data/SubpageContent/offer_3/entryData/offer3EntryData.js";
+
+
 
 export default function Offer_3() {
   return (
     <>
-      <article>
-        <div className="page-o1">
-          <section className="west">
-            <div className="middle-page-text">
-              <h1>
-                TRENING <br />
-                UMIEJĘTNOŚCI SPOŁECZNYCH
-              </h1>
 
-              <p>
-                Trening Umiejętności Społecznej to zajęcia ogólnorozwojowe
-                prowadzone w grupach kilkuosobowych. Udział dziecka w zajęciach
-                poprzedzony jest diagnozą funkcjonowania emocjonalno-społecznego
-                dziecka i wywiadem z Rodzicami. Zajęcia TUS mają na celu
-                rozwinięcie kompetencji społecznych w tym rozpoznawania i
-                reagowania na swoje i cudze emocje, dobrej komunikacji czy
-                współpracy w grupie.
-              </p>
+      
+      <article>
+        
+            <OfferPageEntry
+              pageTitle={Offer3EntryData.pageTitle}
+              entryInformation={Offer3EntryData.entryInformation}
+              photoSrc={Offer3EntryData.photoSrc}
+            />
+            <div>
+              <section>
+                <div>
 
               <h2>Dla kogo?</h2>
 
@@ -63,13 +61,7 @@ export default function Offer_3() {
           </section>
 
           <section className="east">
-            <div className="page-o1-photo">
-              <img
-                className="category-photo"
-                src="img/03_page_o1/Rectangle 22.png"
-              />
-              <div className="book-button">REZERWUJ</div>
-            </div>
+            
 
             <aside>
               <div className="metric">

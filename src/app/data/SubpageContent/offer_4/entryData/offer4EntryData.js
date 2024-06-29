@@ -1,7 +1,7 @@
 const Offer4EntryData = {
-    pageTitle: 'TRENING UMIEJĘTNOŚCI SPOŁECZNYCH',
-    entryInformation: ' Trening Umiejętności Społecznej to zajęcia ogólnorozwojowe prowadzone w grupach kilkuosobowych. Udział dziecka w zajęciach poprzedzony jest diagnozą funkcjonowania emocjonalno-społecznego dziecka i wywiadem z Rodzicami. Zajęcia TUS mają na celu rozwinięcie kompetencji społecznych w tym rozpoznawania i reagowania na swoje i cudze emocje, dobrej komunikacji czy współpracy w grupie.',
-    photoSrc: '/Rectangle24.png',
+    pageTitle: 'TERAPIA RĘKI',
+    entryInformation: ' Terapia Ręki ma na celu usprawnianie tzw. małej motoryki, czyli precyzyjnych ruchów dłoni i palców, jak również dostarczania wrażeń dotykowych i poznawania dzięki nim różnych kształtów, struktur materiałów oraz nabywanie umiejętności ich rozróżniania. Przede wszystkim służy jednak do osiągnięcia samodzielności w podstawowych czynnościach życia codziennego.',
+    photoSrc: '/Terapia_reki_theme.png',
 }
 
 export { Offer4EntryData };

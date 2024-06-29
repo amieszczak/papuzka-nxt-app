@@ -2,8 +2,10 @@ import "./offer_1.css";
 import ContactForm from "../components/form/form.js";
 import OfferPageEntry from "../componentSets/PageTemplate/OfferPageEntry/OfferPageEntry.js";
 import { Offer1EntryData } from "../data/SubpageContent/offer_1/entryData/offer1EntryData.js";
-import ListTemplate from "../componentSets/PageTemplate/list_template/list_template.js";
-import { Offer1ListTemplate } from "../data/SubpageContent/offer_1/template_2/offer_1_list_template.js";
+import ListTemplate from "../componentSets/PageTemplate/ListTemplate/ListTemplate.js";
+import { Offer1ListData } from "../data/SubpageContent/offer_1/ListData/Offer1ListData.js";
+import ParagraphUnit from "../componentSets/PageTemplate/ParagraphUnit/ParagraphUnit.js";
+import { ParagraphData } from "../data/SubpageContent/offer_1/ParagraphData/ParagraphData.js";
 import Image from "next/image";
 
 
@@ -18,14 +20,18 @@ export default function Offer_1() {
           photoSrc={Offer1EntryData.photoSrc}
         />
 
-        <div className="page-o1-offer-1">
-          //list template
+        <div className="page-o1-offer-1">  
+          
           <ListTemplate
-            title={Offer1ListTemplate.title}
-            list={Offer1ListTemplate.list}
+            title={Offer1ListData.title}
+            list={Offer1ListData.list}
           />
 
-          <section>
+          <ParagraphUnit 
+            title={ParagraphData.title}
+            paragraph={ParagraphData.paragraph}
+          />
+          {/* <section>
             <h2>
               Rodzicu! Niezwłocznie udaj się do logopedy, jeśli Twoje dziecko:
             </h2>
@@ -60,8 +66,8 @@ export default function Offer_1() {
                 przestawia sylaby w obrębie wyrazu, lub skraca wyrazy.
               </li>
             </ul>
-          </section>
-          <section>
+          </section> */}
+          {/* <section>
             <h3>Przebieg konsultacji logopedycznej</h3>
 
             <p>
@@ -83,11 +89,11 @@ export default function Offer_1() {
               przeprowadzone badania uzupełniające. Podczas trwania konsultacji
               logopedycznej przez cały czas prowadzona jest obserwacja dziecka.
             </p>
-          </section>
+          </section> */}
         </div>
       </article>
       <article>
-        <div className="page-o1">
+        {/* <div className="page-o1">
           <section className="page-o1-section-01">
             <div className="middle-page-text">
               <h1>KONSULTACJA LOGOPEDYCZNA</h1>
@@ -111,9 +117,9 @@ export default function Offer_1() {
               <div className="book-button">REZERWUJ</div>
             </div>
           </section>
-        </div>
+        </div> */}
 
-        <div className="page-o1-offer-1">
+        {/* <div className="page-o1-offer-1">
           <section>
             <h2>
               Rodzicu! Niezwłocznie udaj się do logopedy, jeśli Twoje dziecko:
@@ -149,8 +155,8 @@ export default function Offer_1() {
                 przestawia sylaby w obrębie wyrazu, lub skraca wyrazy.
               </li>
             </ul>
-          </section>
-          <section>
+          </section> */}
+         {/*  <section>
             <h3>Przebieg konsultacji logopedycznej</h3>
 
             <p>
@@ -173,7 +179,7 @@ export default function Offer_1() {
               logopedycznej przez cały czas prowadzona jest obserwacja dziecka.
             </p>
           </section>
-        </div>
+        </div> */}
       </article>
       {/* <ContactForm/> */}
     </>

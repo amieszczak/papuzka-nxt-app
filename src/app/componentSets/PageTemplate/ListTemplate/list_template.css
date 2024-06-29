@@ -1,0 +1,31 @@
+.list-unit {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 48px 48px 48px 0;
+}
+
+.list-unit ul {
+    /* list-style-image: url('/mdi_bird.svg'); */
+    list-style-type: none; 
+}
+
+.list-unit ul li {
+    position: relative;
+    padding: 24px 0; 
+}
+
+.list-unit ul li::before {
+    content: url('/mdi_bird.svg');
+    position: absolute;
+    left: -80px;
+    bottom: 50%;
+    transform: translateY(50%);
+}
+
+@media(max-width: 1200px) {
+
+    .list-unit {
+        padding: 48px 48px 48px 64px;
+    }
+}

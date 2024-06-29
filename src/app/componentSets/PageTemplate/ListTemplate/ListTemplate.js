@@ -1,9 +1,9 @@
-'use0'
+
 import "./list_template.css";
 
 export default function ListTemplate(props) {
   return (
-    <section>
+    <section className="list-unit">
       <h2>{props.title}</h2>
 
       <ul>

@@ -1,21 +1,21 @@
 import "./offer_5.css";
+import OfferPageEntry from "../componentSets/PageTemplate/OfferPageEntry/OfferPageEntry.js";
+import { Offer5EntryData } from "../data/SubpageContent/offer_5/entryData/offer5EntryData.js";
+
+
+
 
 export default function Offer_5() {
   return (
     <>
       <article>
         <div>
-          <section className="west">
-            <div className="middle-page-text">
-              <h1>WYSTAWIENIE PISEMNEJ OPINII</h1>
-              <p>
-                Opinia logopedyczna wydawana jest na prośbę rodzica lub
-                opiekuna. Przedstawia ona spostrzeżenia diagnostyczne oraz
-                wskazówki do dalszej terapii
-              </p>
-            </div>
-          </section>
-
+          <OfferPageEntry
+            pageTitle={Offer5EntryData.pageTitle}
+            entryInformation={Offer5EntryData.entryInformation}
+            photoSrc={Offer5EntryData.photoSrc}
+          />
+          
           <section className="east">
             <div className="page-o1-photo">
               <img

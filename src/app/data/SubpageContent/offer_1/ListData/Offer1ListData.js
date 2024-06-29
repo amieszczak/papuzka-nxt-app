@@ -1,4 +1,4 @@
-const Offer1ListTemplate = {
+const Offer1ListData = {
     title: 'Rodzicu! Niezwłocznie udaj się do logopedy, jeśli Twoje dziecko:',
     list: [
         {content: 'w wieku 6. miesięcy nie gaworzy'},
@@ -12,5 +12,5 @@ const Offer1ListTemplate = {
     ],
 }
 
-export { Offer1ListTemplate };
+export { Offer1ListData };
 

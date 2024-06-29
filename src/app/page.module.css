@@ -1,98 +1,4 @@
-/*---------------------------------------GENERAL---------------------------------------*/
 
-  /*---------------------------------------GENERAL---------------------------------------*/
-  
-  /*---------------------------------------HEADER---------------------------------------*/
-  
-  
-  
-  
-  
-
-  /*---------------------------------------*/
-  
-  
-  
-  .middle-page-text {
-    color: #ad3d3d;
-    float: left;
-    font-size: 40px;
-    width: 814px;
-    margin-left: 64px;
-    margin-right: 0px;
-    width: 90%;
-  }
-  
-  .middle-page-text h1 {
-    margin-top: 0;
-    text-align: center;
-  }
-  
-  .middle-page-text p {
-    text-align: justify;
-  }
-  
-  /*---------------------------------------*/
-  
-
-  
-  .page-o1 {
-    width: 100%;
-    margin-top: 64px;
-    display: flex;
-    justify-content: space-evenly;
-  }
-  
-  .page-o1-photo {
-    margin-left: auto;
-    margin-right: auto;
-    /* height: 608px; */
-  }
-  
-  .category-photo {
-    border: 3px solid #f08080;
-    border-radius: 50px;
-    z-index: 15;
-    position: relative;
-    width: 100%;
-    /* height: 608px; */
-  }
-  .book-button {
-    width: 100.6%;
-    height: 100px;
-    background-color: #f08080;
-    border-radius: 50px;
-    z-index: 50;
-    position: relative;
-    margin-top: -109px;
-    text-align: center;
-    color: #750505;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0.8;
-    transition: all 0.2s ease-in-out;
-  }
-  
-  .page-o1-photo:hover .book-button {
-    width: 866px;
-    width: 100.6%;
-    height: 183px;
-    background-color: #f8ad9d;
-    border-radius: 50px;
-    z-index: 50;
-    position: relative;
-    margin-top: -192px;
-    text-align: center;
-    color: #942424;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 1;
-    cursor: pointer;
-  }
-  
-  
   
   .metric {
     display: inline-block;
@@ -493,64 +399,9 @@
     content: url("../../img/footer/in_color.svg");
   }
   
-  /*---------------------------------------FOOTER_NEW---------------------------------------*/
-  
-  /*---------------------------------------FOOTER---------------------------------------*/
-  
-  /*-------------------------------MAX - WIDTH - 1400 PX----------------------------------------*/
-  
+
   @media (max-width: 1400px) {
 
-
-  
-    /*------------------MAIN-CONTENT------------------------*/
-  
-    .page-o1 {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-    }
-  
-    .page-o1-section-01 {
-      width: 100%;
-      margin-left: auto;
-      margin-right: auto;
-      display: flex;
-    }
-  
-    .page-o1-section-02 {
-      display: flex;
-    }
-  
-    .middle-page-text {
-      margin-left: auto;
-      margin-right: auto;
-      width: 80%;
-    }
-  
-    .middle-page-text h1 {
-      text-align: center;
-    }
-    .middle-page-text p {
-      text-align: justify;
-      margin-top: auto;
-    }
-    .page-o1-photo {
-      height: auto;
-    }
-  
-    .category-photo {
-      height: auto;
-  
-      width: 80vw;
-      border-radius: 20px;
-    }
-    .book-button {
-      width: auto;
-      border-radius: 20px;
-    }
-  
     .specialist-photo img {
       width: 30%;
     }
@@ -577,46 +428,20 @@
     .reserved-footer p {
       font-size: 18px;
     }
-    /*   .footer-bottom-content {
-      flex-direction: column-reverse;
-      align-items: center;
-    }
-   */
-    /*---------------------------------------FOOTER_NEW---------------------------------------*/
   }
   
-  /*-------------------------------MAX - WIDTH - 1400 PX----------------------------------------*/
-  
-  /*-------------------------------MAX - WIDTH - 992 PX----------------------------------------*/
+
   
   @media (max-width: 992px) {
- 
-    
-  
-    /*------------------MAIN-CONTENT------------------------*/
-  
-    .page-o1 {
-      margin-top: 56px;
-    }
-    /*------------------MAIN-CONTENT------------------------*/
-    /*------------------FOOTER_NEW------------------------*/
+
     .footer-menu ul {
       font-size: 28px;
     }
     /*------------------FOOTER_NEW------------------------*/
   }
-  /*-------------------------------MAX - WIDTH - 992 PX----------------------------------------*/
-  /*-------------------------------MAX - WIDTH - 768 PX----------------------------------------*/
+
   @media (max-width: 768px) {
-  
-  
-    /*------------------MAIN-CONTENT------------------------*/
-  
-    .page-o1 {
-      margin-top: 48px;
-    }
-    /*------------------MAIN-CONTENT------------------------*/
-    /*------------------FOOTER_NEW------------------------*/
+
     .footer-bottom-content {
       flex-direction: column-reverse;
       gap: 24px;
@@ -639,17 +464,10 @@
     }
     /*------------------FOOTER_NEW------------------------*/
   }
-  /*-------------------------------MAX - WIDTH - 768 PX----------------------------------------*/
-  /*-------------------------------MAX - WIDTH - 576 PX----------------------------------------*/
+
+  
   @media (max-width: 576px) {
     
-    /*------------------MAIN-CONTENT------------------------*/
-  
-    .page-o1 {
-      margin-top: 32px;
-    }
-    /*------------------MAIN-CONTENT------------------------*/
-    /*------------------FOOTER_NEW------------------------*/
     .socials {
       gap: 18px;
       flex-wrap: wrap;

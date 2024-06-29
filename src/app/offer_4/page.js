@@ -13,21 +13,7 @@ export default function Offer_4() {
                     entryInformation={Offer4EntryData.entryInformation}
                     photoSrc={Offer4EntryData.photoSrc}
             />
-        <div>  {/* className="page_o1" */}
-          {/* <section>
-            <div className="entry-text">
-              <h1>TERAPIA RĘKI</h1>
-
-              <p>
-                Terapia Ręki ma na celu usprawnianie tzw. małej motoryki, czyli
-                precyzyjnych ruchów dłoni i palców, jak również dostarczania
-                wrażeń dotykowych i poznawania dzięki nim różnych kształtów,
-                struktur materiałów oraz nabywanie umiejętności ich
-                rozróżniania. Przede wszystkim służy jednak do osiągnięcia
-                samodzielności w podstawowych czynnościach życia codziennego.
-              </p>
-            </div>
-          </section> */}
+        <div>  
 
           <section className="east">
             <div className="page-o1-photo">

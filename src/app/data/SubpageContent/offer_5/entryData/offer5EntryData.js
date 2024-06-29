@@ -1,7 +1,7 @@
-const Offer4EntryData = {
-    pageTitle: 'TRENING UMIEJĘTNOŚCI SPOŁECZNYCH',
-    entryInformation: ' Trening Umiejętności Społecznej to zajęcia ogólnorozwojowe prowadzone w grupach kilkuosobowych. Udział dziecka w zajęciach poprzedzony jest diagnozą funkcjonowania emocjonalno-społecznego dziecka i wywiadem z Rodzicami. Zajęcia TUS mają na celu rozwinięcie kompetencji społecznych w tym rozpoznawania i reagowania na swoje i cudze emocje, dobrej komunikacji czy współpracy w grupie.',
-    photoSrc: '/Rectangle24.png',
+const Offer5EntryData = {
+    pageTitle: 'WYSTAWIENIE PISEMNEJ OPINII',
+    entryInformation: ' Opinia logopedyczna wydawana jest na prośbę rodzica lub opiekuna. Przedstawia ona spostrzeżenia diagnostyczne oraz wskazówki do dalszej terapii',
+    photoSrc: '/Wystawienie_theme.png',
 }
 
-export { Offer4EntryData };
+export { Offer5EntryData };

@@ -4,12 +4,14 @@ import activeMenu from './functions/activeMenu.js';
 import menuOffer from './functions/menuOffer.js'
 /* import { BrowserRouter, Routes, Route } from "react-router-dom"; */
 /* import Layout from "../../pages/Layout.js"; */
+import ContactScroll from "./functions/contactScroll.js";
 import Link from 'next/link';
 
 
 
-export default function HeaderNav() {
 
+export default function HeaderNav() {
+  
   return (
     <nav>
       <div className="header-toggle" onClick={activeMenu}></div>
@@ -27,10 +29,11 @@ export default function HeaderNav() {
         <div className="main-menu-section">
           <Link href="#">O NAS</Link>
         </div>
-        <div className="main-menu-section menu-contact">
+        <div className="main-menu-section menu-contact" onClick={ContactScroll}>
           <Link href="#">KONTAKT</Link>
         </div>
       </div>
     </nav>
   );
+  
 }

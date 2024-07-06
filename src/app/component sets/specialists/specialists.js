@@ -2,7 +2,7 @@
 import styles from "./specialists.module.css";
 import TherapistInfo from "./therapistInfo/therapistInfo.js";
 import Carousel from "./photoCarousel/carousel.js";
-/* import Calendar from "../../components/calendar/calendar.js"; */
+import Calendar from "../../components/calendar/calendar.js";
 import FreeConsultationsButton from "../../components/freeConsultationsButton/freeConsultationsButton.js";
 import Diary from "../../components/diary/diary.js";
 
@@ -22,10 +22,10 @@ export default function Specialists() {
 
   }
 
-  const displaySpecialists = (id) => {
-    /* console.log(id); */
-    /* if */
-  }
+  /* const displaySpecialists = (id) => {
+    console.log(id);
+    if
+  } */
 
   ///here function joining 2 imported modules
 
@@ -39,11 +39,11 @@ export default function Specialists() {
             <Carousel onSpecialists = {selectSpecialists} />
             
 
-            <div className="submit-section">
-                <TherapistInfo onInfo={displaySpecialists}/>
-                <div className="date-section">
-                    <div className="calendar-submit">
-                        {/* <Calendar /> */}
+            <div className={styles['submit-section']}>
+                <TherapistInfo/>      {/* onInfo={displaySpecialists} */}
+                <div className={styles['date-section']}>
+                    <div className={styles['calendar-submit']}>
+                        <Calendar />
                         <FreeConsultationsButton />
                     </div>
                     <Diary />                

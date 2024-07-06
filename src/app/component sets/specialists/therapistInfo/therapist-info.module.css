@@ -14,12 +14,12 @@
 
 .specialist {
   display: none;
+  padding: 48px;
 }
 
 .active {
   display: flex; 
   flex-direction: column;
-  width: 50%;
 }
 
 /* specialist toggle */

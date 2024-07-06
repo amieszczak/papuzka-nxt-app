@@ -1,12 +1,12 @@
-import "./form.css";
+import styles from "./form.module.css";
 
 export default function ContactForm() {
   return (
     <>
-      <article className="form-container">
-        <div className="page-o3">
-          <div className="contact">
-            <div className="contact-info">
+      <article className={styles["form-container"]}>
+        <div className={styles["page-o3"]}>
+          <div className={styles["contact"]}>
+            <div className={styles["contact-info"]}>
               <h2>FORMULARZ KONTAKTOWY</h2>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
@@ -18,32 +18,34 @@ export default function ContactForm() {
               </p>
             </div>
 
-            <form className="contact-fields">
-              <div className="info-fields-row">
-                <div className="field-1 info-field">
+            <form className={styles["contact-fields"]}>
+              <div className={styles["info-fields-row"]}>
+                <div className={`${styles["field-1"]} ${styles["info-field"]}`}>
                   <label htmlFor="f1">IMIĘ</label>
-                  <input className="f1" type="text" />
+                  <input className={styles["f1"]} type="text" />
                 </div>
-                <div className="field-2 info-field">
+                <div className={`${styles["field-2"]} ${styles["info-field"]}`}>
                   <label htmlFor="f1">NAZWISKO</label>
-                  <input className="f1" type="text" />
+                  <input className={styles["f1"]} type="text" />
                 </div>
               </div>
-              <div className="info-fields-row">
-                <div className="field-3 info-field">
+              <div className={styles["info-fields-row"]}>
+                <div className={`${styles["field-3"]} ${styles["info-field"]}`}>
                   <label htmlFor="f1">E-MAIL</label>
-                  <input className="f1" type="text" />
+                  <input className={styles["f1"]} type="text" />
                 </div>
-                <div className="field-4 info-field">
+                <div className={`${styles["field-4"]} ${styles["info-field"]}`}>
                   <label htmlFor="f1">NUMER TELEFONU</label>
-                  <input className="f1" type="text" />
+                  <input className={styles["f1"]} type="text" />
                 </div>
               </div>
-              <div className="field-5 message-field">
+              <div
+                className={`${styles["field-5"]} ${styles["message-field"]}`}
+              >
                 <label htmlFor="f1">WIADOMOŚĆ</label>
-                <textarea className="f5" type="text"></textarea>
+                <textarea className={styles["f5"]} type="text"></textarea>
               </div>
-              <div className="contact-button">
+              <div className={styles["contact-button"]}>
                 <input type="submit" value="SKONTAKTUJ SIĘ Z NAMI" />
               </div>
             </form>

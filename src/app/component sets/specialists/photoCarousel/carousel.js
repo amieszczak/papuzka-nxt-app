@@ -1,3 +1,4 @@
+'use client';
 import './carousel.css';
 import Image from 'next/image';
 import specialist_1 from '../img/magda.png';
@@ -7,13 +8,19 @@ import carouselMovement from './functions/carouselFunctions.js';
 
 console.log(carouselMovement);
 
-export default function Carousel() {
+export default function Carousel({onSpecialists}) {
+    
+    
+    const SelectSpecialist = (id) => {  /* SelectSpecialist2 */
+        onSpecialists(id);
+    }
+    
     return (
         <div className='carousel-container'>
             <div className='therapist-carousel'>
                 <div className='carousel-track'>
 
-                <div className='therapist-photo-container'>
+                <div onClick={() => onSpecialists(0)} className='therapist-photo-container'>
                     <Image 
                     src={specialist_1}
                     alt="Therapist Magdalena"
@@ -21,7 +28,7 @@ export default function Carousel() {
                     />
                 </div>
                 
-                <div className='therapist-photo-container'>
+                <div onClick={() => onSpecialists(1)} className='therapist-photo-container'>
                     <Image 
                     src={specialist_2}
                     alt="Therapist Izabela"
@@ -29,7 +36,7 @@ export default function Carousel() {
                     />
                 </div>
                 
-                <div className='therapist-photo-container'>
+                <div onClick={() => onSpecialists(2)} className='therapist-photo-container'>
                     <Image 
                     src={specialist_3}
                     alt="Therapist Angelika"
@@ -37,7 +44,7 @@ export default function Carousel() {
                     />    
                 </div>
                 
-                <div className='therapist-photo-container'>
+                <div onClick={() => onSpecialists(3)} className='therapist-photo-container'>
                     <Image 
                     src={specialist_1}
                     alt="Therapist Magdalena"

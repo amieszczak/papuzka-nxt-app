@@ -10,6 +10,20 @@
   text-align: justify;
 }
 
+/* specialist toggle */
+
+.specialist {
+  display: none;
+}
+
+.active {
+  display: flex; 
+  flex-direction: column;
+  width: 50%;
+}
+
+/* specialist toggle */
+
 @media(max-width: 1400px) {
 
   .spec-info {

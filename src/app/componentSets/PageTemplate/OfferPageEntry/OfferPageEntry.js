@@ -1,4 +1,4 @@
-import "./offer-page-entry.css";
+import styles from "./offer-page-entry.module.css";
 import Image from "next/image";
 
 export default function OfferPageEntry({
@@ -8,21 +8,21 @@ export default function OfferPageEntry({
 }) {
   return (
     <>
-      <section className="entry-container">
-        <div className="entry-description">
+      <section className={styles['entry-container']}>  {/* "entry-container" */} 
+        <div className={styles['entry-description']}>  {/* "entry-description" */}
           <h1>{pageTitle}</h1>
           <p>{entryInformation}</p>
         </div>
 
-        <div className="entry-photo-container">
+        <div className={styles['entry-photo-container']}>  {/* "entry-photo-container" */}
           <Image
-            className="category-photo"
+            className={styles['category-photo']}          /* "category-photo" */
             src={photoSrc}
             alt="zdjęcie kategorii"
             width={500}
             height={500}
           />
-          <div className="book-button">
+          <div className={styles['book-button']}>  {/* "book-button" */}
             <p>REZERWUJ</p>
           </div>
         </div>

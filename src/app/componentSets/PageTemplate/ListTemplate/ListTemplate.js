@@ -1,9 +1,9 @@
 
-import "./list_template.css";
+import styles from "./list_template.module.css";
 
 export default function ListTemplate(props) {
   return (
-    <section className="list-unit">
+    <section className={styles['list-unit']}> 
       <h2>{props.title}</h2>
 
       <ul>

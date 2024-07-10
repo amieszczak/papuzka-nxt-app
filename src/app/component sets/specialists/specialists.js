@@ -12,22 +12,13 @@ import Diary from "../../components/diary/diary.js";
 export default function Specialists() {
   
   const selectSpecialists = (id) => {
-    console.log(id);
+    /* console.log(id); */
     const specialists = document.querySelectorAll('.therapist-info_specialist__q55nM');
-    console.log(specialists[id]);
     for(let i=0; i < specialists.length; i++) {
       specialists[i].classList.remove('therapist-info_active__qaufs');
     }
     specialists[id].classList.add('therapist-info_active__qaufs');
-
   }
-
-  /* const displaySpecialists = (id) => {
-    console.log(id);
-    if
-  } */
-
-  ///here function joining 2 imported modules
 
   return (
     <>
@@ -40,7 +31,7 @@ export default function Specialists() {
             
 
             <div className={styles['submit-section']}>
-                <TherapistInfo/>      {/* onInfo={displaySpecialists} */}
+                <TherapistInfo/>      
                 <div className={styles['date-section']}>
                     <div className={styles['calendar-submit']}>
                         <Calendar />

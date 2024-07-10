@@ -8,8 +8,6 @@
   text-align: center;
 }
 
-
-
 .submit-section {
   display: flex;
   width: 96%;
@@ -17,9 +15,8 @@
 
 .date-section {
   display: flex;
+  padding: 64px 64px 64px 0;
 }
-
-
 
 @media(max-width: 1400px) {
 

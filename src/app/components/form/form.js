@@ -1,4 +1,5 @@
 import styles from "./form.module.css";
+import classNames from 'classnames';
 
 export default function ContactForm() {
   return (
@@ -24,7 +25,7 @@ export default function ContactForm() {
                   <label htmlFor="f1">IMIĘ</label>
                   <input className={styles["f1"]} type="text" />
                 </div>
-                <div className={`${styles["field-2"]} ${styles["info-field"]}`}>
+                <div className={classNames(styles['field-2'], styles['info-field'])}>   //{`${styles["field-2"]} ${styles["info-field"]}`}
                   <label htmlFor="f1">NAZWISKO</label>
                   <input className={styles["f1"]} type="text" />
                 </div>

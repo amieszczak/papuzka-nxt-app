@@ -20,7 +20,7 @@ export default function Carousel({onSpecialists}) {
             <div className='therapist-carousel'>
                 <div className='carousel-track'>
 
-                <div onClick={() => onSpecialists(0)} className='therapist-photo-container'>
+                <div onClick={() => onSpecialists('specialist-Magdalena')} className='therapist-photo-container'>
                     <Image 
                     src={specialist_1}
                     alt="Therapist Magdalena"
@@ -28,7 +28,7 @@ export default function Carousel({onSpecialists}) {
                     />
                 </div>
                 
-                <div onClick={() => onSpecialists(1)} className='therapist-photo-container'>
+                <div onClick={() => onSpecialists('specialist-Izabela')} className='therapist-photo-container'>
                     <Image 
                     src={specialist_2}
                     alt="Therapist Izabela"
@@ -36,7 +36,7 @@ export default function Carousel({onSpecialists}) {
                     />
                 </div>
                 
-                <div onClick={() => onSpecialists(2)} className='therapist-photo-container'>
+                <div onClick={() => onSpecialists('specialist-Angelika')} className='therapist-photo-container'>
                     <Image 
                     src={specialist_3}
                     alt="Therapist Angelika"
@@ -44,7 +44,7 @@ export default function Carousel({onSpecialists}) {
                     />    
                 </div>
                 
-                <div onClick={() => onSpecialists(3)} className='therapist-photo-container'>
+                <div onClick={() => onSpecialists('specialist-Natalia')} className='therapist-photo-container'>
                     <Image 
                     src={specialist_1}
                     alt="Therapist Magdalena"

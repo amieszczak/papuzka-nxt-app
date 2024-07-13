@@ -1,22 +1,22 @@
-.carousel-container {
+.carouselContainer {
     display: flex;
     justify-content: center;
 }
 
-.therapist-carousel {
+.therapistCarousel {
     width: 96%;
     height: 292px;
     overflow: hidden;
     position: relative;
 }
 
-.carousel-track {
+.carouselTrack {
     display: inline-flex;
     gap: 24px;
     position: absolute;
 }
 
-.therapist-photo-container {
+.therapistPhotoContainer {
     min-width: 400px;
     width: 400px;
     height: 292px;
@@ -26,7 +26,7 @@
     position: relative;
 }
 
-.therapist-photo {
+.therapistPhoto {
     width: 100%;
     height: 100%;  
     object-fit: cover;
@@ -34,7 +34,7 @@
   }
 
 
-  .specialist-photo {
+  .specialistPhoto {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;

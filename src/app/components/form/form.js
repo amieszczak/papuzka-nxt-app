@@ -4,10 +4,10 @@ import classNames from 'classnames';
 export default function ContactForm() {
   return (
     <>
-      <article className={styles["form-container"]}>
-        <div className={styles["page-o3"]}>
-          <div className={styles["contact"]}>
-            <div className={styles["contact-info"]}>
+      <article className={styles.formContainer}>
+        <div className={styles.content}>
+          <div className={styles.contact}>
+            <div className={styles.contactInfo}>
               <h2>FORMULARZ KONTAKTOWY</h2>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
@@ -19,34 +19,34 @@ export default function ContactForm() {
               </p>
             </div>
 
-            <form className={styles["contact-fields"]}>
-              <div className={styles["info-fields-row"]}>
-                <div className={`${styles["field-1"]} ${styles["info-field"]}`}>
-                  <label htmlFor="f1">IMIĘ</label>
-                  <input className={styles["f1"]} type="text" />
+            <form className={styles.contactFields}>
+              <div className={styles.infoFieldsRow}>
+                <div className={classNames(styles.nameField ,styles.infoField)}>
+                  <label htmlFor={styles.dataInput}>IMIĘ</label>
+                  <input className={styles.dataInput} type="text" />
                 </div>
-                <div className={classNames(styles['field-2'], styles['info-field'])}>   //{`${styles["field-2"]} ${styles["info-field"]}`}
-                  <label htmlFor="f1">NAZWISKO</label>
-                  <input className={styles["f1"]} type="text" />
+                <div className={classNames(styles.surnameField, styles.infoField)}>   
+                  <label htmlFor={styles.dataInput}>NAZWISKO</label>
+                  <input className={styles.dataInput} type="text" />
                 </div>
               </div>
-              <div className={styles["info-fields-row"]}>
-                <div className={`${styles["field-3"]} ${styles["info-field"]}`}>
-                  <label htmlFor="f1">E-MAIL</label>
-                  <input className={styles["f1"]} type="text" />
+              <div className={styles.infoFieldsRow}>
+                <div className={classNames(styles.mailField, styles.infoField)}>
+                  <label htmlFor={styles.dataInput}>E-MAIL</label>
+                  <input className={styles.dataInput} type="text" />
                 </div>
-                <div className={`${styles["field-4"]} ${styles["info-field"]}`}>
-                  <label htmlFor="f1">NUMER TELEFONU</label>
-                  <input className={styles["f1"]} type="text" />
+                <div className={classNames(styles.phoneField, styles.infoField)}>
+                  <label htmlFor={styles.dataInput}>NUMER TELEFONU</label>
+                  <input className={styles.dataInput} type="text" />
                 </div>
               </div>
               <div
-                className={`${styles["field-5"]} ${styles["message-field"]}`}
+                className={styles.messageField}
               >
-                <label htmlFor="f1">WIADOMOŚĆ</label>
-                <textarea className={styles["f5"]} type="text"></textarea>
+                <label htmlFor={styles.dataInput}>WIADOMOŚĆ</label>
+                <textarea className={styles.textAreaInput} type="text"></textarea>
               </div>
-              <div className={styles["contact-button"]}>
+              <div className={styles.contactButton}>
                 <input type="submit" value="SKONTAKTUJ SIĘ Z NAMI" />
               </div>
             </form>

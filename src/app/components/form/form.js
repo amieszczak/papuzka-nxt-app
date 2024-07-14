@@ -1,12 +1,13 @@
-import "./form.css";
+import styles from "./form.module.css";
+import classNames from 'classnames';
 
 export default function ContactForm() {
   return (
     <>
-      <article className="form-container">
-        <div className="page-o3">
-          <div className="contact">
-            <div className="contact-info">
+      <article className={styles.formContainer}>
+        <div className={styles.content}>
+          <div className={styles.contact}>
+            <div className={styles.contactInfo}>
               <h2>FORMULARZ KONTAKTOWY</h2>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
@@ -18,32 +19,34 @@ export default function ContactForm() {
               </p>
             </div>
 
-            <form className="contact-fields">
-              <div className="info-fields-row">
-                <div className="field-1 info-field">
-                  <label htmlFor="f1">IMIĘ</label>
-                  <input className="f1" type="text" />
+            <form className={styles.contactFields}>
+              <div className={styles.infoFieldsRow}>
+                <div className={classNames(styles.nameField ,styles.infoField)}>
+                  <label htmlFor={styles.dataInput}>IMIĘ</label>
+                  <input className={styles.dataInput} type="text" />
                 </div>
-                <div className="field-2 info-field">
-                  <label htmlFor="f1">NAZWISKO</label>
-                  <input className="f1" type="text" />
-                </div>
-              </div>
-              <div className="info-fields-row">
-                <div className="field-3 info-field">
-                  <label htmlFor="f1">E-MAIL</label>
-                  <input className="f1" type="text" />
-                </div>
-                <div className="field-4 info-field">
-                  <label htmlFor="f1">NUMER TELEFONU</label>
-                  <input className="f1" type="text" />
+                <div className={classNames(styles.surnameField, styles.infoField)}>   
+                  <label htmlFor={styles.dataInput}>NAZWISKO</label>
+                  <input className={styles.dataInput} type="text" />
                 </div>
               </div>
-              <div className="field-5 message-field">
-                <label htmlFor="f1">WIADOMOŚĆ</label>
-                <textarea className="f5" type="text"></textarea>
+              <div className={styles.infoFieldsRow}>
+                <div className={classNames(styles.mailField, styles.infoField)}>
+                  <label htmlFor={styles.dataInput}>E-MAIL</label>
+                  <input className={styles.dataInput} type="text" />
+                </div>
+                <div className={classNames(styles.phoneField, styles.infoField)}>
+                  <label htmlFor={styles.dataInput}>NUMER TELEFONU</label>
+                  <input className={styles.dataInput} type="text" />
+                </div>
               </div>
-              <div className="contact-button">
+              <div
+                className={styles.messageField}
+              >
+                <label htmlFor={styles.dataInput}>WIADOMOŚĆ</label>
+                <textarea className={styles.textAreaInput} type="text"></textarea>
+              </div>
+              <div className={styles.contactButton}>
                 <input type="submit" value="SKONTAKTUJ SIĘ Z NAMI" />
               </div>
             </form>

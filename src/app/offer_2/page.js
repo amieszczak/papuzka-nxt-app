@@ -1,6 +1,4 @@
-import "./offer_2.css";
-import OfferPageEntry from "../componentSets/PageTemplate/OfferPageEntry/OfferPageEntry.js";
-import { Offer2EntryData } from "../data/SubpageContent/offer_2/entryData/offer2EntryData.js";
+import './offer_2.css';
 
 export default function Offer_2() {
   return (

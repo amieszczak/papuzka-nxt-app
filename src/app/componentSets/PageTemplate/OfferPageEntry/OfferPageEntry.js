@@ -8,21 +8,21 @@ export default function OfferPageEntry({
 }) {
   return (
     <>
-      <section className={styles['entry-container']}>  {/* "entry-container" */} 
-        <div className={styles['entry-description']}>  {/* "entry-description" */}
+      <section className={styles.entryContainer}>  
+        <div className={styles.entryDescription}> 
           <h1>{pageTitle}</h1>
           <p>{entryInformation}</p>
         </div>
 
-        <div className={styles['entry-photo-container']}>  {/* "entry-photo-container" */}
+        <div className={styles.entryPhotoContainer}>  
           <Image
-            className={styles['category-photo']}          /* "category-photo" */
+            className={styles.categoryPhoto}          
             src={photoSrc}
             alt="zdjęcie kategorii"
             width={500}
             height={500}
           />
-          <div className={styles['book-button']}>  {/* "book-button" */}
+          <div className={styles.bookButton}> 
             <p>REZERWUJ</p>
           </div>
         </div>

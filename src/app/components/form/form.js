@@ -43,7 +43,7 @@ export default function ContactForm() {
               <div
                 className={styles.messageField}
               >
-                <label htmlFor={styles.dataInput}>WIADOMOŚĆ</label>
+                <label htmlFor={styles.textAreaInput}>WIADOMOŚĆ</label>
                 <textarea className={styles.textAreaInput} type="text"></textarea>
               </div>
               <div className={styles.contactButton}>

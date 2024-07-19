@@ -1,0 +1,43 @@
+.header-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .header-icon {
+      padding: 64px;
+    }
+    
+  .header-icon-middle {
+      margin-right: 4.4%;
+    }
+   
+    @media(max-width: 1400px) {
+  
+      .header-top {
+        width: 100%;
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+    
+      .header-logo {
+        display: none;
+      }
+    
+      .header-user {
+        display: none;
+      }
+    
+      
+    
+      .header-icon {
+        padding: 0;
+      }
+    
+      .header-icon-middle {
+        margin: 0;
+        width: 60%;
+      }
+    }

@@ -1,20 +1,20 @@
-.header-top {
+.headerTop {
     width: 100%;
     display: flex;
     justify-content: space-between;
   }
   
-  .header-icon {
+  .headerIcon {
       padding: 64px;
     }
     
-  .header-icon-middle {
+  .headerIconMiddle {
       margin-right: 4.4%;
     }
    
     @media(max-width: 1400px) {
   
-      .header-top {
+      .headerTop {
         width: 100%;
         padding-top: 20px;
         display: flex;
@@ -22,21 +22,21 @@
         align-items: center;
       }
     
-      .header-logo {
+      .headerLogo {
         display: none;
       }
     
-      .header-user {
+      .headerUser {
         display: none;
       }
     
       
     
-      .header-icon {
+      .headerIcon {
         padding: 0;
       }
     
-      .header-icon-middle {
+      .headerIconMiddle {
         margin: 0;
         width: 60%;
       }

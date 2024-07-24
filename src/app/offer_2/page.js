@@ -1,4 +1,9 @@
-import './offer_2.css';
+import "./offer_2.css";
+import OfferPageEntry from "../componentSets/PageTemplate/OfferPageEntry/OfferPageEntry.js";
+import { Offer2EntryData } from "../data/SubpageContent/offer_2/entryData/offer2EntryData.js";
+//
+import MetricUnit from "../components/metricUnit/metricUnit.js";
+import { metricData } from "../data/SubpageContent/offer_2/metricData/metricData.js";
 
 export default function Offer_2() {
   return (
@@ -10,7 +15,7 @@ export default function Offer_2() {
       />
       <article>
         <div className="page_o1">
-          <section className="west">
+          {/* <section className="west">
             <div className="middle-page-text">
               <h1>TERAPIA LOGOPEDYCZNA</h1>
 
@@ -55,18 +60,29 @@ export default function Offer_2() {
                 <li>wypracowanie alternatywnych zachowań komunikacyjnych</li>
               </ul>
             </div>
-          </section>
+          </section> */}
 
           <section className="east">
-            <div className="page-o1-photo">
+            {metricData.map((item) => {
+              return (
+                <MetricUnit
+                  src={item.src}
+                  alt={item.alt}
+                  title={item.title}
+                  description={item.description}
+                />
+              );
+            })}
+
+            {/* <div className="page-o1-photo">
               <img
                 className="category-photo"
                 src="img/03_page_o1/Rectangle 21.png"
               />
               <div className="book-button">REZERWUJ</div>
-            </div>
+            </div> */}
             <aside>
-              <div className="metric">
+              {/* <div className="metric">
                 <div className="metric-icon">
                   <img src="img/aside/oferta_terapia/u_clock-five.svg" />
                 </div>
@@ -149,6 +165,7 @@ export default function Offer_2() {
                   </p>
                 </div>
               </div>
+ */}
             </aside>
           </section>
         </div>

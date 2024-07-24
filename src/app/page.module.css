@@ -1,31 +1,5 @@
 
   
-  .metric {
-    display: inline-block;
-    width: 750px;
-    margin-top: 50px;
-  }
-  
-  .metric-icon {
-    float: left;
-    /*margin-top: 100px;*/
-  }
-  
-  .metric-info {
-    float: left;
-    margin-left: 150px;
-    width: 400px;
-  }
-  
-  .metric-info p {
-    width: 400px;
-    font-weight: 700;
-    margin-top: -20px;
-  }
-  
-  .metric-info h2 {
-    font-size: 40px;
-  }
   
   /*---------------------------------------*/
   

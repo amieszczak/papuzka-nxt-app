@@ -9,7 +9,8 @@ export default function HeaderTop() {
     <div className={styles.headerTop}>
       {headerTopData.map((item) => {
         return (
-          <Image
+          <Image 
+            key={item.id}
             className={classNames(
               item.classNames.map((myClass) => styles[myClass])
             )}

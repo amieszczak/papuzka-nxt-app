@@ -1,9 +1,12 @@
-import "./offer_2.css";
+import styles from "./offer2.module.css";
 import OfferPageEntry from "../componentSets/PageTemplate/OfferPageEntry/OfferPageEntry.js";
 import { Offer2EntryData } from "../data/SubpageContent/offer_2/entryData/offer2EntryData.js";
 //
 import MetricUnit from "../components/metricUnit/metricUnit.js";
 import { metricData } from "../data/SubpageContent/offer_2/metricData/metricData.js";
+//
+import ListTemplate from "../componentSets/PageTemplate/ListTemplate/ListTemplate.js";
+import { Offer2ListData } from "../data/SubpageContent/offer_2/listData/offer2ListData.js";
 
 export default function Offer_2() {
   return (
@@ -14,158 +17,24 @@ export default function Offer_2() {
         photoSrc={Offer2EntryData.photoSrc}
       />
       <article>
-        <div className="page_o1">
-          {/* <section className="west">
-            <div className="middle-page-text">
-              <h1>TERAPIA LOGOPEDYCZNA</h1>
-
-              <p>
-                Terapia logopedyczna to zespół działań podejmowanych przez
-                logopedów, dla których nadrzędnym zadaniem jest osiągnięcie
-                zamierzonych celów logopedycznych. Czas terapii logopedycznej
-                jest uzależniony od typu trudności oraz indywidualnej motywacji
-                pacjenta. Pracujemy w oparciu o metody niedyrektywne, w zabawie
-                i w relacji, z uwzględnieniem indywidualnych potrzeb każdej
-                osoby. Terapia logopedyczna prowadzona jest z wykorzystaniem
-                terapii miofunkcjonalnej. Logopeda/ neurologopeda prowadzi
-                terapię holistycznie, ćwiczymy połykanie, pozycję spoczynkową
-                języka oraz wykonujemy ćwiczenia normalizujące napięcie
-                mięśniowe.
-              </p>
-
-              <h2>Wskazania:</h2>
-
-              <ul>
-                <li>autyzm</li>
-                <li>mózgowe porażenie dziecięce</li>
-                <li>rozszczep wargi i podniebienia</li>
-                <li>jąkanie</li>
-                <li>niedosłuch</li>
-                <li>niepełnosprawność złożona</li>
-                <li>wady wymowy</li>
-                <li>opóźniony rozwój mowy</li>
-                <li>zespół Downa</li>
-                <li>dysleksja, dysgrafia, dyskalkulia</li>
-              </ul>
-
-              <h2>Cele terapii:</h2>
-
-              <ul>
-                <li>usprawnienie motoryki narządów mowy</li>
-                <li>korygowanie wad wymowy</li>
-                <li>
-                  poprawienie jakości funkcji językowej, oddechowej, fonacyjnej
-                </li>
-                <li>rozbudowanie zasobu słownictwa czynnego i biernego</li>
-                <li>wypracowanie alternatywnych zachowań komunikacyjnych</li>
-              </ul>
-            </div>
-          </section> */}
-
-          <section className="east">
-            {metricData.map((item) => {
-              return (
-                <MetricUnit
-                  src={item.src}
-                  alt={item.alt}
-                  title={item.title}
-                  description={item.description}
-                />
-              );
+        <div className={styles.container}>
+          <section className={styles.halfDivider}>
+            {Offer2ListData.map((item) => {
+              return <ListTemplate title={item.title} list={item.list} />;
             })}
-
-            {/* <div className="page-o1-photo">
-              <img
-                className="category-photo"
-                src="img/03_page_o1/Rectangle 21.png"
-              />
-              <div className="book-button">REZERWUJ</div>
-            </div> */}
-            <aside>
-              {/* <div className="metric">
-                <div className="metric-icon">
-                  <img src="img/aside/oferta_terapia/u_clock-five.svg" />
-                </div>
-
-                <div className="metric-info">
-                  <h2>CZAS TRWANIA</h2>
-
-                  <p>90 MINUT</p>
-                </div>
-              </div>
-
-              <div className="metric">
-                <div className="metric-icon">
-                  <img
-                    className="tele"
-                    src="img/aside/oferta_terapia/u_telegram-alt.svg"
+          </section>
+          <section className={styles.halfDivider}>
+            <aside className={styles.aside}>
+              {metricData.map((item) => {
+                return (
+                  <MetricUnit
+                    src={item.src}
+                    alt={item.alt}
+                    title={item.title}
+                    description={item.description}
                   />
-                </div>
-
-                <div className="metric-info">
-                  <h2>KONTAKT</h2>
-
-                  <p>
-                    W OKRESIE PRZEPROWADZANIA TERAPII JESTEŚMY W KONTAKCIE Z
-                    RODZICEM
-                  </p>
-                </div>
-              </div>
-
-              <div className="metric">
-                <div className="metric-icon">
-                  <img
-                    className="voll"
-                    src="img/aside/oferta_terapia/u_volleyball.svg"
-                  />
-                </div>
-
-                <div className="metric-info">
-                  <h2>NAUKA PRZEZ ZABAWĘ</h2>
-
-                  <p>
-                    NASZE ZAJĘCIA W ODRÓŻNIENIU OD WIELU TEGO TYPU PROGRAMÓW
-                    UCZĄ PRZY JEDNOCZEŚNIE MILE SPĘDZONYM PRZEZ DZIECKO CZASIE
-                  </p>
-                </div>
-              </div>
-
-              <div className="metric">
-                <div className="metric-icon">
-                  <img
-                    className="fire"
-                    src="img/aside/oferta_terapia/u_fire.svg"
-                  />
-                </div>
-
-                <div className="metric-info">
-                  <h2>SZYBKA INTERWENCJA</h2>
-
-                  <p>
-                    W PRZYPADKU PROBLEMÓW WYMAGAJĄCYCH SZYBKIEJ INTERWENCJI,
-                    SŁUŻYMY POMOCĄ.
-                  </p>
-                </div>
-              </div>
-
-              <div className="metric">
-                <div className="metric-icon">
-                  <img
-                    className="eye"
-                    src="img/aside/oferta_terapia/u_eye.svg"
-                  />
-                </div>
-
-                <div className="metric-info">
-                  <h2>WSPÓLNE WIZYTY</h2>
-
-                  <p>
-                    JEŚLI ZACHODZI POTRZEBA UCZESTNICTWA RODZICA W ZAJĘCIACH,
-                    ZAPRASZAMY DO WSPÓLNEJ WIZYTY.
-                  </p>
-                </div>
-              </div>
- */}
+                );
+              })}
             </aside>
           </section>
         </div>

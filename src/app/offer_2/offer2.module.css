@@ -1,11 +1,11 @@
-@import '../globals.css';
+/* @import '../globals.css';
 @import '../page.module.css';
-
+ */
 /* .container-offer-2 {
   width: 100%;
 } */
 
-.container-offer-2 h2 {
+/* .container-offer-2 h2 {
     font-size: 40px;
   }
   .container-offer-2 ul {
@@ -34,6 +34,19 @@
   
   .east {
     width: 50%;
-    /* float: right; */
-  }
+  } */
   
+  .container {
+    
+  }
+
+  .halfDivider {
+    width: 50%;
+  }
+
+  .aside {
+    padding-left: 64px;
+    text-align: center;
+    /* width: 864px; */
+    color: #ad3d3d;
+  }

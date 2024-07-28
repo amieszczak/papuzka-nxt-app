@@ -6,13 +6,12 @@
 }
 
 .listUnit ul {
-    /* list-style-image: url('/mdi_bird.svg'); */
     list-style-type: none; 
 }
 
 .listUnit ul li {
     position: relative;
-    padding: 24px 0; 
+    padding: clamp(0px, 1.3vw, 24px) 0; 
 }
 
 .listUnit ul li::before {

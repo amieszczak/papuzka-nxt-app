@@ -1,5 +1,5 @@
 
-import styles from "./list_template.module.css";
+import styles from "./listTemplate.module.css";
 
 export default function ListTemplate(props) {
   return (

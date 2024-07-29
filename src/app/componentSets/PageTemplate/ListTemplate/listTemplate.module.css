@@ -2,7 +2,8 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
-    padding: 48px 48px 48px 0;
+    /* padding: 48px 48px 48px 0; */
+    color: #AD3D3D;
 }
 
 .listUnit ul {
@@ -24,7 +25,7 @@
 
 @media(max-width: 1200px) {
 
-    .listUnit {
+    /* .listUnit {
         padding: 48px 48px 48px 64px;
-    }
+    } */
 }

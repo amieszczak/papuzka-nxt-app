@@ -7,6 +7,9 @@ import { metricData } from "../data/SubpageContent/offer_2/metricData/metricData
 //
 import ListTemplate from "../componentSets/PageTemplate/ListTemplate/ListTemplate.js";
 import { Offer2ListData } from "../data/SubpageContent/offer_2/listData/offer2ListData.js";
+//
+import classNames from "classnames";
+
 
 export default function Offer_2() {
   return (
@@ -18,7 +21,7 @@ export default function Offer_2() {
       />
       <article>
         <div className={styles.container}>
-          <section className={styles.halfDivider}>
+          <section className={classNames(styles.halfDivider, styles.listDivider)}>
             {Offer2ListData.map((item) => {
               return <ListTemplate title={item.title} list={item.list} />;
             })}

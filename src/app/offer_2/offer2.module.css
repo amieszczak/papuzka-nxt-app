@@ -37,16 +37,24 @@
   } */
   
   .container {
-    
+    display: flex;
+    justify-content: center;
   }
 
   .halfDivider {
     width: 50%;
   }
 
+  .listDivider {
+    margin-left: clamp(20px, 9.4vw, 180px);
+  }
+
   .aside {
-    padding-left: 64px;
+    /* padding-left: 64px; */
     text-align: center;
     /* width: 864px; */
     color: #ad3d3d;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
   }

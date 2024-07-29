@@ -9,6 +9,7 @@
     gap: clamp(0px, 5.2vw, 100px);
     margin: clamp(0px, 3.3vw, 64px) 0;  /* 64px */
     text-transform: uppercase;
+    text-align: left;
   }
   
   .metricIcon {

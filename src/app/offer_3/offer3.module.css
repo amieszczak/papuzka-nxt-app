@@ -1,11 +1,11 @@
-@import '../globals.css';
-@import '../page.module.css';
+/* @import '../globals.css';
+@import '../page.module.css'; */
 
 /* .container-offer-3 {
   width: 100%;
 } */
 
-.middle-page-text h2 {
+/* .middle-page-text h2 {
     font-size: 48px;
     font-weight: 900;
   }
@@ -57,4 +57,8 @@
     float: left;
     width: 50%;
   }
-  
+   */
+
+  .halfDivider {
+    width: 50%;
+  }

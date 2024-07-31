@@ -1,69 +1,44 @@
-import "./offer_3.css";
+import styles from "./offer3.module.css";
 import OfferPageEntry from "../componentSets/PageTemplate/OfferPageEntry/OfferPageEntry.js";
 import { Offer3EntryData } from "../data/SubpageContent/offer_3/entryData/offer3EntryData.js";
-
-
+//
+import ListTitleTemplate from "../componentSets/PageTemplate/ListTitleTemplate/ListTitleTemplate.js";
+import { listTitleData } from "../data/SubpageContent/offer_3/listTitleData/offer3listTitleData.js";
+//
+import MetricUnit from "../components/metricUnit/metricUnit.js";
+import { offer3MetricData } from "../data/SubpageContent/offer_3/metricData/offer3MetricData";
 
 export default function Offer_3() {
   return (
     <>
-
-      
       <article>
-        
-            <OfferPageEntry
-              pageTitle={Offer3EntryData.pageTitle}
-              entryInformation={Offer3EntryData.entryInformation}
-              photoSrc={Offer3EntryData.photoSrc}
+        <OfferPageEntry
+          pageTitle={Offer3EntryData.pageTitle}
+          entryInformation={Offer3EntryData.entryInformation}
+          photoSrc={Offer3EntryData.photoSrc}
+        />
+        <div className={styles.descriptionContainer}>
+          <section className={styles.halfDivider}>
+            <ListTitleTemplate
+              mainTitle={listTitleData.title}
+              mainDescription={listTitleData.description}
+              list={listTitleData.list}
             />
-            <div>
-              <section>
-                <div>
-
-              <h2>Dla kogo?</h2>
-
-              <p>
-                Zajęcia TUS przeznaczone są dla wszystkich uczniów, którzy
-                prezentują szeroko rozumiane trudności w funkcjonowaniu
-                społecznym. Trening Umiejętności Społecznych jest pomocny w
-                terapii dzieci i młodzieży z autyzmem, zespołem Aspergera,
-                zaburzeniami zachowania, ADHD, Zespołem Downa, Zespołem
-                Williamsa. Zajęcia mogą być również skierowane do dzieci
-                nieśmiałych, wycofanych oraz prezentujących zaburzenia lękowe.
-              </p>
-              <ul>
-                <li>
-                  <h3>TUS dla dzieci z autyzmem i zespołem Aspergera</h3>
-                  to zajęcia koncentrujące się na wspieraniu rozwoju kompetencji
-                  społecznych, emocjonalnych i komunikacyjnych dostosowane do
-                  potrzeb i możliwości uczestników.
-                </li>
-                <li>
-                  <h3>TUS dla dzieci z ADHD</h3>
-                  to w dużej mierze praca nad regulacją procesu pobudzenia i
-                  hamowania, tak aby uczeń z wyzwaniem rozwojowym funkcjonował w
-                  grupie z większą uwagą. Podczas zajęć pracuje się nad
-                  minimalizacją kosztów jakie ponosi osoba z ADHD w kontaktach
-                  społecznych w związku z deficytami uwagi i nadmierną
-                  ruchliwością w obrębie ciała.
-                </li>
-                <li>
-                  <h3>TUS dla dzieci nieśmiałych</h3>
-                  to głównie praca nad procesem grupowym, aby stworzyć
-                  przestrzeń do otwarcia się nieśmiałej osoby na kontakty z
-                  grupą. Praca z wycofaną osobą często rozpoczyna się od pracy w
-                  diadzie (tylko dwoje dzieci), tak aby oswajanie się w byciu w
-                  kontakcie odbywało się w jak najbardziej komfortowych i
-                  bezpiecznych dla dziecka warunkach.
-                </li>
-              </ul>
-            </div>
           </section>
 
-          <section className="east">
-            
+          <section className={styles.halfDivider}>
+            {offer3MetricData.map((item) => {
+              return (
+                <MetricUnit
+                  src={item.src}
+                  alt={item.alt}
+                  title={item.title}
+                  description={item.description}
+                />
+              );
+            })}
 
-            <aside>
+            {/* <aside>
               <div className="metric">
                 <div className="metric-icon">
                   <img src="img/aside/offer_3/u_calendar-alt.svg" />
@@ -141,7 +116,7 @@ export default function Offer_3() {
                   </p>
                 </div>
               </div>
-            </aside>
+            </aside> */}
           </section>
         </div>
 

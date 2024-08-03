@@ -1,3 +1,5 @@
+
+
 export default function activeMenu() {
     let menuDropdown = document.querySelector(".offerDropdown");
     let header = document.querySelector("nav");

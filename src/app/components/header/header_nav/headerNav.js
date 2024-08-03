@@ -1,23 +1,35 @@
 'use client';
-import "./header_nav.css";
+import styles from './headerNav.module.css'
 import activeMenu from './functions/activeMenu.js';
 import menuOffer from './functions/menuOffer.js'
 import Link from 'next/link';
+import classNames from 'classnames';
 import { MenuStructure } from '../../../data/menuData/menuData.js';
+import { useState } from 'react';
+
 
 
 export default function HeaderNav() {
 
+/*   const [dropdown, setDropdown] = useState[true]; */
+
+/* function activeMenu() {
+  let menuDropdown = document.querySelector(styles.offerDropdown);
+  let header = document.querySelector(styles.navigation);
+  header.classList.toggle(styles.mainMenuActive); 
+  menuDropdown.classList.toggle(styles.offerDropdownActive);
+} */
+
   return (
-    <nav>
-      <div className="header-toggle" onClick={activeMenu}></div>
-        <div className="menu">
+    <nav className={styles.navigation}>
+      <div className={styles.headerToggle} onClick={activeMenu}></div>
+        <div className={styles.menu}>
           {MenuStructure.map(item => {
             if(item.offerPages) {
               return (
-                <div key={item.id} className={item.class} onClick={menuOffer}>
+                <div key={item.id} className={classNames(item.class.map(classItem => styles[classItem]))} onClick={menuOffer}> 
                   <Link href={item.href}>{item.title}</Link>
-                  <div key={item.subId} className={item.subClass}>
+                  <div key={item.subId} className={styles[item.subClass]}>
                     {item.offerPages.map(offerItem => {
                       return (
                         <Link key={offerItem.id} href={offerItem.href}>{offerItem.title}</Link>
@@ -40,32 +52,31 @@ export default function HeaderNav() {
 }
 
 
-/* {MenuStructure.filter(mainMenuItem => {
-  if(mainMenuItem.offerPages) {
-    return(
-      <div key={mainMenuItem.id} className={mainMenuItem.class}>
-        <Link href={mainMenuItem.href}>{mainMenuItem.title}</Link>
-      </div>
-  )}
-})} */
 
 {/* <nav>
-<div className="header-toggle" onClick={activeMenu}></div>
-  <div className="menu">
-    <div className="main-menu-section menu-offer" onClick={menuOffer}>
-      <a href="#">OFERTA</a>
-      <div className="offer-dropdown">
-          {MenuStructure.map(menuItem => { return (
-            <Link key={menuItem.id} href={menuItem.href}>{menuItem.title}</Link>
-          )
+      <div className={styles.headerToggle} onClick={activeMenu}></div>
+        <div className={styles.menu}>
+          {MenuStructure.map(item => {
+            if(item.offerPages) {
+              return (
+                <div key={item.id} className={classNames(item.class.map(classItem => styles[classItem]))} onClick={menuOffer}> 
+                  <Link href={item.href}>{item.title}</Link>
+                  <div key={item.subId} className={styles[item.subClass]}>
+                    {item.offerPages.map(offerItem => {
+                      return (
+                        <Link key={offerItem.id} href={offerItem.href}>{offerItem.title}</Link>
+                      )
+                    })}
+                  </div>
+                </div>
+              )
+            } else {
+              return (
+                <div key={item.id} className={item.class}>
+                  <Link href={item.href}>{item.title}</Link>
+                </div>
+              )
+            }
           })}
-      </div>
-    </div>
-    <div className="main-menu-section">
-      <Link href="#">O NAS</Link>
-    </div>
-    <div className="main-menu-section menu-contact">
-      <Link href="#">KONTAKT</Link>
-    </div>
-  </div>
-</nav> */}
+        </div>
+    </nav> */}

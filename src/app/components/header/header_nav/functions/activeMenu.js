@@ -1,6 +1,7 @@
 export default function activeMenu() {
-    let menuDropdown = document.querySelector(".offer-dropdown");
+    let menuDropdown = document.querySelector(".offerDropdown");
     let header = document.querySelector("nav");
-    header.classList.toggle("main-menu-active");
-    menuDropdown.classList.toggle(".offer-dropdown-active");
+    header.classList.toggle("mainMenuActive"); 
+    menuDropdown.classList.toggle("offerDropdownActive");
+    console.log(menuDropdown); 
   }

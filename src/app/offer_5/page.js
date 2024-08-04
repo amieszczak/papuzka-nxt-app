@@ -16,15 +16,6 @@ export default function Offer_5() {
             photoSrc={Offer5EntryData.photoSrc}
           />
           
-          <section className="east">
-            <div className="page-o1-photo">
-              <img
-                className="category-photo"
-                src="img/03_page_o1/Rectangle 21.png"
-              />
-              <div className="book-button">REZERWUJ</div>
-            </div>
-          </section>
         </div>
       </article>
     </>

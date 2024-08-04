@@ -50,10 +50,19 @@
     border-bottom: none;
     padding-bottom: 0;
   }
-  
-  .navigation.activeOfferWebDropdown .offerDropdown {
+
+  .offerDropdownActive {
     transform: translateY(0) scaleY(1);
     transition: 0.5s;
+  }
+  
+  /* .navigation.activeOfferWebDropdown .offerDropdown {
+    transform: translateY(0) scaleY(1);
+    transition: 0.5s;
+  } */
+
+  .menuHidden {
+    background-color: red;
   }
   
   @media (max-width: 1400px) {
@@ -75,7 +84,7 @@
       width: 130px;
       height: 130px;
     }
-    
+
     .headerToggle::before {
       content: "";
       position: absolute;
@@ -96,6 +105,19 @@
       transform: translateY(20px);
       transition: 0.5s;
     }
+
+    .headerToggleAnimation::before {
+      transform: rotate(45deg);
+      box-shadow: 0 0 #f08080;
+      transition: 0.5s;
+    }
+    
+    .headerToggleAnimation::after {
+      transform: rotate(315deg);
+      transition: 0.5s;
+    }
+
+    /* 
   
     .navigation.mainMenuActive .headerToggle::before {
       transform: rotate(45deg);
@@ -106,7 +128,7 @@
     .navigation.mainMenuActive .headerToggle::after {
       transform: rotate(315deg);
       transition: 0.5s;
-    }
+    } */
   
     .menu {
       position: absolute;
@@ -121,12 +143,16 @@
       transition: 0.5s;
     }
 
-    
-  
-    .navigation.mainMenuActive .menu {
+    .mainMenuMobileActive {
       transform: translateY(0) scaleY(1);
       transition: 0.5s;
     }
+  
+    /* .navigation.mainMenuActive .menu {
+      transform: translateY(0) scaleY(1);
+      transition: 0.5s;
+    } */
+
   
     .mainMenuSection a {
       border-bottom: 3px dotted #ffdab9;
@@ -162,12 +188,20 @@
       transform: translateY(-50%) scaleY(0);
       transition: all 0.5s;
     }
-    .navigation.activeOfferMobileDropdown .offerDropdown {
+
+    .offerDropdownActive {
       opacity: 1;
       height: 491px;
       transform: translateY(0) scaleY(1);
       transition: all 0.5s;
     }
+
+    /* .navigation.activeOfferMobileDropdown .offerDropdown {
+      opacity: 1;
+      height: 491px;
+      transform: translateY(0) scaleY(1);
+      transition: all 0.5s;
+    } */
   }
   
   @media(max-width: 992px) {

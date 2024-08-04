@@ -1,64 +1,16 @@
 /* @import '../globals.css';
 @import '../page.module.css'; */
 
-/* .container-offer-3 {
-  width: 100%;
-} */
-
-/* .middle-page-text h2 {
-    font-size: 48px;
-    font-weight: 900;
-  }
-  .middle-page-text h3 {
-    font-size: 40px;
-    font-weight: 900;
-    margin: 0;
-  }
-  
-  .middle-page-text ul {
-    margin-left: 10px;
-  }
-  
-  .page-o1-1 {
-    clear: both;
-    color: #ad3d3d;
-  }
-  .page-o1-1 h1 {
-    text-align: center;
-  }
-  
-  .page-o1-1 ul {
-    margin-left: 100px;
-    line-height: 2;
-    font-size: 48px;
-  }
-  
-  .home {
-    margin-top: 20px;
-  }
-  
-  .phone {
-    margin-top: 50px;
-  }
-  
-  .chat {
-    margin-top: 50px;
-  }
-  
-  .award {
-    margin-top: 20px;
-  }
-  
-  .west {
-    width: 50%;
-  }
-  
-  .east {
-    float: left;
-    width: 50%;
-  }
-   */
 
   .halfDivider {
     width: 50%;
+  }
+
+  .descriptionContainer {
+    display: flex;
+  }
+
+  .singleList {
+    display: flex;
+    justify-content: center;
   }

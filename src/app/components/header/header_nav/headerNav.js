@@ -6,22 +6,23 @@ import { MenuStructure } from "../../../data/menuData/menuData.js";
 import { useState } from "react";
 
 export default function HeaderNav() {
-  const [isOfferMenuHidden, setOfferMenuHidden] = useState(true);
-  const [isMainMenuMobileHidden, setMainMenuMobileHidden] = useState(true);
+
+  const [isOfferMenuActive, setOfferMenuActive] = useState(true);
+  const [isMainMenuMobileActive, setMainMenuMobileActive] = useState(true);
 
   return (
     <nav className={styles.navigation}>
       <div
         className={classNames({
           [styles.headerToggle]: true,
-          [styles.headerToggleAnimation]: isMainMenuMobileHidden,
+          [styles.headerToggleAnimation]: isMainMenuMobileActive,
         })}
-        onClick={() => setMainMenuMobileHidden(!isMainMenuMobileHidden)}
+        onClick={() => setMainMenuMobileActive(!isMainMenuMobileActive)}
       ></div>
       <div
         className={classNames({
           [styles.menu]: true,
-          [styles.mainMenuMobileActive]: isMainMenuMobileHidden,
+          [styles.mainMenuMobileActive]: isMainMenuMobileActive,
         })}
       >
         {MenuStructure.map((item) => {
@@ -32,19 +33,19 @@ export default function HeaderNav() {
                 className={classNames(
                   item.class.map((classItem) => styles[classItem])
                 )}
-                onClick={() => setOfferMenuHidden(!isOfferMenuHidden)}
+                onClick={() => setOfferMenuActive(!isOfferMenuActive)}
               >
                 <Link href={item.href}>{item.title}</Link>
                 <div
                   key={item.subId}
                   className={classNames({
                     [styles.offerDropdown]: true,
-                    [styles.offerDropdownActive]: isOfferMenuHidden,
+                    [styles.offerDropdownActive]: isOfferMenuActive,
                   })}
                 >
                   {item.offerPages.map((offerItem) => {
                     return (
-                      <Link key={offerItem.id} href={offerItem.href}>
+                      <Link key={offerItem.id} href={offerItem.href} onClick={() => setMainMenuMobileActive(!isMainMenuMobileActive)}>
                         {offerItem.title}
                       </Link>
                     );

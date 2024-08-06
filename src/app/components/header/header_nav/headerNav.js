@@ -7,8 +7,8 @@ import { useState } from "react";
 
 export default function HeaderNav() {
 
-  const [isOfferMenuActive, setOfferMenuActive] = useState(true);
-  const [isMainMenuMobileActive, setMainMenuMobileActive] = useState(true);
+  const [isOfferMenuActive, setOfferMenuActive] = useState(false);
+  const [isMainMenuMobileActive, setMainMenuMobileActive] = useState(false);
 
   return (
     <nav className={styles.navigation}>

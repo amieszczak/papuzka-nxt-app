@@ -1,19 +1,19 @@
-.footer-menu {
+.footerMenu {
     color: #ad3d3d;
     display: flex;
     justify-content: center;
   }
-  .footer-menu ul {
+  .footerMenu ul {
     list-style-type: none;
     padding-left: 0;
-    padding-bottom: 40px;
+    padding-bottom: clamp(16px, 2.1vw, 40px);
     width: 96%;
     display: flex;
     justify-content: space-between;
     border-bottom: 3px dotted #a13131;
   }
   
-  .footer-menu ul li:hover {
+  .footerMenu ul li:hover {
     text-decoration: underline;
     font-weight: bolder;
     cursor: pointer;

@@ -1,15 +1,17 @@
-import './footer_menu.css';
+import styles from './footerMenu.module.css';
+import { footerMenuData } from '@/app/data/footerData/footerMenuData.js';
+import Link from 'next/link';
 
 export default function FooterMenu() {
     return (
-        <div className="footer-menu">
-          <ul>
-            <li><a href="#">OFERTA</a></li>
-            <li><a href="#">O NAS</a></li>
-            <li><a href="#">KONTAKT</a></li>
-            <li><a href="#">ARTYKUŁY</a></li>
-            <li><a href="#">OPINIE</a></li>
-          </ul>
-        </div>
+      <div class={styles.footerMenu}>
+        <ul>
+          {footerMenuData.map(item => {
+            return (
+              <li key={item.id}><Link href={item.href}>{item.title}</Link></li>
+            )
+          })}
+        </ul>
+      </div>
     )
-}
+}       

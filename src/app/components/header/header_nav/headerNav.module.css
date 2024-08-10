@@ -76,33 +76,35 @@
     .headerToggle {
       position: relative;
       background-color: #ffdab9;
-      border: 3px solid #f08080;
+      border: clamp(1px, 0.2vw, 3px) solid #f08080; /* 3px */
       border-radius: 15px;
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 130px;
-      height: 130px;
+      width: clamp(64px, 9.3vw, 130px); /* 64px 130px */
+      height: clamp(64px, 9.3vw, 130px);
     }
 
     .headerToggle::before {
       content: "";
       position: absolute;
-      width: 70%;
-      height: 5px;
+      width: clamp(45px, 6.4vw, 90px); /* 70% // 45px  91px */
+      height: clamp(1px, 0.4vw, 5px); /* 5px */
       background: #f08080;
-      transform: translateY(-20px);
-      box-shadow: 0 20px #f08080;
+      /* transform: translateY(-20px); */
+      transform: translateY(clamp(-20px, -1.4vw, 0px));
+      /* box-shadow: 0 20px #f08080; */
+      box-shadow: 0 clamp(0px, 1.4vw, 20px) #f08080;
       transition: 0.5s;
     }
   
     .headerToggle::after {
       content: "";
       position: absolute;
-      width: 70%;
-      height: 5px;
+      width: clamp(45px, 6.4vw, 90px);
+      height: clamp(1px, 0.4vw, 5px);
       background: #f08080;
-      transform: translateY(20px);
+      transform: translateY(clamp(0px, 1.4vw, 20px));
       transition: 0.5s;
     }
 
@@ -211,10 +213,10 @@
       top: 180px;
     }
   
-    .headerToggle {
+    /* .headerToggle {
       width: 100px;
       height: 100px;
-    }
+    } */
   
     .mainMenuSection a {
       padding: 20px 0px 20px 32px;
@@ -232,18 +234,18 @@
       top: 130px;
     }
   
-    .headerToggle {
+    /* .headerToggle {
       width: 75px;
       height: 75px;
-    }
+    } */
   
     .mainMenuSection a {
       padding: 16px 0 16px 28px;
     }
   
-    .navigation.activeOfferMobileDropdown .offerDropdown {
+    /* .navigation.activeOfferMobileDropdown .offerDropdown {
       height: 324px;
-    }
+    } */
   }
   
   @media(max-width: 576px) {
@@ -253,10 +255,10 @@
       top: 100px;
     }
   
-    .headerToggle {
+    /* .headerToggle {
       width: 64px;
       height: 64px;
-    }
+    } */
   
     .mainMenuSection a {
       padding: 12px 0 12px 24px;

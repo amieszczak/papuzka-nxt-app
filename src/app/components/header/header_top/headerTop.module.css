@@ -10,6 +10,7 @@
     
   .headerIconMiddle {
       margin-right: 4.4%;
+      min-width: 250px;
     }
    
     @media(max-width: 1400px) {

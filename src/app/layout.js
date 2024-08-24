@@ -4,7 +4,7 @@ import "./globals.css";
 import Header from "./componentSets/header/header";
 import Footer from "./componentSets/footer/footer.js";
 import ContactForm from "./components/form/form.js";
-import Specialists from "./component sets/specialists/specialists.js";
+import Specialists from "./componentSets/specialists/specialists.js";
 
 const inter = Inter({ subsets: ["latin"] });
 

@@ -10,4 +10,4 @@ const MenuStructure = [
     {id: 3, href: '#', title: 'KONTAKT', class: ['mainMenuSection', 'menuContact']},
 ]
 
-export { MenuStructure };
+export { MenuStructure }; //current

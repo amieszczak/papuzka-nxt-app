@@ -135,12 +135,7 @@ header {
   background-image: linear-gradient(#f08080, #ffdab9);
 }
 
-aside {
-  padding-left: 64px;
-  text-align: center;
-  width: 864px;
-  color: #ad3d3d;
-}
+
 
 footer {
   background-image: linear-gradient(#ffdab9, #f08080);

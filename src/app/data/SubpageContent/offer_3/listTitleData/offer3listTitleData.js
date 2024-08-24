@@ -1,0 +1,7 @@
+const listTitleData = {title: 'Dla kogo?', description: 'Zajęcia TUS przeznaczone są dla wszystkich uczniów, którzy prezentują szeroko rozumiane trudności w funkcjonowaniu społecznym. Trening Umiejętności Społecznych jest pomocny w terapii dzieci i młodzieży z autyzmem, zespołem Aspergera, zaburzeniami zachowania, ADHD, Zespołem Downa, Zespołem Williamsa. Zajęcia mogą być również skierowane do dzieci nieśmiałych, wycofanych oraz prezentujących zaburzenia lękowe.', list:[
+        {title:'TUS dla dzieci z autyzmem i zespołem Aspergera', description: 'to zajęcia koncentrujące się na wspieraniu rozwoju kompetencji społecznych, emocjonalnych i komunikacyjnych dostosowane do potrzeb i możliwości uczestników.'},
+        {title:'TUS dla dzieci z ADHD', description: 'to w dużej mierze praca nad regulacją procesu pobudzenia i hamowania, tak aby uczeń z wyzwaniem rozwojowym funkcjonował w grupie z większą uwagą. Podczas zajęć pracuje się nad minimalizacją kosztów jakie ponosi osoba z ADHD w kontaktach społecznych w związku z deficytami uwagi i nadmierną ruchliwością w obrębie ciała.'},
+        {title:'TUS dla dzieci nieśmiałych', description: 'to głównie praca nad procesem grupowym, aby stworzyć przestrzeń do otwarcia się nieśmiałej osoby na kontakty z grupą. Praca z wycofaną osobą często rozpoczyna się od pracy w diadzie (tylko dwoje dzieci), tak aby oswajanie się w byciu w kontakcie odbywało się w jak najbardziej komfortowych i bezpiecznych dla dziecka warunkach.'},
+    ]};
+
+export { listTitleData };

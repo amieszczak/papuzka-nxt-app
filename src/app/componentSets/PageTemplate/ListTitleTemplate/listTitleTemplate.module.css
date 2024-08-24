@@ -1,0 +1,28 @@
+.listTitleTemplate {
+    color: #AD3D3D;
+}
+
+.listTitleTemplate h2,.listTitleTemplate p {
+    margin-bottom: clamp(30px, 3.3vw, 64px); /* 64px */
+}
+
+.listTitleTemplate ul {
+    list-style-type: none; 
+}
+
+.listTitleTemplate ul li {
+    margin-left: 120px;
+    position: relative;
+}
+
+.listTitleTemplate ul li p {
+    margin-bottom: 0;
+}
+
+.listTitleTemplate ul li::before {
+    content: url('/mdi_bird.svg');
+    position: absolute;
+    left: -80px;
+    bottom: 50%;
+    transform: translateY(50%);
+}

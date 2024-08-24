@@ -1,0 +1,38 @@
+/* @import '../globals.css';
+@import '../page.module.css'; */
+
+.offer1Container {
+    color: #ad3d3d;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .offer1Container h2 {
+    text-align: left !important;
+  }
+
+  .offer1Container h3 {
+    font-weight: 900;
+    text-align: center;
+  }
+  
+  .offer1Container ul {
+    margin-left: 10%;
+  }
+  
+  .page-o1-section-01 {
+    width: 50%;
+  }
+  
+  @media (max-width: 1200px) {
+  
+    .offer1Container h2 {
+      text-align: center;
+    }
+  
+    .offer1Container ul {
+      margin-left: auto;
+    }
+  }
+  

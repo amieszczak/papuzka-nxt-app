@@ -1,0 +1,33 @@
+.content {
+  bottom: 1900px;
+  width: 100%;
+  color: #ad3d3d;
+}
+
+.content section h1 {
+  text-align: center;
+}
+
+.submitSection {
+  display: flex;
+  width: 96%;
+}
+
+.dateSection {
+  display: flex;
+  padding: 64px 64px 64px 0;
+}
+
+.calendarSubmit {
+  display: flex;
+  flex-direction: column;
+}
+
+@media(max-width: 1400px) {
+
+  .submitSection {
+    flex-direction: column;
+  }
+}
+
+

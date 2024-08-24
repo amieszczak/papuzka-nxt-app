@@ -1,8 +1,20 @@
-import './calendar.css';
+import styles from "./calendar.module.css";
 
 export default function Calendar() {
-    return (
-        <div className="calendar">
+  return (
+    <>
+      <iframe
+        src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0CJc3pt4SISMkB6o2Ho65ln0BS50eJZKMgScbZpIJZLBSbMqIEvz378WYlmgJxuyanbK4GbGm3?gv=true"
+        width="100%"
+        height="600"
+        frameborder="0"
+      ></iframe>
+    </>
+  );
+}
+
+{
+  /* <div className="calendar">
             <div className="month">
                 <h2>STYCZEŃ</h2>
                 <table>
@@ -58,6 +70,5 @@ export default function Calendar() {
                     </tr>
                 </table>
             </div>
-        </div>
-    )
+        </div> */
 }

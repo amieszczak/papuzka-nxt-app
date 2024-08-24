@@ -106,6 +106,7 @@ a {
 * {
   box-sizing: border-box;
 }
+
 body {
   background-color: #ffdab9;
   font-family: "Lato", sans-serif;
@@ -134,12 +135,7 @@ header {
   background-image: linear-gradient(#f08080, #ffdab9);
 }
 
-aside {
-  padding-left: 64px;
-  text-align: center;
-  width: 864px;
-  color: #ad3d3d;
-}
+
 
 footer {
   background-image: linear-gradient(#ffdab9, #f08080);
@@ -171,15 +167,19 @@ footer a {
     font-size: 28px;
   } */
 
-  nav {
+  /* nav {
     display: flex;
     align-items: center;
-    margin-right: 64px; /*to be changed in media*/
+    margin-right: 64px; 
   }
 
   header {
     display: flex;
     align-items: center;
+  } */
+
+  header {
+    height: clamp(100px, 17.1vw, 240px); 
   }
 }
 

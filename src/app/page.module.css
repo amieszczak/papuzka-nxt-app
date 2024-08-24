@@ -605,7 +605,7 @@
   
     /*------------------TOGGLE------------------------*/
   
-    .header-toggle {
+    /* .header-toggle {
       position: relative;
       background-color: #ffdab9;
       border: 3px solid #f08080;
@@ -613,8 +613,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 130px;
-      height: 130px;
+      width: clamp(64px, 6.8vw, 130px);
+      height: clamp(64px, 6.8vw, 130px); 
     }
     .header-toggle::before {
       content: "";
@@ -646,7 +646,7 @@
     nav.main-menu-active .header-toggle::after {
       transform: rotate(315deg);
       transition: 0.5s;
-    }
+    } */
   
     /*------------------TOGGLE------------------------*/
   
@@ -811,10 +811,10 @@
     
     /*---------------------------------------GENERAL---------------------------------------*/
     /*------------------HEADER------------------------*/
-    .header-toggle {
+    /* .header-toggle {
       width: 100px;
       height: 100px;
-    }
+    } */
   
     /*------------------HEADER------------------------*/
     /*------------------MENU------------------------*/
@@ -851,10 +851,10 @@
   @media (max-width: 768px) {
     
     /*------------------HEADER------------------------*/
-    .header-toggle {
+    /* .header-toggle {
       width: 75px;
       height: 75px;
-    }
+    } */
   
     /*------------------HEADER------------------------*/
     /*------------------MENU------------------------*/
@@ -907,10 +907,10 @@
   @media (max-width: 576px) {
     
     /*------------------HEADER------------------------*/
-    .header-toggle {
+    /* .header-toggle {
       width: 64px;
       height: 64px;
-    }
+    } */
   
     /*------------------HEADER------------------------*/
     /*------------------MENU------------------------*/

@@ -1,7 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Header from "./component sets/header/header.js";
-import Footer from "./component sets/footer/footer.js";
+import Header from "./components/header/header";
+import Footer from "./component sets/footer/footer";
 import ContactForm from "./components/form/form.js";
 import Specialists from "./component sets/specialists/specialists.js";
 

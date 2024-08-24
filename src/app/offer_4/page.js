@@ -8,6 +8,9 @@ import { offer4ParagraphData } from "../data/SubpageContent/offer_4/paragraphDat
 //
 import ListTemplate from "../componentSets/PageTemplate/ListTemplate/ListTemplate.js";
 import { offer4ListData } from "../data/SubpageContent/offer_4/listData/offer4ListData.js";
+//
+import Specialists from '../componentSets/specialists/specialists';
+import ContactForm from "../components/form/form.js";
 
 export default function Offer_4() {
   return (
@@ -34,6 +37,8 @@ export default function Offer_4() {
           </div>
         </section>
       </article>
+      <Specialists/>
+      <ContactForm/>
     </>
   );
 }

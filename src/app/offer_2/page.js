@@ -9,6 +9,9 @@ import ListTemplate from "../componentSets/PageTemplate/ListTemplate/ListTemplat
 import { Offer2ListData } from "../data/SubpageContent/offer_2/listData/offer2ListData.js";
 //
 import classNames from "classnames";
+//
+import Specialists from '../componentSets/specialists/specialists';
+import ContactForm from "../components/form/form.js";
 
 
 export default function Offer_2() {
@@ -42,6 +45,8 @@ export default function Offer_2() {
           </section>
         </div>
       </article>
+      <Specialists/>
+      <ContactForm/>
     </>
   );
 }

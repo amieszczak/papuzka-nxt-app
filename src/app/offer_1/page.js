@@ -1,5 +1,4 @@
 import styles from './offer1.module.css';
-import ContactForm from "../components/form/form.js";
 import OfferPageEntry from "../componentSets/PageTemplate/OfferPageEntry/OfferPageEntry.js";
 import { Offer1EntryData } from "../data/SubpageContent/offer_1/entryData/offer1EntryData.js";
 import ListTemplate from "../componentSets/PageTemplate/ListTemplate/ListTemplate.js";
@@ -7,6 +6,10 @@ import { Offer1ListData } from "../data/SubpageContent/offer_1/ListData/Offer1Li
 import ParagraphUnit from "../componentSets/PageTemplate/ParagraphUnit/ParagraphUnit.js";
 import { ParagraphData } from "../data/SubpageContent/offer_1/ParagraphData/ParagraphData.js";
 import Image from "next/image";
+//
+import Specialists from '../componentSets/specialists/specialists';
+import ContactForm from "../components/form/form.js";
+//
 
 
 export default function Offer_1() {
@@ -34,6 +37,8 @@ export default function Offer_1() {
          
         </div>
       </article>
+      <Specialists/>
+      <ContactForm/>
     </>
   );
 }

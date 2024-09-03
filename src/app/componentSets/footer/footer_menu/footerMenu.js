@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function FooterMenu() {
     return (
-      <div class={styles.footerMenu}>
+      <div className={styles.footerMenu}>
         <ul>
           {footerMenuData.map(item => {
             return (

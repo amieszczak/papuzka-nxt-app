@@ -11,11 +11,15 @@ import 'swiper/css';
 
 // import Swiper core and required modules
 import SwiperCore, {
-  Autoplay,Pagination,Navigation
+ Pagination, Navigation
 } from 'swiper/core';
 
+import {
+  Autoplay
+} from 'swiper/modules';
+
 // install Swiper modules
-SwiperCore.use([Autoplay,Pagination,Navigation]);
+/* SwiperCore.use([Autoplay,Pagination,Navigation]); */
 
 import 'swiper/css/autoplay';
 
@@ -27,7 +31,7 @@ export default function LandingPageOfferComponent() {
   return (
     <div className={styles.container}>
       <div className={styles.titleContainerGap}>
-        <h2 className={styles.h2}>
+        <h2 id='offerHeader' className={styles.h2}>
           Rozwój mowy to nasza <span>specjalność.</span>Poznaj{" "}
           <span>ofertę</span> papużki
         </h2>
@@ -38,7 +42,7 @@ export default function LandingPageOfferComponent() {
           
             {landingPageOfferData.map(item => {
               return(
-                <p className={styles.description}>{item.desctiption}</p>
+                <p key={item.id} className={styles.description}>{item.desctiption}</p>
               )
             })}
           
@@ -46,15 +50,18 @@ export default function LandingPageOfferComponent() {
         <div className={styles.photoSection}>
             <div className={styles.categoryTitle}>Terapia Logopedyczna</div>
             <div className={styles.photoContainer}>
-              <Swiper>
+              <Swiper
+              modules={[Autoplay]}
+              loop={true}
+              autoplay={{
+                  delay: 2500,
+                  disableOnInteraction: true
+              }}
+              onSlideNextTransitionStart={() => console.log('function')}
+               >
                 {landingPageOfferData.map(item => {
                     return(
-                      <SwiperSlide
-                      autoplay={{
-                        "delay": 25,
-                        "disableOnInteraction": false
-                      }} 
-                      >
+                      <SwiperSlide key={item.id}>
                         <Image src={item.photoSrc} className={styles.photo} width={1000} height={737}/>
                       </SwiperSlide>
                     )

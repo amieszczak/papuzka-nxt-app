@@ -10,7 +10,7 @@ import classNames from 'classnames';
 export default function LandingPageVideoComponent() {
     function scroll(element) {
         window.scrollTo({
-            top: element.target.parentNode.parentNode.getBoundingClientRect().bottom,
+            top: element.target.parentNode.parentNode.getBoundingClientRect().bottom, 
             left: 0,
             behavior: "smooth",
         })
@@ -19,20 +19,20 @@ export default function LandingPageVideoComponent() {
     const [scrollButtonHide, setScrollButtonHide] = useState(false);
 
 
-    /* window.addEventListener('scroll', () => {
-        setScrollButtonHide(!scrollButtonHide);
-        if(window.scrollY == 0) {
+    window.addEventListener('scroll', (e) => {
+        /* setScrollButtonHide(!scrollButtonHide); */
+        if(globalThis.scrollY == 0) { 
             setScrollButtonHide(!scrollButtonHide);
         } 
-    }) */
+    })
 
     return (
         <div className={styles.container}>
             <BackgroundVideo src={entryVideo} className={styles.video}/>
             <div className={styles.label}>
-                <h2>W PAPUŻCE WIEMY JAK <span>ZAOPIEKOWAĆ MOWĘ</span></h2> {/* className={classNames({[styles.textPosition]: scrollButtonHide})} */}
+                <h2 className={classNames({[styles.textPosition]: scrollButtonHide})}>W PAPUŻCE WIEMY JAK <span>ZAOPIEKOWAĆ MOWĘ</span></h2> {/* className={classNames({[styles.textPosition]: scrollButtonHide})} */}
                 <div className={styles.buttonContainer}>
-                    <button className={styles.button} onClick={scroll}></button>   {/* {classNames({[styles.button]: true, [styles.buttonHide]: scrollButtonHide})} */}
+                    <button className={classNames({[styles.button]: true, [styles.buttonHide]: scrollButtonHide})} onClick={scroll}></button>   {/* {classNames({[styles.button]: true, [styles.buttonHide]: scrollButtonHide})} */}  {/* className={styles.button} */}
                 </div> 
             </div>
             <div className={styles.topBlinder}></div>

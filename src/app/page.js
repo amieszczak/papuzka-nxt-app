@@ -4,13 +4,15 @@ import styles from "./page.module.css";
 import LandingPageVideoComponent from "./componentSets/landingPage/LPvideoComponent/landingPageVideoComponent.js";
 //
 import LandingPageOfferComponent from "./componentSets/landingPage/LPofferComponent/landingPageOfferComponent.js";
+//
 
 export default function Home() {
+
   return (
     <>
       <main className={styles.main}>
         <LandingPageVideoComponent/>
-        <LandingPageOfferComponent/>
+        <LandingPageOfferComponent data-aos='fade-up'/>
       </main>
     </>
     

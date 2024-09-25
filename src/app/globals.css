@@ -38,6 +38,7 @@
   --callout-border-rgb: 172, 175, 176;
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135; */
+  --color-text-superlight: #AD3D3D;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -146,7 +147,18 @@ footer a {
   text-decoration: none;
   color: inherit;
 }
+/* swiper */
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  background-color: #F08080; /* var */
+  width: clamp(15px, 1.6vw, 30px); 
+  height: clamp(15px, 1.6vw, 30px);;
+  opacity: 1;
+}
 
+.swiper-pagination-bullet-active {
+  background-color: #AD3D3D !important;
+  opacity: 1 !important;
+}
 
 @media(max-width: 1400px) {
 

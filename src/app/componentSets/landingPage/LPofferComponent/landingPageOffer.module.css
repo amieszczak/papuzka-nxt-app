@@ -1,10 +1,8 @@
 .container {
-    width: 100vw;
-    height: 100vh; 
+    width: 100vw; 
 }
 
 .titleContainerGap {
-    /* background-color: red; */
     height: clamp(100px, 18.2vw, 350px);
     padding-top: clamp(20px, 6.3vw, 120px);
     padding-left: clamp(20px, 5.2vw, 100px);
@@ -24,29 +22,59 @@
 
 .contentContainer {
     width: 97vw;
-    height: clamp(600px, 46.9vw, 900px);
+/*     height: clamp(600px, 46.9vw, 900px); */
+    height: clamp(200px, 46.9vw, 900px);
     position: relative;
     display: flex;
     border-radius: 0 0 50px 0;
     border-right: 1px solid #AD3D3D;
     border-bottom: 1px solid #AD3D3D;
+    color: var(--color-text-superlight);
 }
 
 .descriptionsContainer {
     width: clamp(250px, 36.5vw, 700px);
-    height: 100vh;
+    height: 100%;
     padding: clamp(24px, 3.3vw, 64px);
+    display: flex;
+    align-items: center;
+
 }
 
 .description {
     display: none;
 }
 
+.activeDescription {
+    display: flex;
+}
+
+.categoryTitle {
+    text-align: end;
+    margin-right:calc(min(3.4vw, 66px));
+    white-space: nowrap;
+}
+
+.title {
+    display: none; 
+    font-style: italic;
+    font-size: clamp(20px, 3.3vw, 64px);
+    font-weight: 100;
+    text-transform: uppercase;
+    width: max-content;
+    margin-left: auto;
+} 
+
+.titleDisplay {
+    display: initial;
+}
+
 .photoSection {
     width: clamp(100px, 63.5vw, 1220px);
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .photoContainer {
@@ -57,7 +85,7 @@
     border-left: 1px solid #AD3D3D;
     border-bottom: 1px solid #AD3D3D;
     position: relative;
-    margin-bottom: clamp(30px, 4.7vw, 90px); 
+    /* margin-bottom: clamp(30px, 4.7vw, 90px);  */
 }
 
 .photo {
@@ -84,4 +112,60 @@
     /* background-color: red; */
     background-image: linear-gradient(to left, #FFDAB9, #ffdab900);
     z-index: 1;
+}
+
+.refference {
+    color: var(--color-text-superlight);
+    z-index: 100;
+}
+
+.offerLink {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    font-size: clamp(20px, 1.9vw, 36px);
+    text-transform: uppercase;
+    padding: 0 calc(min(5.2vw, 100px));
+    transition: 0.5s;
+    position: relative;
+}
+
+.offerLinkHover {
+    background-color: #942424;
+    color: #FFDAB9;
+    transition: 0.5s;
+}
+
+
+.buttonGradient {
+    position: absolute;
+    height: 100%;
+    width: 40px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.buttonGradientLeft {
+    background-image: linear-gradient(to right, #FFDAB9, #942424);
+    left: 0;
+    transform: translateX(-100%);
+}
+
+.buttonGradientRight {
+    background-image: linear-gradient(to right, #942424, #FFDAB9);
+    right: 0;
+    transform: translateX(100%);
+}
+
+.buttonGradientActive {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.paginationContainer {
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    bottom: clamp(-25px, -1.3vw, -12px) !important;
+    pointer-events: none;
 }

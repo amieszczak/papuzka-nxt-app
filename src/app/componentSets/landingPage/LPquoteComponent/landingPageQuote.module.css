@@ -1,0 +1,40 @@
+.container {
+    height: clamp(300px, 29.2vw, 560px);
+    margin-top: clamp(80px, 8.9vw, 170px);
+    margin-bottom: clamp(80px, 8.9vw, 170px);
+    color: var(--color-text-superlight);
+    position: relative;
+}
+
+.quote {
+    position: absolute;
+    left: 30%;
+    width: clamp(250px, 36vw, 668px);
+}
+
+.quote h2 {
+    font-size: clamp(30px, 3.3vw, 64px);
+    font-weight: 100;
+    margin-bottom: clamp(20px, 2.3vw, 44px);
+}
+
+.parrot {
+    width: calc(min(36vw, 690px)); 
+    height: calc(min(28.2vw, 542px));
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateY(calc(min(9vw, 173px))); 
+}
+
+.bottomLine {
+    width: 64.1%;
+    position: absolute;
+    bottom: 0;
+    border-bottom: 1px solid var(--color-text-superlight);
+}
+
+.parrot img {
+    width: 100%;
+    height: 100%;
+}

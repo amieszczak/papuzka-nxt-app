@@ -5,6 +5,7 @@ import LandingPageVideoComponent from "./componentSets/landingPage/LPvideoCompon
 //
 import LandingPageOfferComponent from "./componentSets/landingPage/LPofferComponent/landingPageOfferComponent.js";
 //
+import LandingPageQuoteComponent from "./componentSets/landingPage/LPquoteComponent/landingPageQuoteComponent.js";
 
 export default function Home() {
 
@@ -13,6 +14,7 @@ export default function Home() {
       <main className={styles.main}>
         <LandingPageVideoComponent/>
         <LandingPageOfferComponent data-aos='fade-up'/>
+        <LandingPageQuoteComponent/>
       </main>
     </>
     

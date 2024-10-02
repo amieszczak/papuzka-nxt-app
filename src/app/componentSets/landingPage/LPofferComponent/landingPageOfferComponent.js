@@ -119,13 +119,9 @@ export default function LandingPageOfferComponent() {
           onMouseLeave={() => setButtonHoverState(false)}
           className={classNames({[styles.offerLink]:true, [styles.offerLinkHover]: buttonHoverState === true})}
           >
-           {landingPageOfferData.map(item => {
-            if(offerId === item.id) {
-              return(
-                <Link href={item.refference}>Dowiedz się więcej</Link> 
-              )
-            }
-           })}
+
+            <Link href={landingPageOfferData.find(item => offerId === item.id).refference}>Dowiedz się więcej</Link> 
+
            <span className={classNames({[styles.buttonGradient]: true, [styles.buttonGradientLeft]: true, [styles.buttonGradientActive]: buttonHoverState === true})}></span>
            <span className={classNames({[styles.buttonGradient]:true, [styles.buttonGradientRight]: true, [styles.buttonGradientActive]: buttonHoverState === true})}></span>
           </div>

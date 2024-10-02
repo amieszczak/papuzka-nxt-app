@@ -109,7 +109,6 @@
     position: absolute;
     right: -1px;
     top: 0;
-    /* background-color: red; */
     background-image: linear-gradient(to left, #FFDAB9, #ffdab900);
     z-index: 1;
 }
@@ -124,11 +123,43 @@
     display: flex;
     align-items: center;
     font-size: clamp(20px, 1.9vw, 36px);
-    text-transform: uppercase;
+    text-transform: uppercase; 
     padding: 0 calc(min(5.2vw, 100px));
     transition: 0.5s;
     position: relative;
 }
+
+
+/* --------------------------ChatStylingOnlyCssGradient------------------------- */
+/* .offerLink {
+    display: inline-block;
+    padding: 15px 30px;
+    background: linear-gradient(to right, #D3A48F, #800000); 
+    color: #F7DAB3; 
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.offerLink:hover {
+    background: linear-gradient(to right, #800000, #D3A48F); 
+} */
+/* --------------------------ChatStylingOnlyCssGradient------------------------- */
+
+/* .offerLink:hover {
+    background-color: #942424;
+    color: #FFDAB9;
+    transition: 0.5s;
+} *//* !!!!!!! */
+
+/* .offerLink a { */
+    /* color: var(--color-text-superlight);
+    z-index: 100; */
+    /* background-color: red; */
+/* } */
 
 .offerLinkHover {
     background-color: #942424;

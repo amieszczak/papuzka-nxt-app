@@ -8,7 +8,8 @@ import LandingPageOfferComponent from "./componentSets/landingPage/LPofferCompon
 import LandingPageQuoteComponent from "./componentSets/landingPage/LPquoteComponent/landingPageQuoteComponent.js";
 //
 import LandingPageAboutComponent from "./componentSets/landingPage/LPaboutComponent/landingPageAboutComponent.js";
-
+//
+import LandingPageTeamComponent from "./componentSets/landingPage/LPteamComponent/landingPageTeamComponent.js";
 
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
         <LandingPageOfferComponent data-aos='fade-up'/>
         <LandingPageQuoteComponent/>
         <LandingPageAboutComponent/>
+        <LandingPageTeamComponent/>
       </main>
     </>
     

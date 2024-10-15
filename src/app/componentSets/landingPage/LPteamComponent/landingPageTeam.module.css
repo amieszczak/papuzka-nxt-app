@@ -1,0 +1,47 @@
+.container {
+    display: flex;
+    color: var(--color-text-superlight);
+    height: clamp(500px, 51.4vw, 987px);
+    margin-top: clamp(250px, 24.5vw, 470px); 
+    position: relative;
+}
+
+.name {
+    position: absolute;
+    display: none;
+    top: -100px; /* //to be set */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nameDisplay{
+    display: initial;
+}
+
+.descriptionContainer {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.description {
+    font-size: clamp(12px, 1.7vw, 32px);
+    display: none;
+    width: 80%;
+}
+
+.activeDescription {
+    display: initial;
+}
+
+.photoContainer {
+    width: 50%;
+    overflow: hidden;
+}
+
+.photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

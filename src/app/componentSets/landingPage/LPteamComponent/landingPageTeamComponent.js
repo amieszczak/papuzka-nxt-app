@@ -25,15 +25,14 @@ export default function LandingPageTeamComponent() {
 
     return(
         <div className={styles.container}>
-            {landingPageTeamData.map(item => {
-                return(
-                    <h2 className={classNames({[styles.name]: true, [styles.nameDisplay]: item.id == activeId})}>{item.name}</h2>
-                )
-            })}
+            <h2 className={styles.slogan}>Mamy bogate <span>doświadczenie <span className={styles.noWrap}>i kompetencje.</span> </span>Poznaj nasz <span>zespół</span></h2>
             <div className={styles.descriptionContainer}>
                 {landingPageTeamData.map(item => {
                     return(
-                        <p className={classNames({[styles.description]: true, [styles.activeDescription]: item.id == activeId})}>{item.description}</p>
+                        <>
+                            <h3 className={classNames({[styles.name]: true, [styles.nameDisplay]: item.id == activeId})}>{item.name}</h3>
+                            <p className={classNames({[styles.description]: true, [styles.activeDescription]: item.id == activeId})}>{item.description}</p>
+                        </>
                     )
                 })}
             </div>
@@ -46,11 +45,12 @@ export default function LandingPageTeamComponent() {
                     delay: 5000,
                     disableOnInteraction: true,
                     }}
+
                     pagination={{
                     clickable: true,
-                    el: `.${styles.paginationContainer}`,      
-                    bulletClass: 'swiper-pagination-bullet',
-                    bulletActiveClass: 'swiper-pagination-bullet-active', 
+                    el: `.${styles.teamPaginationContainer}`,      
+                    bulletClass: 'swiper-pagination-bullet-team',
+                    bulletActiveClass: 'swiper-pagination-bullet-team-active', 
                     }}
 
                     onActiveIndexChange={(swiper) => setActiveId(swiper.realIndex + 1)}
@@ -67,9 +67,13 @@ export default function LandingPageTeamComponent() {
                                 />
                             </SwiperSlide>
                         )
-                    })}
+                    })} 
                 </Swiper>
             </div>
+            <div className={styles.teamCoordinatesContainer}>
+                <div className={styles.teamPaginationContainer}></div>
+            </div>
+            <div className={styles.bottomLine}></div>
         </div> 
     )
 }

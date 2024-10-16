@@ -147,9 +147,9 @@ footer a {
   text-decoration: none;
   color: inherit;
 }
-/* swiper */
+/* swiper1 */
 .swiper-pagination-clickable .swiper-pagination-bullet {
-  background-color: #F08080; /* var */
+  background-color: #F08080; 
   width: clamp(15px, 1.6vw, 30px); 
   height: clamp(15px, 1.6vw, 30px);;
   opacity: 1;
@@ -158,6 +158,19 @@ footer a {
 .swiper-pagination-bullet-active {
   background-color: #AD3D3D !important;
   opacity: 1 !important;
+}
+
+/* swiper1 */
+.swiper-pagination-clickable .swiper-pagination-bullet-team {
+  width: clamp(20px, 2.7vw, 53px);
+  height: clamp(20px, 2.7vw, 53px);
+  border: 1px solid var(--color-text-superlight);
+  border-radius: 50%;
+}
+
+.swiper-pagination-bullet-team-active {
+  border: 3px solid var(--color-text-superlight) !important;
+  border-radius: 50%;
 }
 
 @media(max-width: 1400px) {

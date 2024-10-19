@@ -10,7 +10,8 @@ import LandingPageQuoteComponent from "./componentSets/landingPage/LPquoteCompon
 import LandingPageAboutComponent from "./componentSets/landingPage/LPaboutComponent/landingPageAboutComponent.js";
 //
 import LandingPageTeamComponent from "./componentSets/landingPage/LPteamComponent/landingPageTeamComponent.js";
-
+//
+import LandingPageArticlesComponent from "./componentSets/landingPage/LParticlesComponent/landingPageArticlesComponent.js";
 
 export default function Home() {
 
@@ -22,6 +23,7 @@ export default function Home() {
         <LandingPageQuoteComponent/>
         <LandingPageAboutComponent/>
         <LandingPageTeamComponent/>
+        <LandingPageArticlesComponent/>
       </main>
     </>
     

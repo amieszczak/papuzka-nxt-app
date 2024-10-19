@@ -62,7 +62,6 @@
     border-radius: clamp(20px, 2.6vw, 50px);
     border: 1px solid var(--color-text-superlight);
     overflow: hidden;
-    /* position: relative; */
 }
 
 .photo {
@@ -74,9 +73,10 @@
 
 .teamCoordinatesContainer {
     position: absolute;
-    bottom: clamp(-25px, -1.3vw, -12px) !important;
-    right: 0;
+    /* bottom: clamp(-25px, -1.3vw, -12px) !important; */
+    right: 25%; /* temporary */
     width: max-content;
+    bottom: 10%; /* temporary */
 }
 
 .teamPaginationContainer {
@@ -86,8 +86,15 @@
     display: flex;
     justify-content: center;
     gap: clamp(8px, 0.9vw, 18px);
+    position: relative;
 }
 
+/* .prev {
+    width: 50px;
+    height: 100px;
+    background-color: red;
+}
+ */
 .bottomLine {
     width: calc(min(82.8vw, 1590px));
     height: calc(min(5.7vw, 109px));

@@ -3,9 +3,9 @@ import styles from './landingPageTeam.module.css';
 //
 import { landingPageTeamData } from '@/app/data/landingPageData/landingPageTeamData/landingPageTeamData.js';
 //
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide} from "swiper/react"; /* , useSwiper  */
 import "swiper/css";
-import { Autoplay, Pagination } from "swiper/modules";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css/autoplay";
 import "swiper/css/pagination";
 //
@@ -19,9 +19,16 @@ import { useState } from "react";
 //
 import classNames from 'classnames';
 
+
+
+
 export default function LandingPageTeamComponent() {
 
     const [activeId, setActiveId] = useState(1);
+
+    /* function SlidePrevButton() {
+        const swiper = useSwiper();
+    } */
 
     return(
         <div className={styles.container}>
@@ -39,13 +46,16 @@ export default function LandingPageTeamComponent() {
             <div className={styles.photoContainer }>
                 
                 <Swiper
-                    modules={[Autoplay, Pagination]}
+                    modules={[Autoplay, Pagination, Navigation]}
                     loop={true}
                     autoplay={{
                     delay: 5000,
                     disableOnInteraction: true,
                     }}
-
+                    /* navigation = {{
+                        prevEl: `${styles.prev}`,
+                        nextEl: `${styles.next}`,
+                    }} */
                     pagination={{
                     clickable: true,
                     el: `.${styles.teamPaginationContainer}`,      
@@ -71,7 +81,10 @@ export default function LandingPageTeamComponent() {
                 </Swiper>
             </div>
             <div className={styles.teamCoordinatesContainer}>
-                <div className={styles.teamPaginationContainer}></div>
+                <div className={styles.teamPaginationContainer}>
+                </div>
+                <div className={styles.next}></div>
+                    <div className={styles.prev}></div>
             </div>
             <div className={styles.bottomLine}></div>
         </div> 

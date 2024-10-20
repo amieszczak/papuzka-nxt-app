@@ -1,0 +1,30 @@
+.container {
+    color: var(--color-text-superlight);
+    width: 93vw;
+    height: clamp(400px, 44.9vw, 863px);
+    border-radius: clamp(25px, 2.6vw, 50px) clamp(25px, 2.6vw, 50px) 0 0;
+    padding: clamp(25px, 2.6vw, 50px); 
+    border-left: 1px solid var(--color-text-superlight);
+    border-top: 1px solid var(--color-text-superlight);
+    border-right: 1px solid var(--color-text-superlight);
+}
+
+.container h2 {
+    font-size: clamp(30px, 3.3vw, 64px);
+    font-weight: 700;
+}
+
+.container p {
+    font-size: clamp(20px, 2vw, 40px);
+    font-weight: 400;
+}
+
+.dataContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info h3 {
+    font-size: clamp(20px, 1.8vw, 36px); 
+    font-weight: 100;
+}

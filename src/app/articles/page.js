@@ -1,11 +1,17 @@
 import styles from './articles.module.css';
 //
 import ArticlePreview from '../components/articlePreview/articlePreview.js';
+//
+import { articlesData } from '../data/articlesData/articlesData.js';
 
 export default function Articles() {
-    return(
+    return (
         <div className={styles.container}>
-            <ArticlePreview/>
+            {articlesData.map(item => {
+                return (
+                    <ArticlePreview title={item.title} content={item.content} author={item.author} date={item.date} refference={item.refference} />
+                )
+            })}
         </div>
     )
 }

@@ -1,7 +1,5 @@
 .container {
     color: var(--color-text-superlight);
-    width: 93vw;
-    height: clamp(200px, 44.9vw, 863px);
     border-radius: clamp(12px, 2.6vw, 50px) clamp(12px, 2.6vw, 50px) 0 0;
     padding: clamp(16px, 2.6vw, 50px);
     border-left: 1px solid var(--color-text-superlight);
@@ -11,17 +9,50 @@
     position: relative;
 }
 
+/* // */
+.containerArticles {
+    width: 93vw;
+    height: clamp(200px, 44.9vw, 863px);
+}
+
+.containerLandingPage {
+    background-color: #FFDAB9;
+    width: 100%;
+    height: clamp(100px, 26vw, 500px);
+}
+/* // */
+
 .container h2 {
-    font-size: clamp(18px, 3.3vw, 64px);
     font-weight: 700;
     text-align: center;
+}
+
+/* // */
+.containerArticles h2 {
+    font-size: clamp(18px, 3.3vw, 64px);
     margin-bottom: calc(min(2.6vw, 50px));
 }
 
+.containerLandingPage h2 {
+    font-size: clamp(14px, 1.6vw, 30px);
+    margin-bottom: calc(min(2vw, 40px));
+}
+
 .container p {
-    font-size: clamp(14px, 2vw, 40px);
     font-weight: 400;
 }
+
+/* // */
+
+.containerArticles p {
+    font-size: clamp(14px, 2vw, 40px);
+}
+
+.containerLandingPage p {
+    font-size: clamp(1px, 1.3vw, 24px);
+}
+
+/* // */
 
 .dataContainer {
     width: 100%;

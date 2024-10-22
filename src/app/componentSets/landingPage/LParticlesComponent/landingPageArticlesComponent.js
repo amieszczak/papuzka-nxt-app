@@ -9,6 +9,8 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css/autoplay";
 import "swiper/css/pagination";
 //
+import ArticlePreview from '@/app/components/articlePreview/articlePreview';
+import { articlesData } from '@/app/data/articlesData/articlesData';
 
 export default function LandingPageArticlesComponent() {
     return(
@@ -29,7 +31,26 @@ export default function LandingPageArticlesComponent() {
                 </div>
             </div>
             <div className={styles.sliderContainer}>
-
+                <Swiper
+                modules={[Autoplay]}
+                loop={true}
+                autoplay={{
+                    delay: 5000,
+                    disableOnInteraction: true,
+                }}
+                slidesPerView={2}
+                spaceBetween={40}
+                centeredSlides={true}
+                /* onActiveIndexChange={(swiper) => setOfferId(swiper.realIndex + 1)} */
+                >
+                {articlesData.map((item) => {
+                    return (
+                    <SwiperSlide key={item.id}>
+                       <ArticlePreview title={item.title} content={item.content} author={item.author} date={item.date} refference={item.refference} styleProp='landingPage'/>
+                    </SwiperSlide>
+                    );
+                })}
+                </Swiper>
             </div>
         </div>
     )

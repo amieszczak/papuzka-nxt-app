@@ -9,7 +9,7 @@ export default function Articles() {
         <div className={styles.container}>
             {articlesData.map(item => {
                 return (
-                    <ArticlePreview title={item.title} content={item.content} author={item.author} date={item.date} refference={item.refference} />
+                    <ArticlePreview title={item.title} content={item.content} author={item.author} date={item.date} refference={item.refference} styleProp='articles'/>
                 )
             })}
         </div>

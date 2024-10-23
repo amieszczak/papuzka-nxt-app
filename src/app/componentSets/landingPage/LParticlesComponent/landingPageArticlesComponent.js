@@ -46,7 +46,7 @@ export default function LandingPageArticlesComponent() {
                 {articlesData.map((item) => {
                     return (
                     <SwiperSlide key={item.id}>
-                       <ArticlePreview title={item.title} content={item.content} author={item.author} date={item.date} refference={item.refference} styleProp='landingPage'/>
+                       <ArticlePreview {...item} title={item.title} content={item.content} refference={item.refference} styleProp='landingPage'/>
                     </SwiperSlide>
                     );
                 })}

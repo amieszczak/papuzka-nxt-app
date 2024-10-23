@@ -6,7 +6,7 @@ const MenuStructure = [
         {id: 1_4, href: 'offer_4', title: 'TERAPIA RĘKI'},
         {id: 1_5, href: 'offer_5', title: 'WYSTAWIENIE PISEMNEJ OPINII'}, 
     ]},
-    {id: 2, href: '#', title: 'O NAS', class: ['mainMenuSection']},
+    {id: 2, href: '/about', title: 'O NAS', class: ['mainMenuSection']},
     {id: 3, href: '#', title: 'KONTAKT', class: ['mainMenuSection', 'menuContact']},
     {id: 4, href: 'articles', title: 'ARTYKUŁY', class: ['mainMenuSection']},
 ]

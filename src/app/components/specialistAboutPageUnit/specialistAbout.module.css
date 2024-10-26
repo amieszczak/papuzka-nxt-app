@@ -23,7 +23,6 @@
     position: absolute;
     top: 0;
     width: calc(min(6vw, 115px));
-    /* background-image: linear-gradient(to left, #ffdab900, #FFDAB9); */
     height: 100%; 
 }
 

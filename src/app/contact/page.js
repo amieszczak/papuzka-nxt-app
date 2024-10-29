@@ -1,14 +1,18 @@
+'use client';
 import styles from './contact.module.css';
 //
 import ContactForm from '../components/form/form';
 //
 import Link from 'next/link';
+//
+import LocationMap from '../components/map/map.js'
 
 
 export default function Contact() {
     return(
         <div className={styles.container}>
             <div className={styles.infoContainer}>
+                <div className={styles.infoContainerTopLine}></div>
                 <h1>Skontaktuj się z <span>nami </span></h1>
                 <div className={styles.content}>
                     <p>Jesteśmy dostępni od poniedziałku do piątku w godzinach popołudniowych w naszych gabinetach w Krakowie. Alternatywnie zapraszamy do kontaktu telefonicznego/mailowego lub przez nasz formularz kontaktowy.</p>
@@ -18,7 +22,10 @@ export default function Contact() {
                         <Link className={styles.link} href='#'>Kraków, ul.Adres 1/1</Link>
                     </div>
                 </div>
-                <div className={styles.mapContainer}></div>
+                <div className={styles.mapContainer}>
+                    <LocationMap/>
+                    <div className={styles.mapBorderAdditional}></div>
+                </div>
             </div>
             <ContactForm/>
         </div>

@@ -3,12 +3,8 @@ import styles from "./specialists.module.css";
 import TherapistInfo from "./therapistInfo/therapistInfo.js";
 import Carousel from "./photoCarousel/carousel.js";
 import Calendar from "../../components/calendar/calendar.js";
-/* import FreeConsultationsButton from "../../components/freeConsultationsButton/freeConsultationsButton.js"; */
-/* import Diary from "../../components/diary/diary.js"; */
 import { useState } from 'react';
-
-
-
+import Link from "next/link";
 
 export default function Specialists() {
 
@@ -24,19 +20,10 @@ export default function Specialists() {
         <div className={styles.content}>
           <section>
             <h1>SPRAWDŹ DOSTĘPNOŚĆ NASZYCH SPECJALISTÓW</h1>
-
             <Carousel onSpecialists = {selectSpecialists} />
-            
-
             <div className={styles.submitSection}>
-                <TherapistInfo currentSpecialist={ currentSpecialist }/>      
-                <div className={styles.dateSection}>
-                    <div className={styles.calendarSubmit}>
-                        <Calendar />
-                        {/* <FreeConsultationsButton /> */}
-                    </div>
-                   {/*  <Diary /> */}                
-                </div>
+                <TherapistInfo currentSpecialist={ currentSpecialist }/>   
+                <Link href="#" className={styles.link}>Zapisz się na bezpłatne konsultacje</Link>   
             </div>
           </section>
         </div>

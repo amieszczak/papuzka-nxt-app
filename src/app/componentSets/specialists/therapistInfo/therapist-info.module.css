@@ -14,7 +14,7 @@
 
 .specialist {
   display: none;
-  padding: 48px;
+  padding: clamp(20px, 2.5vw, 48px) clamp(20px, 2.5vw, 48px) clamp(10px, 1vw, 20px) clamp(20px, 2.5vw, 48px); /* 48px */
 }
 
 .active {

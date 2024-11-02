@@ -1,6 +1,6 @@
 'use client';
 import styles from "./specialists.module.css";
-import TherapistInfo from "./therapistInfo/therapistInfo.js";
+/* import TherapistInfo from "./therapistInfo/therapistInfo.js"; */
 /* import Carousel from "./photoCarousel/carousel.js"; */
 import { carouselPho2tos } from "@/app/data/SpecialistsData/carouselPhotos.js";
 import TherapistInfo from "./therapistInfo/therapistInfo.js";

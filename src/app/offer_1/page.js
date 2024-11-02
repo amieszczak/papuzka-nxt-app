@@ -7,9 +7,9 @@ import ParagraphUnit from "../componentSets/PageTemplate/ParagraphUnit/Paragraph
 import { ParagraphData } from "../data/SubpageContent/offer_1/ParagraphData/ParagraphData.js";
 import Image from "next/image";
 //
-import Specialists from '../componentSets/specialists/specialists';
 import ContactForm from "../components/form/form.js";
 //
+import SpecialistShowcase from '../componentSets/specialistShowcase/specialistShowcase.js';
 
 
 export default function Offer_1() {
@@ -37,7 +37,7 @@ export default function Offer_1() {
          
         </div>
       </article>
-      <Specialists/>
+      <SpecialistShowcase/>
       <ContactForm/>
     </>
   );

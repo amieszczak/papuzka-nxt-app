@@ -2,33 +2,59 @@
 import styles from "./carousel.module.css";
 import Image from "next/image";
 import { carouselPhotos } from "@/app/data/SpecialistsData/carouselPhotos.js";
-import carouselMovement from "./functions/carouselFunctions.js";
+//
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import { Autoplay, Pagination } from "swiper/modules";
+import "swiper/css/autoplay";
+import "swiper/css/pagination";
+//
+import { useState } from "react";
+//
+import { useEffect } from "react";
+//
+import classNames from "classnames";
 
-export default function Carousel({ onSpecialists }) {
-  const SelectSpecialist = (id) => {
+
+export default function Carousel({onSpecialists}) {
+
+  const [activeIndex, setActiveIndex] = useState(1);
+
+  const selectSpecialist = (id) => {
     onSpecialists(id);
-  };
+  }
 
   return (
     <div className={styles.carouselContainer}> 
-      <div className={styles.therapistCarousel}>  
-        <div className={styles.carouselTrack}> 
+      <Swiper
+            className={styles.swiper}
+            modules={[Autoplay, Pagination]}
+            loop={true}
+            /* autoplay={{
+              delay: 5000,
+              disableOnInteraction: true,
+            }} */
+            slidesPerView={3}
+            centeredSlides={true}
+            spaceBetween={40}
+            onActiveIndexChange={(swiper) => {
+              setActiveIndex(activeIndex === swiper.realIndex)
+            }}
+          >
           {carouselPhotos.map((item) => {
             return (
-              <div key={item.id} onClick={() => onSpecialists(item.id)} className={styles.therapistPhotoContainer}>  
+              <SwiperSlide key={item.id} onClick={() => onSpecialists(item.id)} className={styles.therapistPhotoContainer}>
                 <Image
                   src={item.src}
                   alt={item.alt}
                   width={500}
                   height={500}
-                  className={styles.therapistPhoto}  
+                  className={classNames({[styles.therapistPhoto]:true, [styles.therapistActive]: item.id === activeIndex})}  
                 />
-              </div>
+              </SwiperSlide>
             );
           })}
-        </div>
-      </div>
+      </Swiper>
     </div>
   );
 }
-

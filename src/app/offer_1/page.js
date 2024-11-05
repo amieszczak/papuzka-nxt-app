@@ -5,7 +5,6 @@ import ListTemplate from "../componentSets/PageTemplate/ListTemplate/ListTemplat
 import { Offer1ListData } from "../data/SubpageContent/offer_1/ListData/Offer1ListData.js";
 import ParagraphUnit from "../componentSets/PageTemplate/ParagraphUnit/ParagraphUnit.js";
 import { ParagraphData } from "../data/SubpageContent/offer_1/ParagraphData/ParagraphData.js";
-import Image from "next/image";
 //
 import ContactForm from "../components/form/form.js";
 //

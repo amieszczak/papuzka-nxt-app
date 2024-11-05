@@ -10,9 +10,9 @@ import { Offer2ListData } from "../data/SubpageContent/offer_2/listData/offer2Li
 //
 import classNames from "classnames";
 //
-import Specialists from '../componentSets/specialists/specialists';
 import ContactForm from "../components/form/form.js";
-
+//
+import SpecialistShowcase from '../componentSets/specialistShowcase/specialistShowcase.js';
 
 export default function Offer_2() {
   return (
@@ -45,8 +45,9 @@ export default function Offer_2() {
           </section>
         </div>
       </article>
-      <Specialists/>
+      <SpecialistShowcase/>
       <ContactForm/>
+
     </>
   );
 }

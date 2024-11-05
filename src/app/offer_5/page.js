@@ -2,8 +2,8 @@ import "./offer_5.css";
 import OfferPageEntry from "../componentSets/PageTemplate/OfferPageEntry/OfferPageEntry.js";
 import { Offer5EntryData } from "../data/SubpageContent/offer_5/entryData/offer5EntryData.js";
 //
-import Specialists from '../componentSets/specialists/specialists';
 import ContactForm from "../components/form/form.js";
+import SpecialistShowcase from "../componentSets/specialistShowcase/specialistShowcase";
 
 
 
@@ -21,7 +21,7 @@ export default function Offer_5() {
           
         </div>
       </article>
-      <Specialists/>
+      <SpecialistShowcase/>
       <ContactForm/>
     </>
   );

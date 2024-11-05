@@ -11,8 +11,9 @@ import { offer3MetricData } from "../data/SubpageContent/offer_3/metricData/offe
 import ListTemplate from "../componentSets/PageTemplate/ListTemplate/ListTemplate.js";
 import { offer3ListData } from "../data/SubpageContent/offer_3/listData/offer3ListData.js";
 //
-import Specialists from '../componentSets/specialists/specialists';
 import ContactForm from "../components/form/form.js";
+//
+import SpecialistShowcase from "../componentSets/specialistShowcase/specialistShowcase";
 
 export default function Offer_3() {
   return (
@@ -60,7 +61,7 @@ export default function Offer_3() {
         </div>
 
       </article>
-      <Specialists/>
+      <SpecialistShowcase/>
       <ContactForm/>
     </>
   );

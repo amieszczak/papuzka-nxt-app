@@ -8,23 +8,23 @@ import classNames from 'classnames';
 
 
 export default function LandingPageVideoComponent() {
-    /* function scroll(element) {
+    function scroll(element) {
         window.scrollTo({
             top: element.target.parentNode.parentNode.getBoundingClientRect().bottom, 
             left: 0,
             behavior: "smooth",
         })
-    } */
+    }
 
     const [scrollButtonHide, setScrollButtonHide] = useState(false);
 
 
-    /* window.addEventListener('scroll', (e) => { */
+    window.addEventListener('scroll', (e) => {
         /* setScrollButtonHide(!scrollButtonHide); */
-        /* if(globalThis.scrollY == 0) { 
+        if(globalThis.scrollY == 0) { 
             setScrollButtonHide(!scrollButtonHide);
         } 
-    }) */
+    })
 
     return (
         <div className={styles.container}>

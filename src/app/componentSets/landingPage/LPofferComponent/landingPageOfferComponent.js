@@ -70,6 +70,7 @@ export default function LandingPageOfferComponent() {
             {landingPageOfferData.map((item) => {
               return (
                 <h2
+                  key={item.id}
                   className={classNames({
                     [styles.title]: true,
                     [styles.titleDisplay]: item.id === offerId,

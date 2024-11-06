@@ -33,7 +33,7 @@ export default function Offer_4() {
             />
 
             {offer4ListData.map((item) => {
-              return <ListTemplate title={item.title} list={item.list} />;
+              return <ListTemplate key={item.id} title={item.title} list={item.list} />;
             })}
           </div>
         </section>

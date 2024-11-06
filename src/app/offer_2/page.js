@@ -26,7 +26,7 @@ export default function Offer_2() {
         <div className={styles.container}>
           <section className={classNames(styles.halfDivider, styles.listDivider)}>
             {Offer2ListData.map((item) => {
-              return <ListTemplate title={item.title} list={item.list} />;
+              return <ListTemplate key={item.id} title={item.title} list={item.list} />;
             })}
           </section>
           <section className={styles.halfDivider}>
@@ -34,6 +34,7 @@ export default function Offer_2() {
               {metricData.map((item) => {
                 return (
                   <MetricUnit
+                    key={item.id}
                     src={item.src}
                     alt={item.alt}
                     title={item.title}

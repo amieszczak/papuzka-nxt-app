@@ -31,7 +31,7 @@ export default function FooterBottom() {
       </div>
       {footerBottomData.map(item => {
         return(
-          <div className={styles[item.class]}>
+          <div key={item.id} className={styles[item.class]}>
             <p>{item.title}</p>
           </div>
         )

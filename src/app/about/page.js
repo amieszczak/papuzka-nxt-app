@@ -12,7 +12,7 @@ export default function About() {
             <LandingPageAboutComponent/>
             {aboutData.map(item => {
                 return(
-                    <SpecialistAboutPageUnit {...item} variant={item.id % 2 == 0 ? 'reversed' : null}/>
+                    <SpecialistAboutPageUnit key={item.id} {...item} variant={item.id % 2 == 0 ? 'reversed' : null}/>
                 )
             })}
         </div>

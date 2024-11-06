@@ -9,7 +9,7 @@ export default function ListTemplate(props) {
       <ul>
         {props.list.map(item => {
             return (
-                <li>{item.content}</li>
+                <li key={item.id}>{item.content}</li>
             )
         })}
       </ul>

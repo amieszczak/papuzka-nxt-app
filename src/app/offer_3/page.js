@@ -38,6 +38,7 @@ export default function Offer_3() {
               {offer3MetricData.map((item) => {
                 return (
                   <MetricUnit
+                    key={item.div}
                     src={item.src}
                     alt={item.alt}
                     title={item.title}
@@ -54,7 +55,7 @@ export default function Offer_3() {
           <section>
             {offer3ListData.map(item => {
               return(
-                <ListTemplate title={item.title} list={item.list}/>
+                <ListTemplate key={item.id} title={item.title} list={item.list}/>
               )
             })}
           </section>

@@ -15,8 +15,8 @@ export default function LandingPageQuoteComponent() {
     return(
         <div className={styles.container} data-aos='fade-left'>
             <div className={styles.quote}>
-                <h2>„Sposób, w jaki mówimy do naszych dzieci, staje się ich wewnętrznym głosem.” </h2>
-                <p>~Peggy O'Mara</p>
+                <h2>Sposób, w jaki mówimy do naszych dzieci, staje się ich wewnętrznym głosem. </h2>
+                <p>Peggy O Mara</p>
             </div>
             <div className={styles.parrot}>
                 <Image src='/landingPage/parrot.svg' width={690} height={542}/>

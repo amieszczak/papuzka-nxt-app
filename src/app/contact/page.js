@@ -5,7 +5,7 @@ import ContactForm from '../components/form/form';
 //
 import Link from 'next/link';
 //
-import LocationMap from '../components/map/map.js'
+import LocationMap from '../components/map/map.js';
 //
 import classNames from 'classnames';
 
@@ -29,11 +29,11 @@ export default function Contact() {
                     <div className={classNames({[styles.mapBlinder]: true, [styles.leftMapBlinder]:true})}></div>
                     <div className={classNames({[styles.mapBlinder]: true, [styles.rightMapBlinder]: true})}></div>
                     <div className={classNames({[styles.mapBlinder]: true, [styles.bottomMapBlinder]: true})}></div>
-                    {/* <LocationMap/> */}
+                    <LocationMap/>
                     <div className={styles.mapBorderAdditional}></div>
                 </div>
             </div>
-            {/* <ContactForm/> */}
+            <ContactForm/>
         </div>
     )
 }

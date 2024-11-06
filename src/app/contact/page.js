@@ -29,7 +29,7 @@ export default function Contact() {
                     <div className={classNames({[styles.mapBlinder]: true, [styles.leftMapBlinder]:true})}></div>
                     <div className={classNames({[styles.mapBlinder]: true, [styles.rightMapBlinder]: true})}></div>
                     <div className={classNames({[styles.mapBlinder]: true, [styles.bottomMapBlinder]: true})}></div>
-                    <LocationMap/>
+                    {/* <LocationMap/> */}
                     <div className={styles.mapBorderAdditional}></div>
                 </div>
             </div>

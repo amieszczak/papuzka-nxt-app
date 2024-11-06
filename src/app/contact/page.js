@@ -33,7 +33,7 @@ export default function Contact() {
                     <div className={styles.mapBorderAdditional}></div>
                 </div>
             </div>
-            <ContactForm/>
+            {/* <ContactForm/> */}
         </div>
     )
 }

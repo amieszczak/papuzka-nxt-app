@@ -5,8 +5,7 @@ import ContactForm from '../components/form/form';
 //
 import Link from 'next/link';
 //
-/* import LocationMap from '../components/map/map.js'; */
-const LocationMap = dynamic(() => import('../components/map/map.js'), { ssr: false });
+import LocationMap from '../components/map/map.js';
 //
 import classNames from 'classnames';
 

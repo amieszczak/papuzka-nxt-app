@@ -8,7 +8,7 @@ export default function ListTitleTemplate({mainTitle, mainDescription, list}) {
             <ul>
                 {list.map(item => {
                     return (
-                        <li>
+                        <li key={item.id}>
                             <h3>{item.title}</h3>
                             <p>{item.description}</p>
                         </li>

@@ -8,7 +8,7 @@ const MenuStructure = [
     ]},
     {id: 2, href: '/about', title: 'O NAS', class: ['mainMenuSection']},
     {id: 3, href: '/contact', title: 'KONTAKT', class: ['mainMenuSection', 'menuContact']},
-    {id: 4, href: 'articles', title: 'ARTYKUŁY', class: ['mainMenuSection']},
+    {id: 4, href: 'articles', title: 'ARTYKUŁY', class: ['mainMenuSection', 'menuArticles']},
 ]
 
 export { MenuStructure }; 

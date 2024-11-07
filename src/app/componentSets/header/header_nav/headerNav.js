@@ -4,11 +4,18 @@ import Link from "next/link";
 import classNames from "classnames";
 import { MenuStructure } from "../../../data/menuData/menuData.js";
 import { useState } from "react";
+import { useEffect } from "react";
 
-export default function HeaderNav() {
+export default function HeaderNav({isValue}) {
 
   const [isOfferMenuActive, setOfferMenuActive] = useState(false);
-  const [isMainMenuMobileActive, setMainMenuMobileActive] = useState(false);
+  const [isMainMenuMobileActive, setMainMenuMobileActive] = useState(isValue);
+
+  /* useEffect(() => {
+    setMainMenuMobileActive(isValue);
+  }, [isValue]) */
+
+  console.log(isValue);
 
   return (
     <nav className={styles.navigation}>
@@ -61,7 +68,7 @@ export default function HeaderNav() {
                   item.class.map((classItem) => styles[classItem])
                 )}
               >
-                <Link href={item.href}>{item.title}</Link>
+                <Link href={item.href} onClick={() => setMainMenuMobileActive(!isMainMenuMobileActive)}>{item.title}</Link>
               </div>
             );
           }

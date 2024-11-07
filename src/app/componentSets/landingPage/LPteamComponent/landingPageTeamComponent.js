@@ -36,10 +36,10 @@ export default function LandingPageTeamComponent() {
             <div className={styles.descriptionContainer}>
                 {landingPageTeamData.map(item => {
                     return(
-                        <>
+                        <div key={item.id}>
                             <h3 className={classNames({[styles.name]: true, [styles.nameDisplay]: item.id == activeId})}>{item.name}</h3>
                             <p className={classNames({[styles.description]: true, [styles.activeDescription]: item.id == activeId})}>{item.description}</p>
-                        </>
+                        </div>
                     )
                 })}
             </div>

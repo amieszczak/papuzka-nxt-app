@@ -38,8 +38,32 @@
   --callout-border-rgb: 172, 175, 176;
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135; */
+
+  /* COLORS */
   --color-text-superlight: #AD3D3D;
+  /*FONTS*/
+  --font-size-paragraph-primary: clamp(20px, 2vw, 40px);
+  --font-size-paragraph-secondary: clamp(12px, 1.6vw, 32px);
+  --font-size-paragraph-tertiary: clamp(16px, 1.2vw, 24px);
+
+
+
+  /* STYLING SETS */
+  /* FONTS */
+
+  
 }
+
+:root {
+  /* COLORS */
+  --color-text-superlight: #AD3D3D;
+  /*FONTS*/
+  --font-size-paragraph-primary: clamp(20px, 2vw, 40px);
+  --font-size-paragraph-secondary: clamp(12px, 1.6vw, 32px);
+  --font-size-paragraph-tertiary: clamp(16px, 1.2vw, 24px); 
+}
+
+
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -147,7 +171,7 @@ footer a {
   text-decoration: none;
   color: inherit;
 }
-/* swiper1 */
+/* swiper-landing-page-team */
 .swiper-pagination-clickable .swiper-pagination-bullet {
   background-color: #F08080; 
   width: clamp(15px, 1.6vw, 30px); 
@@ -160,7 +184,6 @@ footer a {
   opacity: 1 !important;
 }
 
-/* swiper1 */
 .swiper-pagination-clickable .swiper-pagination-bullet-team {
   width: clamp(20px, 2.7vw, 53px);
   height: clamp(20px, 2.7vw, 53px);
@@ -171,6 +194,10 @@ footer a {
 .swiper-pagination-bullet-team-active {
   border: 3px solid var(--color-text-superlight) !important;
   border-radius: 50%;
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 36px !important;
 }
 
 @media(max-width: 1400px) {

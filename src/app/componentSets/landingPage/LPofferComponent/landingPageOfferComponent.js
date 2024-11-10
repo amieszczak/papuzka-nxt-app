@@ -24,7 +24,7 @@ import Aos from "aos";
 import 'aos/dist/aos.css';
 
 
-export default function LandingPageOfferComponent() {
+export default function LandingPageOfferComponent({classes}) {
 
   useEffect(() => {
     Aos.init();
@@ -43,7 +43,7 @@ export default function LandingPageOfferComponent() {
   return (
     <div className={styles.container}>
       <div className={styles.titleContainerGap}>
-        <h2 id="offerHeader" className={styles.h2} data-aos='fade-right'>
+        <h2 id="offerHeader" className={classNames({[styles.heading]:true, [classes.headingSecondary]:true})} data-aos='fade-right'>
           Rozwój mowy to nasza <span>specjalność.</span>Poznaj{" "}
           <span>ofertę</span> papużki
         </h2>
@@ -51,6 +51,22 @@ export default function LandingPageOfferComponent() {
       <div className={styles.contentContainer} data-aos='fade-right'>
         <LandingPageMarkup category="oferta"/>
         <div className={styles.descriptionsContainer}>
+          <div className={styles.categoryTitleMobile}>
+            {landingPageOfferData.map((item) => {
+              return (
+                <h2
+                  key={item.id}
+                  className={classNames({
+                    [styles.title]: true,
+                    [styles.titleDisplay]: item.id === offerId,
+                    [classes.headingPrimary]: true
+                  })}
+                >
+                  {item.title}
+                </h2>
+              );
+            })}
+          </div>
           {landingPageOfferData.map((item) => {
             return (
               <p
@@ -58,6 +74,7 @@ export default function LandingPageOfferComponent() {
                 className={classNames({
                   [styles.description]: true,
                   [styles.activeDescription]: item.id === offerId,
+                  [classes.paragraphSecondary]: true
                 })}
               >
                 {item.desctiption}
@@ -66,7 +83,7 @@ export default function LandingPageOfferComponent() {
           })}
         </div>
         <div className={styles.photoSection} data-aos='fade-up'>
-          <div className={styles.categoryTitle}>
+          <div className={styles.categoryTitleDesktop}>
             {landingPageOfferData.map((item) => {
               return (
                 <h2
@@ -74,6 +91,7 @@ export default function LandingPageOfferComponent() {
                   className={classNames({
                     [styles.title]: true,
                     [styles.titleDisplay]: item.id === offerId,
+                    [classes.headingPrimary]: true
                   })}
                 >
                   {item.title}

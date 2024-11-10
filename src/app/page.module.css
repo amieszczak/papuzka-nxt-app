@@ -1,13 +1,37 @@
 /*GLOBALS*/
 /*TYPOGRAPHY*/
+.headingPrimary {
+  font-size: var(--font-size-heading-primary);
+  font-weight: 100;
+  color: var(--color-text-light);
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.headingSecondary {
+  font-size: var(--font-size-heading-secondary);
+  font-weight: 400;
+  color: var(--color-text-light);
+}
+
+.headingSecondary span {
+  font-weight: 700;
+  color: var(--color-text-medium);
+}
+
 .paragraphPrimary {
   font-size: var(--font-size-paragraph-primary);
+  line-height: var(--line-height-paragraph-primary);
 }
 
 .paragraphSecondary {
   font-size: var(--font-size-paragraph-secondary);
+  line-height: var(--line-height-paragraph-secondary);
 }
 
 .paragraphTertiary {
   font-size: var(--font-size-paragraph-tertiary);
+  line-height: var(--line-height-paragraph-tertiary);
 }
+
+

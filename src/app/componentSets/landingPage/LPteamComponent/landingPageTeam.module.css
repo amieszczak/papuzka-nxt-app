@@ -1,6 +1,6 @@
 .container {
     display: flex;
-    color: var(--color-text-superlight);
+    color: var(--color-text-light);
     height: clamp(200px, 51.4vw, 987px);
     margin-top: clamp(250px, 24.5vw, 470px); 
     position: relative;
@@ -60,7 +60,7 @@
     width: calc(min(46.6vw, 896px));
     height: calc(min(36.2vw, 695px));
     border-radius: clamp(20px, 2.6vw, 50px);
-    border: 1px solid var(--color-text-superlight);
+    border: 1px solid var(--color-text-light);
     overflow: hidden;
 }
 
@@ -102,6 +102,6 @@
     bottom: 0;
     left: 0;
     border-radius: 0 0 clamp(20px, 2.6vw, 50px) 0;
-    border-bottom: 1px solid var(--color-text-superlight);
-    border-right: 1px solid var(--color-text-superlight);
+    border-bottom: 1px solid var(--color-text-light);
+    border-right: 1px solid var(--color-text-light);
 }

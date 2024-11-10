@@ -2,7 +2,7 @@
     height: clamp(300px, 29.2vw, 560px);
     margin-top: clamp(80px, 8.9vw, 170px);
     margin-bottom: clamp(80px, 8.9vw, 170px);
-    color: var(--color-text-superlight);
+    color: var(--color-text-light);
     position: relative;
 }
 
@@ -31,7 +31,7 @@
     width: 64.1%;
     position: absolute;
     bottom: 0;
-    border-bottom: 1px solid var(--color-text-superlight);
+    border-bottom: 1px solid var(--color-text-light);
 }
 
 .parrot img {

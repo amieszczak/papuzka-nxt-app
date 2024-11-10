@@ -1,6 +1,6 @@
 .container {
     height: clamp(250px, 26vw, 500px);
-    color: var(--color-text-superlight);
+    color: var(--color-text-light);
     display: flex;
     justify-content: space-between;
     padding: 0 calc(min(3.3vw, 64px));
@@ -67,16 +67,16 @@
 
 .photoContainerRegular {
     border-radius: 0 clamp(20px, 2.6vw, 50px) clamp(20px, 2.6vw, 50px) 0;
-    border-top: 1px solid var(--color-text-superlight);
-    border-right: 1px solid var(--color-text-superlight);
-    border-bottom: 1px solid var(--color-text-superlight);
+    border-top: 1px solid var(--color-text-light);
+    border-right: 1px solid var(--color-text-light);
+    border-bottom: 1px solid var(--color-text-light);
 }
 
 .photoContainerReversed {
     border-radius: clamp(20px, 2.6vw, 50px) 0 0 clamp(20px, 2.6vw, 50px);
-    border-top: 1px solid var(--color-text-superlight);
-    border-left: 1px solid var(--color-text-superlight);
-    border-bottom: 1px solid var(--color-text-superlight);
+    border-top: 1px solid var(--color-text-light);
+    border-left: 1px solid var(--color-text-light);
+    border-bottom: 1px solid var(--color-text-light);
 }
 
 .photoBlinderRegular {

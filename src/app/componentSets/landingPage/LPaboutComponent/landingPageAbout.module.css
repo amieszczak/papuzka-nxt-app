@@ -1,7 +1,7 @@
 .container {
     display: flex;
     height: clamp(116px, 36.2vw, 695px);
-    color: var(--color-text-superlight);
+    color: var(--color-text-light);
     margin-top: calc(min(24vw, 460px));
 }
 
@@ -29,8 +29,8 @@
     position: absolute;
     width: 100%;
     height: clamp(80px, 34.2vw, 657px);
-    border-top: 1px solid var(--color-text-superlight);
-    border-right: 1px solid var(--color-text-superlight);
+    border-top: 1px solid var(--color-text-light);
+    border-right: 1px solid var(--color-text-light);
     border-radius: 0 50px 0 0;
     z-index: 10;
 }
@@ -41,8 +41,8 @@
     left: clamp(10px, 1.6vw, 31px);
     width: 100%;
     height: clamp(80px, 34.2vw, 657px);
-    border-bottom: 1px solid var(--color-text-superlight);
-    border-left: 1px solid var(--color-text-superlight);
+    border-bottom: 1px solid var(--color-text-light);
+    border-left: 1px solid var(--color-text-light);
     border-radius: 0 0 0 50px;
     z-index: 10;
 }
@@ -50,7 +50,7 @@
 /* description */
 
 .descriptionContainer {
-    border-bottom: 1px solid var(--color-text-superlight);
+    border-bottom: 1px solid var(--color-text-light);
     width: 52%;
     display: flex;
     align-items: center;

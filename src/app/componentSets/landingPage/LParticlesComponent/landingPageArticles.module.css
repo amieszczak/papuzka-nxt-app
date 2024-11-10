@@ -1,7 +1,7 @@
 .container {
     height: 100vh;
     margin-top: calc(min(17.3vw, 333px));
-    color: var(--color-text-superlight);
+    color: var(--color-text-light);
 }
 
 .presentationContainer {
@@ -22,7 +22,7 @@
     z-index: -10;
     width: 895px;
     height: 695px;
-    border: 1px solid var(--color-text-superlight);
+    border: 1px solid var(--color-text-light);
     border-radius: clamp(20px, 2.6vw, 50px);
     overflow: hidden;
 }
@@ -53,7 +53,7 @@
 }
 
 .topLine {
-    border-top: 1px solid var(--color-text-superlight); 
+    border-top: 1px solid var(--color-text-light); 
     width: clamp(250px, 36.9vw, 709px);
     position: absolute;
     top: 0;

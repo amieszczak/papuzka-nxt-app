@@ -1,66 +1,39 @@
 :root {
-  /* --max-width: 1100px;
-  --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
-    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
-    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
-
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-
-  --primary-glow: conic-gradient(
-    from 180deg at 50% 50%,
-    #16abff33 0deg,
-    #0885ff33 55deg,
-    #54d6ff33 120deg,
-    #0071ff33 160deg,
-    transparent 360deg
-  );
-  --secondary-glow: radial-gradient(
-    rgba(255, 255, 255, 1),
-    rgba(255, 255, 255, 0)
-  );
-
-  --tile-start-rgb: 239, 245, 249;
-  --tile-end-rgb: 228, 232, 233;
-  --tile-border: conic-gradient(
-    #00000080,
-    #00000040,
-    #00000030,
-    #00000020,
-    #00000010,
-    #00000010,
-    #00000080
-  );
-
-  --callout-rgb: 238, 240, 241;
-  --callout-border-rgb: 172, 175, 176;
-  --card-rgb: 180, 185, 188;
-  --card-border-rgb: 131, 134, 135; */
-
   /* COLORS */
-  --color-text-superlight: #AD3D3D;
-  /*FONTS*/
-  --font-size-paragraph-primary: clamp(20px, 2vw, 40px);
-  --font-size-paragraph-secondary: clamp(12px, 1.6vw, 32px);
-  --font-size-paragraph-tertiary: clamp(16px, 1.2vw, 24px);
+  --color-text-dark: #750505;
+  --color-text-dark-medium: #861616;
+  --color-text-medium: #942424; 
+  --color-text-light-medium: #A13131;
+  --color-text-light: #AD3D3D;
 
+  --color-background-dark: #F08080;
+  --color-background-dark-medium: #F4978E;
+  --color-background-medium: #F8AD9D; 
+  --color-background-light-medium: #FBC4AB;
+  --color-background-light: #FFDAB9;
 
+  /*TYPOGRAPHY*/
+  --font-size-heading-primary: clamp(20px, 3.3vw, 64px);
+  --font-size-heading-secondary: clamp(18px, 2.5vw, 48px);
 
-  /* STYLING SETS */
-  /* FONTS */
+  --font-size-paragraph-primary: clamp(16px, 2vw, 40px);
+  --font-size-paragraph-secondary: clamp(14px, 1.6vw, 32px);
+  --font-size-paragraph-tertiary: clamp(12px, 1.2vw, 24px);
 
+  --font-size-button-primary: clamp(16px, 1.9vw, 36px);
   
-}
+  --line-height-paragraph-primary: clamp(21px, 2.6vw, 50px); 
+  --line-height-paragraph-secondary: clamp(16px, 1.9vw, 38px);
+  --line-height-paragraph-tertiary: clamp(12px, 1.6vw, 30px);
 
-:root {
-  /* COLORS */
-  --color-text-superlight: #AD3D3D;
-  /*FONTS*/
-  --font-size-paragraph-primary: clamp(20px, 2vw, 40px);
-  --font-size-paragraph-secondary: clamp(12px, 1.6vw, 32px);
-  --font-size-paragraph-tertiary: clamp(16px, 1.2vw, 24px); 
+  /*ANOTHER PARAMETERS*/
+  /*BORDER*/
+  --border-primary: 1px solid #AD3D3D;
+  --border-radius-primary: clamp(12px, 2.6vw, 50px);
+
+  /* GRADIENTS */
+  --gradient-top-bottom: linear-gradient(#FFDAB9, #ffdab900);
+  --gradient-right-left: linear-gradient(to left, #FFDAB9, #ffdab900);
 }
 
 
@@ -174,8 +147,8 @@ footer a {
 /* swiper-landing-page-team */
 .swiper-pagination-clickable .swiper-pagination-bullet {
   background-color: #F08080; 
-  width: clamp(15px, 1.6vw, 30px); 
-  height: clamp(15px, 1.6vw, 30px);;
+  width: calc(min(1.6vw, 30px));
+  height: calc(min(1.6vw, 30px));
   opacity: 1;
 }
 
@@ -187,17 +160,17 @@ footer a {
 .swiper-pagination-clickable .swiper-pagination-bullet-team {
   width: clamp(20px, 2.7vw, 53px);
   height: clamp(20px, 2.7vw, 53px);
-  border: 1px solid var(--color-text-superlight);
+  border: 1px solid var(--color-text-light);
   border-radius: 50%;
 }
 
 .swiper-pagination-bullet-team-active {
-  border: 3px solid var(--color-text-superlight) !important;
+  border: 3px solid var(--color-text-light) !important;
   border-radius: 50%;
 }
 
 .swiper-pagination-bullets.swiper-pagination-horizontal {
-  bottom: 36px !important;
+  bottom: calc(min(1.8vw, 36px))!important; 
 }
 
 @media(max-width: 1400px) {

@@ -74,7 +74,7 @@
     text-transform: uppercase; 
     transition: 0.5s;
     position: relative;
-    border: 1px solid var(--color-text-superlight);
+    border: 1px solid var(--color-text-light);
 }
 
 .link:hover {

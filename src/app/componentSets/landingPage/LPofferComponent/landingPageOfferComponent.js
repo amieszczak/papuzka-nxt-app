@@ -49,7 +49,7 @@ export default function LandingPageOfferComponent({classes}) {
         </h2>
       </div>
       <div className={styles.contentContainer} data-aos='fade-right'>
-        <LandingPageMarkup category="oferta"/>
+        <LandingPageMarkup category="oferta" side='left'/>
         <div className={styles.descriptionsContainer}>
           <div className={styles.categoryTitleMobile}>
             {landingPageOfferData.map((item) => {

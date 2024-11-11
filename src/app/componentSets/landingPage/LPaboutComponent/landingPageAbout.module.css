@@ -13,7 +13,7 @@
 .photo {
     width: clamp(150px, 46.6vw, 896px);
     height: clamp(116px, 36.2vw, 695px);
-    border-radius: 0 50px 0 50px;
+    border-radius: 0 var(--border-radius-primary) 0 var(--border-radius-primary);
     overflow: hidden;
     position: absolute;
     right: 0;
@@ -31,19 +31,19 @@
     height: clamp(80px, 34.2vw, 657px);
     border-top: 1px solid var(--color-text-light);
     border-right: 1px solid var(--color-text-light);
-    border-radius: 0 50px 0 0;
+    border-radius: 0 var(--border-radius-primary) 0 0;
     z-index: 10;
 }
 
 .photoLineBottom {
     position: absolute;
     bottom: 0;
-    left: clamp(10px, 1.6vw, 31px);
+    left: clamp(10px, 1.5vw, 31px);
     width: 100%;
     height: clamp(80px, 34.2vw, 657px);
     border-bottom: 1px solid var(--color-text-light);
     border-left: 1px solid var(--color-text-light);
-    border-radius: 0 0 0 50px;
+    border-radius: 0 0 0 var(--border-radius-primary);
     z-index: 10;
 }
 
@@ -70,9 +70,25 @@
     font-weight: 700;
 }
 
-.descriptionContainer p {
+.description{
     font-size: clamp(12px, 1.7vw, 32px);
     padding: 0 calc(min(6.3vw, 120px));
     height: 80%;
     overflow-y: auto;
+}
+
+
+@media(max-width: 576px) {
+    .container {
+        flex-direction: column;
+        height: initial;
+    }
+
+    .photoContainer {
+        width: 100%;
+    }
+
+    .descriptionContainer {
+        width: 100%;
+    }
 }

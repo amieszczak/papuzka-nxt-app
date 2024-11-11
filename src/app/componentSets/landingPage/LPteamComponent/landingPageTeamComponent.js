@@ -18,6 +18,8 @@ import 'aos/dist/aos.css';
 import { useState } from "react";
 //
 import classNames from 'classnames';
+//
+import LandingPageMarkup from '@/app/components/landingPageMarkup/landingPageMarkup';
 
 
 
@@ -32,6 +34,7 @@ export default function LandingPageTeamComponent() {
 
     return(
         <div className={styles.container}>
+            <LandingPageMarkup category='ZESPÓŁ' side='left'/>
             <h2 className={styles.slogan}>Mamy bogate <span>doświadczenie <span className={styles.noWrap}>i kompetencje.</span> </span>Poznaj nasz <span>zespół</span></h2>
             <div className={styles.descriptionContainer}>
                 {landingPageTeamData.map(item => {

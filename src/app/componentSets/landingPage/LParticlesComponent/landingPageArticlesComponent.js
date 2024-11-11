@@ -11,10 +11,12 @@ import "swiper/css/pagination";
 //
 import ArticlePreview from '@/app/components/articlePreview/articlePreview';
 import { articlesData } from '@/app/data/articlesData/articlesData';
+import LandingPageMarkup from '@/app/components/landingPageMarkup/landingPageMarkup';
 
 export default function LandingPageArticlesComponent() {
     return(
         <div className={styles.container}>
+            <LandingPageMarkup category='ARTYKUŁY' side='right'/>
             <div className={styles.presentationContainer}>
                 <div className={styles.photoContainer}>
                     <div className={styles.photo}>

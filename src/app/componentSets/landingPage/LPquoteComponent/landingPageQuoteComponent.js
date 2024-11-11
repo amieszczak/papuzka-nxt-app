@@ -1,12 +1,13 @@
 'use client';
 import styles from './landingPageQuote.module.css';
 import Image from 'next/image';
+import classNames from 'classnames';
 //
 import { useEffect } from 'react';
 import Aos from "aos";
 import 'aos/dist/aos.css';
 
-export default function LandingPageQuoteComponent() {
+export default function LandingPageQuoteComponent({classes}) {
 
     useEffect(() => {
         Aos.init();
@@ -15,7 +16,7 @@ export default function LandingPageQuoteComponent() {
     return(
         <div className={styles.container} data-aos='fade-left'>
             <div className={styles.quote}>
-                <h2>Sposób, w jaki mówimy do naszych dzieci, staje się ich wewnętrznym głosem. </h2>
+                <h2 className={classes.headingPrimary}>Sposób, w jaki mówimy do naszych dzieci, staje się ich wewnętrznym głosem. </h2>
                 <p>Peggy O Mara</p>
             </div>
             <div className={styles.parrot}>

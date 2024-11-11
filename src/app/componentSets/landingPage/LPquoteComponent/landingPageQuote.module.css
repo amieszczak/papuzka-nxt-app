@@ -1,5 +1,5 @@
 .container {
-    height: clamp(300px, 29.2vw, 560px);
+    height: clamp(150px, 29.2vw, 560px);
     margin-top: clamp(80px, 8.9vw, 170px);
     margin-bottom: clamp(80px, 8.9vw, 170px);
     color: var(--color-text-light);
@@ -8,14 +8,13 @@
 
 .quote {
     position: absolute;
-    left: 30%;
+    left: 50%;
+    transform: translateX(-50%);
     width: clamp(250px, 36vw, 668px);
 }
 
-.quote h2 {
-    font-size: clamp(30px, 3.3vw, 64px);
-    font-weight: 100;
-    margin-bottom: clamp(20px, 2.3vw, 44px);
+.quote p {
+    font-size: var(--font-size-button-primary);
 }
 
 .parrot {

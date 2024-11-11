@@ -20,7 +20,7 @@ export default function Home() {
       <main className={styles.main}>
         <LandingPageVideoComponent/>
         <LandingPageOfferComponent classes={styles} data-aos='fade-up'/>
-        <LandingPageQuoteComponent/>
+        <LandingPageQuoteComponent classes={styles}/>
         <LandingPageAboutComponent/>
         <LandingPageTeamComponent/>
         <LandingPageArticlesComponent/>

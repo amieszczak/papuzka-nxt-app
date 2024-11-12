@@ -1,18 +1,26 @@
 .container {
     display: flex;
     height: clamp(116px, 36.2vw, 695px);
-    color: var(--color-text-light);
     margin-top: calc(min(24vw, 460px));
+    position: relative;
+}
+
+.title {
+    text-transform: uppercase;
+    width: calc(min(36.3vw, 696px)); 
+    position: absolute;
+    top: calc(max(-8vw, -155px)); 
+    left: 50%;
 }
 
 .photoContainer {
-    position: relative;
     width: 48%;
+    height: clamp(116px, 36.2vw, 695px);
 }
 
 .photo {
     width: clamp(150px, 46.6vw, 896px);
-    height: clamp(116px, 36.2vw, 695px);
+    height: 100%;
     border-radius: 0 var(--border-radius-primary) 0 var(--border-radius-primary);
     overflow: hidden;
     position: absolute;
@@ -57,21 +65,8 @@
     position: relative;
 }
 
-.title {
-    text-transform: uppercase;
-    width: calc(min(36.3vw, 696px)); 
-    font-size: clamp(18px, 2.5vw, 48px);
-    font-weight: 400;
-    position: absolute;
-    top: calc(max(-8vw, -155px)); 
-}
-
-.title span {
-    font-weight: 700;
-}
-
 .description{
-    font-size: clamp(12px, 1.7vw, 32px);
+    /* font-size: clamp(12px, 1.7vw, 32px); */
     padding: 0 calc(min(6.3vw, 120px));
     height: 80%;
     overflow-y: auto;
@@ -81,14 +76,41 @@
 @media(max-width: 576px) {
     .container {
         flex-direction: column;
+        align-items: center;
         height: initial;
     }
 
+    .title {
+        transform: translateX(-50%);
+        width: 216px;
+    }
+
     .photoContainer {
+        width: 90%;
+        margin-top: 24px;
+    }
+
+    .photo {
         width: 100%;
+    }
+
+    .photo img {
+        object-position: 50% 30%;
+    }
+
+    .photoLineTop {
+        width: 106%;
+        right: 0%;  
+    }
+
+    .photoLineBottom {
+        width: 106%;
+        left: 0;
     }
 
     .descriptionContainer {
         width: 100%;
+        border: none;
+        margin-top: 24px;
     }
 }

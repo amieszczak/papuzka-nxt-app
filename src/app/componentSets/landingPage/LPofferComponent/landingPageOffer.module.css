@@ -20,7 +20,7 @@
     border-radius: 0 0 var(--border-radius-primary) 0;
     border-right: var(--border-primary);
     border-bottom: var(--border-primary);
-    color: var(--color-text-light);
+    /* color: var(--color-text-light); */
 }
 
 .descriptionsContainer {
@@ -102,11 +102,6 @@
     z-index: 1;
 }
 
-.refference {
-    color: var(--color-text-light);
-    z-index: 100;
-}
-
 .offerLink {
     height: clamp(28px, 4.7vw, 90px);
     display: flex;
@@ -116,8 +111,12 @@
     padding: 0 calc(min(5.2vw, 100px));
     transition: 0.5s;
     position: relative;
+    color: var(--color-text-light);
 }
 
+.refference {
+    z-index: 100;
+}
 
 .offerLinkHover {
     background-color: var(--color-text-medium);

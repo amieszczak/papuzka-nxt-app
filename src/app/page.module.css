@@ -22,16 +22,19 @@
 .paragraphPrimary {
   font-size: var(--font-size-paragraph-primary);
   line-height: var(--line-height-paragraph-primary);
+  color: var(--color-text-light);
 }
 
 .paragraphSecondary {
   font-size: var(--font-size-paragraph-secondary);
   line-height: var(--line-height-paragraph-secondary);
+  color: var(--color-text-light);
 }
 
 .paragraphTertiary {
   font-size: var(--font-size-paragraph-tertiary);
   line-height: var(--line-height-paragraph-tertiary);
+  color: var(--color-text-light);
 }
 
 

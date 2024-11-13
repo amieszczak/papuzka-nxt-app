@@ -1,9 +1,10 @@
 'use client';
 import styles from './landingPageTeam.module.css';
+import classes from '../../../page.module.css';
 //
 import { landingPageTeamData } from '@/app/data/landingPageData/landingPageTeamData/landingPageTeamData.js';
 //
-import { Swiper, SwiperSlide} from "swiper/react"; /* , useSwiper  */
+import { Swiper, SwiperSlide} from "swiper/react";
 import "swiper/css";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css/autoplay";
@@ -36,16 +37,16 @@ export default function LandingPageTeamComponent() {
         <div className={styles.container}>
             <LandingPageMarkup category='ZESPÓŁ' side='left'/>
             <h2 className={styles.slogan}>Mamy bogate <span>doświadczenie <span className={styles.noWrap}>i kompetencje.</span> </span>Poznaj nasz <span>zespół</span></h2>
-            <div className={styles.descriptionContainer}>
+            {/* <div className={styles.descriptionContainer}> */}
                 {landingPageTeamData.map(item => {
                     return(
-                        <div key={item.id}>
+                       <div key={item.id} className={classNames({[styles.descriptionContainer]:true, [styles.descriptionContainerActive]:item.id === activeId})}>
                             <h3 className={classNames({[styles.name]: true, [styles.nameDisplay]: item.id == activeId})}>{item.name}</h3>
                             <p className={classNames({[styles.description]: true, [styles.activeDescription]: item.id == activeId})}>{item.description}</p>
-                        </div>
+                       </div>
                     )
                 })}
-            </div>
+            {/* </div> */}
             <div className={styles.photoContainer }>
                 
                 <Swiper

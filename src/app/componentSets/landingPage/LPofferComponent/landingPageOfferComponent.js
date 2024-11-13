@@ -104,10 +104,10 @@ export default function LandingPageOfferComponent() {
             <Swiper
               modules={[Autoplay, Pagination]}
               loop={true}
-             /*  autoplay={{
+              autoplay={{
                 delay: 5000,
                 disableOnInteraction: true,
-              }} */
+              }}
               pagination={{
                 clickable: true,
                 el: `.${styles.paginationContainer}`,      

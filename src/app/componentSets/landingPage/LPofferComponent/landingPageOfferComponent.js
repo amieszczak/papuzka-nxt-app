@@ -1,5 +1,6 @@
 "use client";
 import styles from "./landingPageOffer.module.css";
+import classes from '../../../page.module.css';
 import LandingPageMarkup from "@/app/components/landingPageMarkup/landingPageMarkup.js";
 //
 import { landingPageOfferData } from "@/app/data/landingPageData/landingPageOfferData/landingPageOfferData.js";
@@ -24,7 +25,7 @@ import Aos from "aos";
 import 'aos/dist/aos.css';
 
 
-export default function LandingPageOfferComponent({classes}) {
+export default function LandingPageOfferComponent() {
 
   useEffect(() => {
     Aos.init();

@@ -1,5 +1,6 @@
 'use client';
 import styles from './landingPageQuote.module.css';
+import classes from '../../../page.module.css';
 import Image from 'next/image';
 import classNames from 'classnames';
 //
@@ -7,7 +8,7 @@ import { useEffect } from 'react';
 import Aos from "aos";
 import 'aos/dist/aos.css';
 
-export default function LandingPageQuoteComponent({classes}) {
+export default function LandingPageQuoteComponent() {
 
     useEffect(() => {
         Aos.init();

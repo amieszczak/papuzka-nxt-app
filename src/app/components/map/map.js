@@ -1,11 +1,10 @@
+'use client';
 import React from "react";
-/* import { MapContainer, Marker, Popup, TileLayer, useMap } from "react-leaflet"; */
-/* import "leaflet/dist/leaflet.css"; */
 import './map.css'
 //
-import { MapContainer, TileLayer,Marker,Popup } from 'react-leaflet'
-import 'leaflet/dist/leaflet.css'
-import 'leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css'
+import { MapContainer, TileLayer,Marker,Popup } from 'react-leaflet';
+import 'leaflet/dist/leaflet.css';
+import 'leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css';
 import "leaflet-defaulticon-compatibility";
 
 export default function LocationMap() {
@@ -20,3 +19,5 @@ export default function LocationMap() {
     </MapContainer>
   );
 }
+
+

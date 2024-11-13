@@ -1,5 +1,6 @@
 'use client';
 import styles from './landingPageAbout.module.css';
+import classes from '../../../page.module.css';
 //
 import Image from 'next/image';
 //
@@ -11,7 +12,7 @@ import LandingPageMarkup from '@/app/components/landingPageMarkup/landingPageMar
 //
 import classNames from 'classnames';
 
-export default function LandingPageAboutComponent({classes}) {
+export default function LandingPageAboutComponent() {
 
     useEffect(() => {
         Aos.init();

@@ -5,12 +5,15 @@ import ContactForm from '../components/form/form';
 //
 import Link from 'next/link';
 //
-import LocationMap from '../components/map/map.js';
+import dynamic from "next/dynamic";
 //
 import classNames from 'classnames';
 
 
 export default function Contact() {
+
+    const LocationMap = dynamic(() => import("../components/map/map.js"), { ssr:false });
+
     return(
         <div className={styles.container}>
             <div className={styles.infoContainer}>

@@ -1,5 +1,6 @@
 'use client'
 import styles from './landingPageArticles.module.css';
+import classes from '../../../page.module.css';
 //
 import Image from 'next/image';
 //

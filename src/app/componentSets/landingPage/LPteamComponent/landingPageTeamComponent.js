@@ -36,17 +36,15 @@ export default function LandingPageTeamComponent() {
     return(
         <div className={styles.container}>
             <LandingPageMarkup category='ZESPÓŁ' side='left'/>
-            <h2 className={styles.slogan}>Mamy bogate <span>doświadczenie <span className={styles.noWrap}>i kompetencje.</span> </span>Poznaj nasz <span>zespół</span></h2>
-            {/* <div className={styles.descriptionContainer}> */}
+            <h2 className={classNames({[styles.slogan]:true, [classes.headingSecondary]:true})}>Mamy bogate <span>doświadczenie <span className={styles.noWrap}>i kompetencje.</span> </span>Poznaj nasz <span>zespół</span></h2>
                 {landingPageTeamData.map(item => {
                     return(
                        <div key={item.id} className={classNames({[styles.descriptionContainer]:true, [styles.descriptionContainerActive]:item.id === activeId})}>
-                            <h3 className={classNames({[styles.name]: true, [styles.nameDisplay]: item.id == activeId})}>{item.name}</h3>
-                            <p className={classNames({[styles.description]: true, [styles.activeDescription]: item.id == activeId})}>{item.description}</p>
+                            <h3 className={classNames({[styles.name]: true, [classes.headingPrimary]: true, [styles.nameDisplay]: item.id == activeId})}>{item.name}</h3>
+                            <p className={classNames({[styles.description]: true, [classes.paragraphSecondary]: true, [styles.activeDescription]: item.id == activeId})}>{item.description}</p>
                        </div>
                     )
                 })}
-            {/* </div> */}
             <div className={styles.photoContainer }>
                 
                 <Swiper

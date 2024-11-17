@@ -33,6 +33,7 @@
 
   /* GRADIENTS */
   --gradient-top-bottom: linear-gradient(#FFDAB9, #ffdab900);
+  --gradient-bottom-top: linear-gradient(#ffdab900, #FFDAB9);
   --gradient-right-left: linear-gradient(to left, #FFDAB9, #ffdab900);
 }
 

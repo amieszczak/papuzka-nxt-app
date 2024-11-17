@@ -1,4 +1,5 @@
 import styles from './articlePreview.module.css';
+import classes from '../../page.module.css';
 //
 import classNames from 'classnames';
 
@@ -7,8 +8,8 @@ export default function ArticlePreview({title, content, author, date, refference
     if(styleProp == 'articles') {
         return (
             <div className={classNames({[styles.container]:true, [styles.containerArticles]:true})}>
-                <h2>{title}</h2>
-                <p>{content}</p>
+                <h2 className={classes.headingPrimary}>{title}</h2>
+                <p className={classes.paragraphPrimary}>{content}</p>
                 <div className={styles.dataContainer}>
                     <div className={styles.info}>
                         <h3>{author} | {date}</h3>
@@ -22,8 +23,8 @@ export default function ArticlePreview({title, content, author, date, refference
         return(
             <a href={refference}>
                 <div className={classNames({[styles.container]:true, [styles.containerLandingPage]:true})}>
-                    <h2>{title}</h2>
-                    <p>{content}</p>
+                    <h2 className={classes.paragraphSecondary}>{title}</h2>
+                    <p className={classes.paragraphTertiary}>{content}</p>
                     <div className={styles.bottomBlinder}></div>
                 </div>
             </a>

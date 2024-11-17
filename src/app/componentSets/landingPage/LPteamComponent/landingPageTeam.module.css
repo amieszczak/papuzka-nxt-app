@@ -127,3 +127,9 @@
         width: 90%;
     }
 }
+
+@media(max-width: 400px) {
+    .teamPaginationContainer {
+        display: none;
+    }
+}

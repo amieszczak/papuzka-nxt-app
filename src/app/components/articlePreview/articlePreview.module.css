@@ -1,5 +1,4 @@
 .container {
-    color: var(--color-text-light);
     border-radius: clamp(12px, 2.6vw, 50px) clamp(12px, 2.6vw, 50px) 0 0;
     padding: clamp(16px, 2.6vw, 50px);
     border-left: 1px solid var(--color-text-light);
@@ -18,41 +17,24 @@
 .containerLandingPage {
     background-color: #FFDAB9;
     width: 100%;
-    height: clamp(100px, 26vw, 500px);
+    height: clamp(150px, 26vw, 500px); 
 }
 /* // */
 
 .container h2 {
     font-weight: 700;
+    font-style: normal;
     text-align: center;
 }
 
 /* // */
 .containerArticles h2 {
-    font-size: clamp(18px, 3.3vw, 64px);
     margin-bottom: calc(min(2.6vw, 50px));
 }
 
 .containerLandingPage h2 {
-    font-size: clamp(14px, 1.6vw, 30px);
     margin-bottom: calc(min(2vw, 40px));
 }
-
-.container p {
-    font-weight: 400;
-}
-
-/* // */
-
-.containerArticles p {
-    font-size: clamp(14px, 2vw, 40px);
-}
-
-.containerLandingPage p {
-    font-size: clamp(1px, 1.3vw, 24px);
-}
-
-/* // */
 
 .dataContainer {
     width: 100%;
@@ -71,7 +53,8 @@
 
 .info h3,
 .dataContainer a {
-    font-size: clamp(12px, 1.8vw, 36px);
+    font-size: var(--font-size-paragraph-secondary);
+    color: var(--color-text-light);
 }
 
 .bottomBlinder {

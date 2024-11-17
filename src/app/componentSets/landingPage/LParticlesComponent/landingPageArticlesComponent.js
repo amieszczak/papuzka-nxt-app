@@ -14,9 +14,12 @@ import ArticlePreview from '@/app/components/articlePreview/articlePreview';
 import { articlesData } from '@/app/data/articlesData/articlesData';
 import LandingPageMarkup from '@/app/components/landingPageMarkup/landingPageMarkup';
 
+
 export default function LandingPageArticlesComponent() {
+
     return(
         <div className={styles.container}>
+            <div className={styles.topBlinder}></div>
             <LandingPageMarkup category='ARTYKUŁY' side='right'/>
             <div className={styles.presentationContainer}>
                 <div className={styles.photoContainer}>
@@ -30,7 +33,7 @@ export default function LandingPageArticlesComponent() {
                 </div>
                 <div className={styles.slogan}>
                     <div className={styles.topLine}></div>
-                    <h2>Udokumentowana terapia pomaga w <span>szybszym rozwoju.</span> Zapoznaj się z naszymi <span>artykułami</span></h2>
+                    <h2 className={classes.headingSecondary}>Udokumentowana terapia pomaga w <span>szybszym rozwoju.</span> Zapoznaj się z naszymi <span>artykułami</span></h2>
                 </div>
             </div>
             <div className={styles.sliderContainer}>
@@ -41,20 +44,49 @@ export default function LandingPageArticlesComponent() {
                     delay: 5000,
                     disableOnInteraction: true,
                 }}
-                slidesPerView={2}
-                spaceBetween={40}
                 centeredSlides={true}
-                /* onActiveIndexChange={(swiper) => setOfferId(swiper.realIndex + 1)} */
+                breakpoints={{
+                    1200: {
+                        spaceBetween: 40,
+                    },
+                    
+                    992: {
+                        spaceBetween: 30,
+                    },
+                    
+                    768: {
+                        spaceBetween: 20,
+                    },
+                    
+                    576: {
+                        spaceBetween: 10,
+                        slidesPerView: 2,
+                    },
+                    
+                    450: {
+                        slidesPerView: 1.75,
+                    },
+
+                    400: {
+                        slidesPerview: 1.5, 
+                    },
+
+                    0: {
+                        spaceBetween: 5,
+                        slidesPerView: 1.25,
+                    }
+                }}
                 >
                 {articlesData.map((item) => {
                     return (
-                    <SwiperSlide key={item.id}>
+                    <SwiperSlide key={item.id} className={styles.swiperSlide}>
                        <ArticlePreview {...item} title={item.title} content={item.content} refference={item.refference} styleProp='landingPage'/>
                     </SwiperSlide>
                     );
                 })}
                 </Swiper>
             </div>
+            <div className={styles.bottomBlinder}></div>
         </div>
     )
 }

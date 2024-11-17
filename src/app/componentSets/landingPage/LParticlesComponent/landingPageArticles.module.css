@@ -1,8 +1,6 @@
 .container {
-    /* height: 100vh; */
     height: calc(min(57.3vw, 1100px));
     margin-top: calc(min(17.3vw, 333px));
-    color: var(--color-text-light);
     position: relative;
 }
 
@@ -44,14 +42,8 @@
 }
 
 .slogan h2 {
-    font-size: clamp(18px, 2.5vw, 48px);
-    font-weight: 400;
     width: clamp(300px, 36.5vw, 700px);
     text-transform: uppercase;
-}
-
-.slogan h2 span {
-    font-weight: 700;
 }
 
 .topLine {
@@ -66,7 +58,22 @@
     height: 50%;
 }
 
+
 @media(max-width: 576px) {
+
+    .container {
+        height: 330px;
+        position: relative;
+    }
+
+    .topBlinder {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 40px;
+       background-image: var(--gradient-top-bottom);
+    }
+
     .presentationContainer {
         flex-direction: column;
         height: initial;
@@ -75,13 +82,31 @@
     .photoContainer {
         width: 100%;
         height: 100%;
-        top: 160px;
+        top: 170px;
     }
 
     .photo {
         width: 100vw;
+        height: 330px;
         border: none;
         border-radius: 0;
         opacity: 0.5;
+    }
+
+    .slogan {
+        width: 288px;
+        padding: calc(min(5.2vw, 30px));
+    }
+
+    .topLine {
+        display: none;
+    }
+
+    .bottomBlinder {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 70px;
+        background-image: var(--gradient-bottom-top);
     }
 }

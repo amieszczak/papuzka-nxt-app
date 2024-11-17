@@ -64,6 +64,7 @@
     .container {
         height: 330px;
         position: relative;
+        margin-top: 28px;
     }
 
     .topBlinder {

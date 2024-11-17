@@ -37,9 +37,39 @@ export default function SpecialistShowcase() {
                         centeredSlides={true}
                         spaceBetween={40}
                         slideToClickedSlide={true}
+                        breakpoints={{
+                            1200: {
+                                spaceBetween: 40,
+                            },
+                            
+                            992: {
+                                spaceBetween: 30,
+                            },
+                            
+                            768: {
+                                spaceBetween: 20,
+                            },
+                            
+                            576: {
+                                spaceBetween: 10,
+                                slidesPerView: 2,
+                            },
+                            
+                            450: {
+                                slidesPerView: 1.75,
+                            },
+        
+                            400: {
+                                slidesPerview: 1.5, 
+                            },
+        
+                            0: {
+                                spaceBetween: 5,
+                                slidesPerView: 1.25,
+                            }
+                        }}
                         onActiveIndexChange={(swiper) => {
                         setActiveIndex(swiper.realIndex)
-                        console.log(swiper.realIndex);
                         }}
                         >
                         {specialistShowcaseData.map(item => {

@@ -95,7 +95,7 @@
     }
 
     .photo img {
-        object-position: 50% 30%;
+        object-position: var(--object-position-responsive-primary);
     }
 
     .photoLineTop {

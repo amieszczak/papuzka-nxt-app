@@ -1,5 +1,7 @@
 import styles from "./offer-page-entry.module.css";
+import classes from '../../../page.module.css';
 import Image from "next/image";
+/* import classNames from "classnames"; */
 
 export default function OfferPageEntry({
   pageTitle,
@@ -10,8 +12,8 @@ export default function OfferPageEntry({
     <>
       <section className={styles.entryContainer}>  
         <div className={styles.entryDescription}> 
-          <h1>{pageTitle}</h1>
-          <p>{entryInformation}</p>
+          <h1 className={classes.headingSecondary}>{pageTitle}</h1>
+          <p className={classes.paragraphPrimary}>{entryInformation}</p>
         </div>
 
         <div className={styles.entryPhotoContainer}>  

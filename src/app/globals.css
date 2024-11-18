@@ -29,12 +29,17 @@
   /*ANOTHER PARAMETERS*/
   /*BORDER*/
   --border-primary: 1px solid #AD3D3D;
+  --border-secondary: 3px solid #f08080;
   --border-radius-primary: clamp(12px, 2.6vw, 50px);
 
   /* GRADIENTS */
   --gradient-top-bottom: linear-gradient(#FFDAB9, #ffdab900);
   --gradient-bottom-top: linear-gradient(#ffdab900, #FFDAB9);
   --gradient-right-left: linear-gradient(to left, #FFDAB9, #ffdab900);
+
+  /*DIMENSIONS*/
+  --object-position-responsive-primary: 50% 30%;
+
 }
 
 

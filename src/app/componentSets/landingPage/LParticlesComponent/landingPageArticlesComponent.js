@@ -45,6 +45,7 @@ export default function LandingPageArticlesComponent() {
                     disableOnInteraction: true,
                 }}
                 centeredSlides={true}
+                slidesPerView={2}
                 breakpoints={{
                     1200: {
                         spaceBetween: 40,

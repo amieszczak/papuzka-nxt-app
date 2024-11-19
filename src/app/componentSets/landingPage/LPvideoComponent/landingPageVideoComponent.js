@@ -1,6 +1,8 @@
 'use client';
 import styles from './landingPageVideo.module.css';
 import BackgroundVideo from 'next-video/background-video';
+import Video from 'next-video';
+  import getStarted from '/videos/get-started.mp4';
 import entryVideo from '/videos/7424128-uhd_3840_2160_30fps.mp4'
 import { useState } from 'react';
 //
@@ -28,7 +30,7 @@ export default function LandingPageVideoComponent() {
 
     return (
         <div className={styles.container}>
-            <BackgroundVideo src={entryVideo} className={styles.video}/>
+            <Video src={entryVideo} className={styles.video}/>
             <div className={styles.label}>
                 <h2 className={classNames({[styles.textPosition]: scrollButtonHide})}>W PAPUŻCE WIEMY JAK <span>ZAOPIEKOWAĆ MOWĘ</span></h2> {/* className={classNames({[styles.textPosition]: scrollButtonHide})} */}
                 <div className={styles.buttonContainer}>

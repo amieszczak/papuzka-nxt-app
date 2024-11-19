@@ -1,8 +1,5 @@
 'use client';
 import styles from './landingPageVideo.module.css';
-import BackgroundVideo from 'next-video/background-video';
-/* import Video from 'next-video'; */
-import entryVideo from '/videos/7424128-uhd_3840_2160_30fps.mp4'; 
 import { useState } from 'react';
 //
 import classNames from 'classnames';
@@ -29,7 +26,10 @@ export default function LandingPageVideoComponent() {
 
     return (
         <div className={styles.container}>
-            <BackgroundVideo src={entryVideo} className={styles.video}/>
+            <video className={styles.video} autoPlay loop preload="auto">
+            <source src='/7424128-uhd_3840_2160_30fps.mp4' type="video/mp4" />
+            Your browser does not support the video tag.
+            </video>
             <div className={styles.label}>
                 <h2 className={classNames({[styles.textPosition]: scrollButtonHide})}>W PAPUŻCE WIEMY JAK <span>ZAOPIEKOWAĆ MOWĘ</span></h2> {/* className={classNames({[styles.textPosition]: scrollButtonHide})} */}
                 <div className={styles.buttonContainer}>

@@ -1,7 +1,6 @@
 import styles from "./offer-page-entry.module.css";
 import classes from '../../../page.module.css';
 import Image from "next/image";
-/* import classNames from "classnames"; */
 
 export default function OfferPageEntry({
   pageTitle,

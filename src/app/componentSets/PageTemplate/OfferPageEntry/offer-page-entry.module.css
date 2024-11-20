@@ -1,5 +1,4 @@
 .entryContainer {
-  min-height: 50vh;
   display: flex;
   justify-content: center;
   gap: clamp(24px, 3.3vw, 64px);
@@ -60,7 +59,7 @@
 }
 
 .entryPhotoContainer:hover .bookButton {
-  height: 183px;
+  height: clamp(75px, 7.8vw, 150px);
   opacity: 1;
 }
 

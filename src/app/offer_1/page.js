@@ -22,7 +22,7 @@ export default function Offer_1() {
           photoSrc={Offer1EntryData.photoSrc}
         />
 
-        <div className={styles.offer1Container}>  
+        <div className={styles.infoContainer}>  
           
           <ListTemplate
             title={Offer1ListData.title}

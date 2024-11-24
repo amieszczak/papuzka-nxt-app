@@ -3,7 +3,7 @@
 }
 
 .listTitleTemplate h2,.listTitleTemplate p {
-    margin-bottom: clamp(30px, 3.3vw, 64px); /* 64px */
+    margin-bottom: clamp(30px, 3.3vw, 64px);
 }
 
 .listTitleTemplate ul {

@@ -1,3 +1,4 @@
+'use client';
 import styles from "./offer-page-entry.module.css";
 import classes from '../../../page.module.css';
 import Image from "next/image";
@@ -7,6 +8,15 @@ export default function OfferPageEntry({
   entryInformation,
   photoSrc,
 }) {
+
+  function handleScroll() {
+    const specialists = document.getElementById("specialists");
+
+    if(specialists) {
+      specialists.scrollIntoView({behavior: 'smooth'});
+    }
+  }
+
   return (
     <>
       <section className={styles.entryContainer}>  
@@ -23,7 +33,7 @@ export default function OfferPageEntry({
             width={500}
             height={500}
           />
-          <div className={styles.bookButton}> 
+          <div onClick={handleScroll} className={styles.bookButton}> 
             <p>REZERWUJ</p>
           </div>
         </div>

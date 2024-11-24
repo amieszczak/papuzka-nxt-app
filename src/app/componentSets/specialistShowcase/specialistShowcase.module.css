@@ -1,11 +1,8 @@
 .container {
     width: 100%;
-    color: #ad3d3d;
 }
 
 .containerHeading {
-    font-size: clamp(24px, 2.6vw, 50px);
-    font-weight: 600;
     text-align: center;
     padding: calc(min(5.9vw, 115px)) 0;
 }
@@ -45,17 +42,12 @@
 }
 
 .descriptionHeading {
-    font-size: clamp(24px, 2.6vw, 50px);
-    font-style: italic;
-    font-weight: 400;
     text-transform: uppercase;
     text-align: center;
     padding-bottom: clamp(24px, 3.3vw, 64px);
 }
 
 .descriptionContainer p {
-    font-size: clamp(20px, 2vw, 40px);
-    font-weight: 400;
     height: clamp(200px, 25vw, 480px);
     overflow: auto;
 }
@@ -70,15 +62,16 @@
 
 .link {
     padding: clamp(16px, 1.3vw, 25px);
-    font-size: clamp(20px, 1.9vw, 36px);
     text-transform: uppercase; 
     transition: 0.5s;
     position: relative;
     border: 1px solid var(--color-text-light);
+    font-size: var(--font-size-button-primary);
+    color: var(--color-text-light);
 }
 
 .link:hover {
-    background-color: #942424;
-    color: #FFDAB9;
+    background-color: var(--color-text-medium);
+    color: var(--color-background-light); 
     transition: 0.5s;
 }

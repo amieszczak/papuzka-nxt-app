@@ -1,8 +1,9 @@
 .paragraphUnit {
     padding: 48px 0;
-    color: #AD3D3D;
+    width: 85%;
 }
 
-/* .paragraph-unit h3 {
-    margin-bottom: 24px;
-} */
+.paragraphUnit h3 {
+    text-align: center;
+    margin-bottom: clamp(24px, 3.3vw, 64px);
+}

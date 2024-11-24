@@ -1,16 +1,12 @@
-/* @import '../globals.css';
-@import '../page.module.css'; */
+.halfDivider {
+  width: 50%;
+}
 
+.descriptionContainer {
+  display: flex;
+}
 
-  .halfDivider {
-    width: 50%;
-  }
-
-  .descriptionContainer {
-    display: flex;
-  }
-
-  .singleList {
-    display: flex;
-    justify-content: center;
-  }
+.singleList {
+  display: flex;
+  justify-content: center;
+}

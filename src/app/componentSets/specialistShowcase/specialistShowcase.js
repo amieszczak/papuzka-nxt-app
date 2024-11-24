@@ -1,5 +1,7 @@
 'use client';
 import styles from './specialistShowcase.module.css';
+import classes from '../../page.module.css';
+import classNames from 'classnames';
 import { specialistShowcaseData } from '@/app/data/SpecialistsData/specialistShowcaseData';
 //
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -12,7 +14,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 //
 import { useState } from 'react';
-import classNames from 'classnames';
 
 export default function SpecialistShowcase() {
 
@@ -22,8 +23,8 @@ export default function SpecialistShowcase() {
 
     return (
         <article>
-            <div className={styles.container}>
-                <h2 className={styles.containerHeading}>SPRAWDŹ DOSTĘPNOŚĆ NASZYCH SPECIALISTÓW</h2>
+            <div id="specialists" className={styles.container}>
+                <h2 className={classNames({[styles.containerHeading]:true, [classes.headingSecondary]:true})}>SPRAWDŹ DOSTĘPNOŚĆ NASZYCH SPECIALISTÓW</h2>
                 <div className={styles.carouselContainer}>
                     <Swiper
                         className={styles.swiper}
@@ -87,8 +88,8 @@ export default function SpecialistShowcase() {
                 </div>
                 {selectedDescription ? 
                     <div className={styles.descriptionContainer}>
-                        <h2 className={styles.descriptionHeading}>{selectedDescription.name}</h2> 
-                        <p>{selectedDescription.description}</p> 
+                        <h2 className={classNames({[styles.descriptionHeading]:true, [classes.headingSecondary]:true})}>{selectedDescription.name}</h2> 
+                        <p className={classes.paragraphPrimary}>{selectedDescription.description}</p> 
                         <div className={styles.linkContainer}>
                             <Link href={selectedDescription.href} className={styles.link}>umów się na bezpłatną wizytę</Link>
                         </div>

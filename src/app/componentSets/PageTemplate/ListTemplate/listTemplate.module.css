@@ -45,3 +45,9 @@
     }
 
 }
+
+@media(max-width: 576px) {
+    .listContainer {
+        justify-content: initial;
+    }
+}

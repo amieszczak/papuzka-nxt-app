@@ -1,4 +1,5 @@
 import styles from "./metricUnit.module.css";
+import classes from "../../page.module.css";
 import Image from "next/image";
 
 export default function MetricUnit({ src, alt, title, description }) {
@@ -8,8 +9,8 @@ export default function MetricUnit({ src, alt, title, description }) {
         <Image src={src} alt={alt} width={70} height={70} />
       </div>
       <div className={styles.metricInfo}>
-        <h2>{title}</h2>
-        <p>{description}</p>
+        <h2 className={classes.paragraphPrimary}>{title}</h2>
+        <p className={classes.paragraphTertiary}>{description}</p>
       </div>
     </div>
   );

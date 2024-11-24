@@ -48,7 +48,6 @@ export default function Offer_2() {
       </article>
       <SpecialistShowcase/>
       <ContactForm/>
-
     </>
   );
 }

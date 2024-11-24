@@ -15,7 +15,7 @@ export default function HeaderNav({isValue}) {
     setMainMenuMobileActive(isValue);
   }, [isValue]) */
 
-  console.log(isValue);
+/*   console.log(isValue); */
 
   return (
     <nav className={styles.navigation}>

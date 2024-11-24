@@ -1,10 +1,11 @@
 import styles from './paragraph-unit.module.css';
+import classes from '../../../page.module.css';
 
 export default function ParagraphUnit({title, paragraph}) {
     return (
         <section className={styles.paragraphUnit}>
-            <h3>{title}</h3>
-            <p>{paragraph}</p>
+            <h3 className={classes.headingSecondary}>{title}</h3>
+            <p className={classes.paragraphPrimary}>{paragraph}</p>
         </section>
     )
 }

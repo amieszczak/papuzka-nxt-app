@@ -1,5 +1,6 @@
 "use client";
 import styles from "./headerNav.module.css";
+import classes from "../../../page.module.css";
 import Link from "next/link";
 import classNames from "classnames";
 import { MenuStructure } from "../../../data/menuData/menuData.js";
@@ -42,7 +43,7 @@ export default function HeaderNav({isValue}) {
                 )}
                 onClick={() => setOfferMenuActive(!isOfferMenuActive)}
               >
-                <Link href={item.href}>{item.title}</Link>
+                <Link className={classes.paragraphPrimary} href={item.href}>{item.title}</Link>
                 <div
                   key={item.subId}
                   className={classNames({
@@ -52,7 +53,7 @@ export default function HeaderNav({isValue}) {
                 >
                   {item.offerPages.map((offerItem) => {
                     return (
-                      <Link key={offerItem.id} href={offerItem.href} onClick={() => setMainMenuMobileActive(!isMainMenuMobileActive)}>
+                      <Link className={classes.paragraphPrimary} key={offerItem.id} href={offerItem.href} onClick={() => setMainMenuMobileActive(!isMainMenuMobileActive)}>
                         {offerItem.title}
                       </Link>
                     );
@@ -68,7 +69,7 @@ export default function HeaderNav({isValue}) {
                   item.class.map((classItem) => styles[classItem])
                 )}
               >
-                <Link href={item.href} onClick={() => setMainMenuMobileActive(!isMainMenuMobileActive)}>{item.title}</Link>
+                <Link className={classes.paragraphPrimary} href={item.href} onClick={() => setMainMenuMobileActive(!isMainMenuMobileActive)}>{item.title}</Link>
               </div>
             );
           }

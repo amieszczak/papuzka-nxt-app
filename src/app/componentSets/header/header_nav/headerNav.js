@@ -7,7 +7,7 @@ import { MenuStructure } from "../../../data/menuData/menuData.js";
 import { useState } from "react";
 import { useEffect } from "react";
 
-export default function HeaderNav({isValue}) {
+export default function HeaderNav() {
 
   const [isOfferMenuActive, setOfferMenuActive] = useState(false);
   const [isMainMenuMobileActive, setMainMenuMobileActive] = useState(false);
@@ -16,11 +16,9 @@ export default function HeaderNav({isValue}) {
     setOfferMenuActive(false);
   }
 
-  /* useEffect(() => {
-    setMainMenuMobileActive(isValue);
-  }, [isValue]) */
-
-/*   console.log(isValue); */
+  const handleDropdownSelected = () => {
+    
+  }
 
   return (
     <nav onBlur={handleFocusOut} className={styles.navigation}>

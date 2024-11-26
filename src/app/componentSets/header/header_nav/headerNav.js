@@ -10,7 +10,11 @@ import { useEffect } from "react";
 export default function HeaderNav({isValue}) {
 
   const [isOfferMenuActive, setOfferMenuActive] = useState(false);
-  const [isMainMenuMobileActive, setMainMenuMobileActive] = useState(isValue);
+  const [isMainMenuMobileActive, setMainMenuMobileActive] = useState(false);
+
+  const handleFocusOut = () => {
+    setOfferMenuActive(false);
+  }
 
   /* useEffect(() => {
     setMainMenuMobileActive(isValue);
@@ -19,7 +23,7 @@ export default function HeaderNav({isValue}) {
 /*   console.log(isValue); */
 
   return (
-    <nav className={styles.navigation}>
+    <nav onBlur={handleFocusOut} className={styles.navigation}>
       <div
         className={classNames({
           [styles.headerToggle]: true,

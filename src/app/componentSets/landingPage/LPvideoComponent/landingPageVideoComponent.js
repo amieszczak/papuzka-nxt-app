@@ -27,8 +27,8 @@ export default function LandingPageVideoComponent() {
     return (
         <div className={styles.container}>
             <video className={styles.video} autoPlay loop muted preload="auto">
-            <source src='/7424128-uhd_3840_2160_30fps.mp4' type="video/mp4" />
-            Your browser does not support the video tag.
+                <source src='/7424128-uhd_3840_2160_30fps.mp4' type="video/mp4" />
+                Your browser does not support the video tag.
             </video>
             <div className={styles.label}>
                 <h2 className={classNames({[styles.textPosition]: scrollButtonHide})}>W PAPUŻCE WIEMY JAK <span>ZAOPIEKOWAĆ MOWĘ</span></h2> {/* className={classNames({[styles.textPosition]: scrollButtonHide})} */}

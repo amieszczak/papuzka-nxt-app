@@ -12,16 +12,27 @@ export default function HeaderNav() {
   const [isOfferMenuActive, setOfferMenuActive] = useState(false);
   const [isMainMenuMobileActive, setMainMenuMobileActive] = useState(false);
 
-  const handleFocusOut = () => {
-    setOfferMenuActive(false);
+
+  const handleDropdownHide = (event) => {
+    if(window.innerWidth > 1400 && !event.target.closest('#dropdown') && !event.target.closest('#offer')){
+      setOfferMenuActive(false);
+    } else if(window.innerWidth <= 1400, !event.target.closest('nav')){
+      setMainMenuMobileActive(false);
+      setOfferMenuActive(false);
+    }
   }
 
-  const handleDropdownSelected = () => {
-    
-  }
+  useEffect(() => {
+    window.addEventListener('click', handleDropdownHide);
+    window.addEventListener('resize', () => {
+      setMainMenuMobileActive(false);
+      setOfferMenuActive(false);
+    })
+  }, [])
+
 
   return (
-    <nav onBlur={handleFocusOut} className={styles.navigation}>
+    <nav className={styles.navigation}>
       <div
         className={classNames({
           [styles.headerToggle]: true,
@@ -40,6 +51,7 @@ export default function HeaderNav() {
             return (
               <div
                 key={item.id}
+                id='offer'
                 className={classNames(
                   item.class.map((classItem) => styles[classItem])
                 )}
@@ -48,6 +60,7 @@ export default function HeaderNav() {
                 <Link className={classes.paragraphPrimary} href={item.href}>{item.title}</Link>
                 <div
                   key={item.subId}
+                  id='dropdown'
                   className={classNames({
                     [styles.offerDropdown]: true,
                     [styles.offerDropdownActive]: isOfferMenuActive,
@@ -55,7 +68,7 @@ export default function HeaderNav() {
                 >
                   {item.offerPages.map((offerItem) => {
                     return (
-                      <Link className={classes.paragraphPrimary} key={offerItem.id} href={offerItem.href} onClick={() => setMainMenuMobileActive(!isMainMenuMobileActive)}>
+                      <Link className={classes.paragraphPrimary} key={offerItem.id} href={offerItem.href} onClick={() => setMainMenuMobileActive(!isMainMenuMobileActive)} >
                         {offerItem.title}
                       </Link>
                     );
@@ -71,7 +84,7 @@ export default function HeaderNav() {
                   item.class.map((classItem) => styles[classItem])
                 )}
               >
-                <Link className={classes.paragraphPrimary} href={item.href} onClick={() => setMainMenuMobileActive(!isMainMenuMobileActive)}>{item.title}</Link>
+                <Link className={classes.paragraphPrimary} href={item.href} onClick={() => {setMainMenuMobileActive(!isMainMenuMobileActive); setOfferMenuActive(false)}}>{item.title}</Link>
               </div>
             );
           }

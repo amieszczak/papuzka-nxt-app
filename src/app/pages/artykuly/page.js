@@ -1,4 +1,4 @@
-import styles from './articles.module.css';
+import styles from './page.module.css';
 //
 import ArticlePreview from '../../components/articlePreview/articlePreview.js';
 //

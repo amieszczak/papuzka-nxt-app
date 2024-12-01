@@ -1,4 +1,4 @@
-import styles from './about.module.css';
+import styles from './page.module.css';
 //
 import LandingPageAboutComponent from '../../componentSets/landingPage/LPaboutComponent/landingPageAboutComponent.js';
 //

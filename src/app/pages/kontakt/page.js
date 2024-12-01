@@ -1,5 +1,5 @@
 'use client';
-import styles from './contact.module.css';
+import styles from './page.module.css';
 //
 import ContactForm from '../../components/form/form';
 //

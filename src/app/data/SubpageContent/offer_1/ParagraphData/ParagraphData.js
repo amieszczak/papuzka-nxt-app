@@ -1,6 +1,0 @@
-const ParagraphData = {
-    title: 'Przebieg konsultacji logopedycznej',
-    paragraph: 'Najważniejszą częścią konsultacji logopedycznej jest wywiad. W przypadku dziecka jest to wywiad z rodzicem. Logopeda będzie pytał m.in. o choroby matki w ciąży, przebieg ciąży i porodu, zdrowie dziecka, sposób karmienia dziecka, przebieg rozwoju psychoruchowego dziecka, rozwój mowy oraz czy w rodzinie dziecka występują wady wymowy. Wywiad jest konieczny, żeby pomóc logopedzie określić przyczynę wady wymowy i opracować skuteczny plan terapii. Kolejnymi etapami konsultacji jest badanie mowy i umiejętności komunikacyjnych. Forma badania jest dostosowana do wieku badanego. Na jego podstawie logopeda wstępnie oceni umiejętności nawiązywania kontaktów przez dziecko, sprawność aparatu artykulacyjnego, sposób artykulacji, zasób słownictwa i umiejętność formułowania wypowiedzi. W przypadku dzieci szkolnych logopeda sprawdzi też, czy ewentualna wada wymowy wpływa na umiejętności czytania i pisania. W razie potrzeby zostaną przeprowadzone badania uzupełniające. Podczas trwania konsultacji logopedycznej przez cały czas prowadzona jest obserwacja dziecka.',
-}
-
-export { ParagraphData };

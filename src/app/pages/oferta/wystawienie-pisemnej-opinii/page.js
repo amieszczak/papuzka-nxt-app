@@ -1,6 +1,5 @@
 import styles from './page.module.css';
 import OfferPageEntry from "../../../componentSets/PageTemplate/OfferPageEntry/OfferPageEntry.js";
-/* import { Offer5EntryData } from "../../../data/SubpageContent/offer_5/entryData/offer5EntryData.js"; */
 import { wystawieniePisemnejOpiniiEntryData } from '@/app/data/SubpageContent/wystawieniePisemnejOpinii/entryData/wystawieniePisemnejOpiniiEntryData';
 
 //

@@ -1,14 +1,11 @@
 import styles from "./page.module.css";
 import OfferPageEntry from "../../../componentSets/PageTemplate/OfferPageEntry/OfferPageEntry.js";
-/* import { Offer2EntryData } from "../../../data/SubpageContent/offer_2/entryData/offer2EntryData.js"; */
 import { terapiaLogopedycznaEntryData } from "@/app/data/SubpageContent/terapiaLogopedyczna/entryData/terapiaLogopedycznaEntryData";
 //
 import MetricUnit from "../../../components/metricUnit/metricUnit.js";
-/* import { metricData } from "../../../data/SubpageContent/offer_2/metricData/metricData.js"; */
 import { terapiaLogopedycznaMetricData } from "@/app/data/SubpageContent/terapiaLogopedyczna/metricData/terapiaLogopedycznaMetricData";
 //
 import ListTemplate from "../../../componentSets/PageTemplate/ListTemplate/ListTemplate.js";
-/* import { Offer2ListData } from "../../../data/SubpageContent/offer_2/listData/offer2ListData.js"; */
 import { terapiaLogopedycznaListData } from "@/app/data/SubpageContent/terapiaLogopedyczna/listData/terapiaLogopedycznaListData";
 //
 import classNames from "classnames";

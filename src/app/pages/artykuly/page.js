@@ -1,8 +1,8 @@
 import styles from './articles.module.css';
 //
-import ArticlePreview from '../components/articlePreview/articlePreview.js';
+import ArticlePreview from '../../components/articlePreview/articlePreview.js';
 //
-import { articlesData } from '../data/articlesData/articlesData.js';
+import { articlesData } from '../../data/articlesData/articlesData.js';
 
 export default function Articles() {
     return (

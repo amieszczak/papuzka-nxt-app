@@ -3,6 +3,7 @@
   justify-content: center;
   gap: clamp(24px, 3.3vw, 64px);
   padding: clamp(0px, 3.3vw, 64px) clamp(0px, 3.3vw, 64px) 0 clamp(0px, 3.3vw, 64px);
+  min-height: calc(min(31.6vw, 608px));
 }
 
 .entryDescription {

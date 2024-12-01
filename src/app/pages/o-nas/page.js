@@ -1,8 +1,8 @@
 import styles from './about.module.css';
 //
-import LandingPageAboutComponent from '../componentSets/landingPage/LPaboutComponent/landingPageAboutComponent.js';
+import LandingPageAboutComponent from '../../componentSets/landingPage/LPaboutComponent/landingPageAboutComponent.js';
 //
-import SpecialistAboutPageUnit from '../components/specialistAboutPageUnit/specialistAboutPageUnit.js';
+import SpecialistAboutPageUnit from '../../components/specialistAboutPageUnit/specialistAboutPageUnit.js';
 //
 import { aboutData } from '@/app/data/aboutData/aboutData.js';
 

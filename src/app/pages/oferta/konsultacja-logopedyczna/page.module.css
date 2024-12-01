@@ -1,0 +1,21 @@
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.listUnit {
+  margin-top: 100px;
+}
+  
+@media (max-width: 1200px) {
+
+  .offer1Container h2 {
+    text-align: center;
+  }
+
+  .offer1Container ul {
+    margin-left: auto;
+  }
+}
+  

@@ -1,0 +1,12 @@
+.halfDivider {
+  width: 50%;
+}
+
+.descriptionContainer {
+  display: flex;
+}
+
+.singleList {
+  display: flex;
+  justify-content: center;
+}

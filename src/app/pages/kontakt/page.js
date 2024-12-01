@@ -1,7 +1,7 @@
 'use client';
 import styles from './contact.module.css';
 //
-import ContactForm from '../components/form/form';
+import ContactForm from '../../components/form/form';
 //
 import Link from 'next/link';
 //
@@ -12,7 +12,7 @@ import classNames from 'classnames';
 
 export default function Contact() {
 
-    const LocationMap = dynamic(() => import("../components/map/map.js"), { ssr:false });
+    const LocationMap = dynamic(() => import("../../components/map/map.js"), { ssr:false });
 
     return(
         <div className={styles.container}>

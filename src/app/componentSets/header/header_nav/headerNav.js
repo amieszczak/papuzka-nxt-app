@@ -11,8 +11,7 @@ export default function HeaderNav() {
 
   const [isOfferMenuActive, setOfferMenuActive] = useState(false);
   const [isMainMenuMobileActive, setMainMenuMobileActive] = useState(false);
-   
-  
+
 
   const handleDropdownHide = (event) => {
     if(window.innerWidth > 1400 && !event.target.closest('#dropdown') && !event.target.closest('#offer')){

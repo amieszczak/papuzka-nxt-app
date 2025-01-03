@@ -1,7 +1,7 @@
 import { withNextVideo } from "next-video/process";
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    async rewrites() {
+   /*  async rewrites() {
         return [
             {
                 source: '/o-nas',
@@ -36,7 +36,7 @@ const nextConfig = {
                 destination: '/pages/oferta/wystawienie-pisemnej-opinii',
             },
         ]
-    },
+    }, */
 };
 
 

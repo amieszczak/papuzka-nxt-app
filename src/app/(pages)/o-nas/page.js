@@ -10,11 +10,13 @@ export default function About() {
     return(
         <div className={styles.container}>
             <LandingPageAboutComponent/>
-            {aboutData.map(item => {
-                return(
-                    <SpecialistAboutPageUnit key={item.id} {...item} variant={item.id % 2 == 0 ? 'reversed' : null}/>
-                )
-            })}
+            <div className={styles.specialistsContainer}>
+                {aboutData.map(item => {
+                    return(
+                        <SpecialistAboutPageUnit key={item.id} {...item} variant={item.id % 2 == 0 ? 'reversed' : null}/>
+                    )
+                })}
+            </div>            
         </div>
     )
 }

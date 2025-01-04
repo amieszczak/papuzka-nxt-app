@@ -1,5 +1,5 @@
 'use client';
-import styles from "./offer-page-entry.module.css";
+import styles from "./offerPageEntry.module.css";
 import classes from '../../../page.module.css';
 import Image from "next/image";
 

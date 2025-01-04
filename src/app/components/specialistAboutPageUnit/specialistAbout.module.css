@@ -34,19 +34,6 @@
     gap: calc(min(1.6vw, 30px));
 }
 
-.content h2 {
-    font-size: clamp(24px, 3.3vw, 64px);
-    font-weight: 100;
-    font-style: italic;
-}
-
-.content p {
-    font-size: clamp(20px, 1,7vw, 32px);
-    font-weight: 400; 
-    max-height: calc(min(16.9vw, 325px));
-    overflow: auto;
-}
-
 /* variants */
 
 .containerRegular {

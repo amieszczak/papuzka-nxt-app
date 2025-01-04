@@ -34,11 +34,11 @@ export default function TreningUmiejetnosciSpolecznych() {
           </section>
 
           <section className={styles.halfDivider}>
-            <aside>
-              {treningUmiejetnosciSpolecznychMetricData.map((item) => {
+            <aside className={styles.metricContainer}>
+              {treningUmiejetnosciSpolecznychMetricData.map((item, index) => {
                 return (
                   <MetricUnit
-                    key={item.div}
+                    key={index}
                     src={item.src}
                     alt={item.alt}
                     title={item.title}

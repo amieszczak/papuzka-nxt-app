@@ -1,4 +1,4 @@
-import styles from './paragraph-unit.module.css';
+import styles from './paragraphUnit.module.css';
 import classes from '../../../page.module.css';
 
 export default function ParagraphUnit({title, paragraph}) {

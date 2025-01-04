@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   gap: clamp(24px, 3.3vw, 64px);
-  padding: clamp(0px, 3.3vw, 64px) clamp(0px, 3.3vw, 64px) 0 clamp(0px, 3.3vw, 64px);
+  padding: var(--unit-padding-primary) var(--unit-padding-primary) 0 var(--unit-padding-primary);
   min-height: calc(min(31.6vw, 608px));
 }
 
@@ -71,7 +71,7 @@
   }
 
   .entryDescription {
-    width: 96%;
+    width: 100%;
   }
   
   .entryDescription h1 {
@@ -98,7 +98,7 @@
 
 @media (max-width: 992px) {
 
-    .entryPhotoContainer {
-      width: 96%;
+  .entryPhotoContainer {
+    width: 100%;
   }
 }

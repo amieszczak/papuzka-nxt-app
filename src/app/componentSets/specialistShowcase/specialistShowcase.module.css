@@ -17,8 +17,8 @@
 
 .therapistPhotoContainer {
     height: 80% !important;
-    border: 3px solid #f4978e;
-    border-radius: 50px;
+    border: 3px solid #f4978e;    
+    border-radius: var(--border-radius-primary);
     overflow: hidden;
     position: relative;
     opacity: 0.7;

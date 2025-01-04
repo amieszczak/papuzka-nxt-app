@@ -1,28 +1,39 @@
-.listTitleTemplate {
+.container {
     color: #AD3D3D;
+    padding: var(--unit-padding-primary);
 }
 
-.listTitleTemplate h2,.listTitleTemplate p {
+.container h2,.container p {
     margin-bottom: clamp(30px, 3.3vw, 64px);
 }
 
-.listTitleTemplate ul {
+.container ul {
     list-style-type: none; 
 }
 
-.listTitleTemplate ul li {
-    margin-left: 120px;
+.container ul li {
+    margin-left: clamp(66px, 6.3vw, 120px);
     position: relative;
 }
 
-.listTitleTemplate ul li p {
+.container ul li p {
     margin-bottom: 0;
 }
 
-.listTitleTemplate ul li::before {
+.container ul li::before {
     content: url('/mdi_bird.svg');
     position: absolute;
     left: -80px;
     bottom: 50%;
     transform: translateY(50%);
+}
+
+.unit p {
+    margin: 10px 0 !important;
+}
+
+@media(max-width: 1400px) {
+    .container ul li {
+        margin-left: 66px;
+    }
 }

@@ -1,5 +1,6 @@
 'use client';
 import styles from './specialistAbout.module.css';
+import globalClasses from '../../page.module.css';
 //
 import Image from 'next/image';
 //
@@ -44,8 +45,8 @@ export default function SpecialistAboutPageUnit({name, description, photoSrc, va
     return(
         <div className={classNames({[styles.container]: true, [classes.containerClass]:true})}>
             <div className={classNames({[styles.content]: true, [classes.contentClass]:true})}>
-                <h2>{name}</h2>
-                <p>{description}</p>
+                <h2 className={globalClasses.headingPrimary}>{name}</h2>
+                <p className={globalClasses.paragraphSecondary}>{description}</p>
             </div>
             <div className={classNames({[styles.photoContainer]: true, [classes.photoClass]:true})}>
                 <Image src={photoSrc} width={660} height={510}/>

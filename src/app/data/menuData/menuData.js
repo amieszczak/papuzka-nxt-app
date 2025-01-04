@@ -6,9 +6,9 @@ const MenuStructure = [
         {id: 1_4, href: '/oferta/terapia-reki', title: 'TERAPIA RĘKI'},
         {id: 1_5, href: '/oferta/wystawienie-pisemnej-opinii', title: 'WYSTAWIENIE PISEMNEJ OPINII'}, 
     ]},
-    {id: 2, href: 'o-nas', title: 'O NAS', class: ['mainMenuSection']},
-    {id: 3, href: 'kontakt', title: 'KONTAKT', class: ['mainMenuSection', 'menuContact']},
-    {id: 4, href: 'artykuly', title: 'ARTYKUŁY', class: ['mainMenuSection', 'menuArticles']},
+    {id: 2, href: '/o-nas', title: 'O NAS', class: ['mainMenuSection']},
+    {id: 3, href: '/kontakt', title: 'KONTAKT', class: ['mainMenuSection', 'menuContact']},
+    {id: 4, href: '/artykuly', title: 'ARTYKUŁY', class: ['mainMenuSection', 'menuArticles']},
 ]
 
 export { MenuStructure }; 

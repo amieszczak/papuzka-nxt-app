@@ -1,6 +1,5 @@
 .paragraphUnit {
-    padding: 48px 0;
-    width: 85%;
+    padding: var(--unit-padding-primary);
 }
 
 .paragraphUnit h3 {

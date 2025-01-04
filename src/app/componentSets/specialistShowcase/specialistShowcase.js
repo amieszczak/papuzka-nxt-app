@@ -77,7 +77,7 @@ export default function SpecialistShowcase() {
                             return (
                                 <SwiperSlide key={item.id} className={classNames({[styles.therapistPhotoContainer]:true, [styles.therapistPhotoContainerActive]: item.id === activeIndex})} onClick={() => setActiveIndex(item.id)}>
                                     <Image src={item.src} 
-                                        alt={item.alt}
+                                        alt={item.name}
                                         width={500}
                                         height={500}
                                         className={styles.therapistPhoto} />

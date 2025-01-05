@@ -1,5 +1,6 @@
 .container {
     margin-top: calc(max(-9.6vw, -200px));
+    margin-bottom: var(--unit-padding-primary);
 }
 
 @media(max-width: 576px) {

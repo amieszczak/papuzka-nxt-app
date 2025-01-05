@@ -3,7 +3,7 @@
     color: var(--color-text-light);
     display: flex;
     justify-content: space-between;
-    padding: 0 calc(min(3.3vw, 64px));
+    padding: 0 var(--unit-padding-primary);
     margin-top: -1px;
 }
 
@@ -53,14 +53,14 @@
 }
 
 .photoContainerRegular {
-    border-radius: 0 clamp(20px, 2.6vw, 50px) clamp(20px, 2.6vw, 50px) 0;
+    border-radius: 0 var(--border-radius-primary) var(--border-radius-primary) 0;
     border-top: 1px solid var(--color-text-light);
     border-right: 1px solid var(--color-text-light);
     border-bottom: 1px solid var(--color-text-light);
 }
 
 .photoContainerReversed {
-    border-radius: clamp(20px, 2.6vw, 50px) 0 0 clamp(20px, 2.6vw, 50px);
+    border-radius: var(--border-radius-primary) 0 0 var(--border-radius-primary);
     border-top: 1px solid var(--color-text-light);
     border-left: 1px solid var(--color-text-light);
     border-bottom: 1px solid var(--color-text-light);
@@ -74,3 +74,52 @@
     right: 0;
     background-image: linear-gradient(to right, #ffdab900, #FFDAB9);
 }
+
+@media(max-width: 576px) {
+    .container {
+        height: initial;
+        flex-direction: column-reverse;
+    }
+
+    .container p {
+        margin-bottom: var(--unit-padding-primary);
+    }
+
+    .photoContainer {
+        height: clamp(100px, 43.4vw, 250px);
+        width: 100%;
+    }
+
+    .photoContainerRegular {        
+        border-radius: var(--border-radius-primary) var(--border-radius-primary) 0 0;
+        border-top: 1px solid var(--color-text-light);
+        border-right: 1px solid var(--color-text-light);
+        border-left: 1px solid var(--color-text-light);
+        border-bottom: none;
+    }
+
+    .photoContainerReversed {
+        border-radius: var(--border-radius-primary) var(--border-radius-primary) 0 0;
+        border-top: 1px solid var(--color-text-light);
+        border-right: 1px solid var(--color-text-light);
+        border-left: 1px solid var(--color-text-light);
+        border-bottom: none;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .contentContainerRegular {
+        padding-right: 0;
+    }
+    
+    .contentContainerReversed {
+        padding-left: 0;
+    }
+
+    .photoBlinderRegular,
+    .photoBlinderReversed {
+        display: none;
+    }
+} 

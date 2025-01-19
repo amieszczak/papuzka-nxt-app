@@ -5,7 +5,7 @@
 
 .infoContainer {
     height: clamp(300px, 34.9vw, 670px); 
-    padding: 0 calc(min(6.3vw, 120px));
+    padding: 0 var(--unit-padding-primary);
     display: flex;
     position: relative;
 }
@@ -22,8 +22,6 @@
     position: absolute;
     right: 50%;
     top: -26%;
-    font-size: clamp(24px, 2.5vw, 48px);
-    font-weight: 400;
     text-transform: uppercase;
     width: clamp(200px, 22.9vw, 440px);
 }
@@ -40,40 +38,31 @@
     justify-content: space-evenly;
 }
 
-.content p {
-    font-size: clamp(20px, 1.7vw, 32px);
-    font-weight: 400;
+.content p {    
     width: clamp(300px, 37vw, 710px);
 }
 
 .contactDataContainer {
-    height: clamp(50px, 9.4vw, 180px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.contactDataContainer:before svg{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+
+.link {   
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.contactDataContainer a:first-child:before {
-    content: url('/contact/phone.svg');
+.link p {
+    width: initial;
 }
 
-.contactDataContainer a:nth-child(2):before {
-    content: url('/contact/message.svg');
-}
-
-.contactDataContainer a:nth-child(3):before {
-    content: url('/contact/location.svg');
-}
-
-.link {
-    font-size: clamp(16px, 1.3vw, 24px);
-    font-style: italic;
+.iconContainer {
+    position: relative;
+    width: clamp(40px, 2.6vw, 50px);
+    height: clamp(40px, 2.6vw, 50px);
 }
 
 .mapContainer {
@@ -129,4 +118,49 @@
     position: absolute;
     z-index: 10;
     pointer-events: none;
+}
+
+@media(max-width: 768px) {
+
+    .container {
+        margin-top: 50px;
+    }
+
+    .infoContainer {
+        height: initial;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .infoContainer h1 {
+        margin-left: 50%;
+        transform: translateX(-50%);
+        position: static;
+        height: max-content;
+    }
+
+    .infoContainerTopLine {
+        display: none;
+    }
+
+    .content {
+        width: initial;
+        flex-direction: row;
+    }
+
+    .mapContainer {
+        width: initial;
+        height: 350px;
+    }
+}
+
+@media(max-width: 576px) {
+    .content {        
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .content p {
+        width: 100%;
+    }
 }

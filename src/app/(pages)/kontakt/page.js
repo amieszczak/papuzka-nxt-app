@@ -1,9 +1,11 @@
 'use client';
 import styles from './page.module.css';
+import classes from '../../page.module.css';
 //
 import ContactForm from '../../components/form/form';
 //
 import Link from 'next/link';
+import Image from 'next/image';
 //
 import dynamic from "next/dynamic";
 //
@@ -18,13 +20,28 @@ export default function Contact() {
         <div className={styles.container}>
             <div className={styles.infoContainer}>
                 <div className={styles.infoContainerTopLine}></div>
-                <h1>Skontaktuj się z <span>nami </span></h1>
+                <h1 className={classes.headingSecondary}>Skontaktuj się z <span>nami </span></h1>
                 <div className={styles.content}>
-                    <p>Jesteśmy dostępni od poniedziałku do piątku w godzinach popołudniowych w naszych gabinetach w Krakowie. Alternatywnie zapraszamy do kontaktu telefonicznego/mailowego lub przez nasz formularz kontaktowy.</p>
+                    <p className={classes.parĻagraphSecondary}>Jesteśmy dostępni od poniedziałku do piątku w godzinach popołudniowych w naszych gabinetach w Krakowie. Alternatywnie zapraszamy do kontaktu telefonicznego/mailowego lub przez nasz formularz kontaktowy.</p>
                     <div className={styles.contactDataContainer}>
-                        <Link className={styles.link} href='#'>+48 111222333</Link>
-                        <Link className={styles.link} href='#'>papuzka@papuzka.com</Link>
-                        <Link className={styles.link} href='#'>Kraków, ul.Adres 1/1</Link>
+                        <Link className={styles.link} href='#'>
+                            <div className={styles.iconContainer}>
+                                <Image layout='fill' src='/contact/phone.svg' />
+                            </div>                            
+                            <p className={classes.paragraphTertiary}>+48 111222333</p>
+                        </Link>
+                        <Link className={styles.link} href='#'>
+                            <div className={styles.iconContainer}>
+                                <Image layout='fill' src='/contact/message.svg' />
+                            </div>                            
+                            <p className={classes.paragraphTertiary}>papuzka@papuzka.com</p>
+                        </Link>
+                        <Link className={styles.link} href='#'>
+                            <div className={styles.iconContainer}>
+                                <Image layout='fill' src='/contact/location.svg' />
+                            </div>                            
+                            <p className={classes.paragraphTertiary}>Kraków, ul.Adres 1/1</p>
+                        </Link>
                     </div>
                 </div>
                 <div className={styles.mapContainer}>

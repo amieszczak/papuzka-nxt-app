@@ -1,33 +1,14 @@
 'use client';
 import styles from "./page.module.css";
 import dynamic from "next/dynamic";
+import LandingPageVideoComponent from "./componentSets/landingPage/LPvideoComponent/landingPageVideoComponent";
+import LandingPageOfferComponent from "./componentSets/landingPage/LPofferComponent/landingPageOfferComponent";
+import LandingPageQuoteComponent from "./componentSets/landingPage/LPquoteComponent/landingPageQuoteComponent";
+import LandingPageAboutComponent from "./componentSets/landingPage/LPaboutComponent/landingPageAboutComponent";
+import LandingPageTeamComponent from "./componentSets/landingPage/LPteamComponent/landingPageTeamComponent";
+import LandingPageArticlesComponent from "./componentSets/landingPage/LParticlesComponent/landingPageArticlesComponent";
 
 export default function Home() {
-
-  const LandingPageVideoComponent = dynamic(() => import('./componentSets/landingPage/LPvideoComponent/landingPageVideoComponent.js'), {
-    ssr: false,
-  });
-
-  const LandingPageOfferComponent = dynamic(() => import('./componentSets/landingPage/LPofferComponent/landingPageOfferComponent.js'), {
-    ssr: false,
-  });
-  
-  const LandingPageQuoteComponent = dynamic(() => import('./componentSets/landingPage/LPquoteComponent/landingPageQuoteComponent.js'), {
-    ssr: false,
-  });
-
-  const LandingPageAboutComponent = dynamic(() => import('./componentSets/landingPage/LPaboutComponent/landingPageAboutComponent.js'), {
-    ssr: false,
-  });
-
-  const LandingPageTeamComponent = dynamic(() => import('./componentSets/landingPage/LPteamComponent/landingPageTeamComponent.js'), {
-    ssr: false,
-  });
-
-  const LandingPageArticlesComponent = dynamic(() => import('./componentSets/landingPage/LParticlesComponent/landingPageArticlesComponent.js'), {
-    ssr: false,
-  });
-
 
   return (
     <>

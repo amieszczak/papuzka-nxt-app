@@ -3,6 +3,7 @@ import styles from './landingPageVideo.module.css';
 import { useState, useEffect } from 'react';
 //
 import classNames from 'classnames';
+import Image from 'next/image';
 
 
 export default function LandingPageVideoComponent() {
@@ -43,7 +44,13 @@ export default function LandingPageVideoComponent() {
 
     return (
         <div className={styles.container}>
-            <img alt="Dziecko podczas terapii" className={styles.video} src ="/8655048-sd_960_540_25fps.gif"/>
+            <Image
+            layout="fill"
+            alt="Dziecko podczas terapii"
+            className={styles.video}
+            src ="/8655048-sd_960_540_25fps.gif"
+            />
+            {/* <img alt="Dziecko podczas terapii" className={styles.video} src ="/8655048-sd_960_540_25fps.gif"/> */}
             <div className={styles.label}>
                 <h2 className={classNames({[styles.textPosition]: scrollButtonHide})}>W PAPUŻCE WIEMY JAK <span>ZAOPIEKOWAĆ MOWĘ</span></h2> 
                 <div className={styles.buttonContainer}>

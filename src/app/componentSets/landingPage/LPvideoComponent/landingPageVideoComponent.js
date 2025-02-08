@@ -43,11 +43,7 @@ export default function LandingPageVideoComponent() {
 
     return (
         <div className={styles.container}>
-            {/* <video className={styles.video} autoPlay loop muted preload="auto">
-                <source src='/7424128-uhd_3840_2160_30fps.mp4' type="video/mp4" />
-                Your browser does not support the video tag.
-            </video> */}
-            <img className={styles.video} src ="/8655048-sd_960_540_25fps.gif"/>
+            <img alt="Dziecko podczas terapii" className={styles.video} src ="/8655048-sd_960_540_25fps.gif"/>
             <div className={styles.label}>
                 <h2 className={classNames({[styles.textPosition]: scrollButtonHide})}>W PAPUŻCE WIEMY JAK <span>ZAOPIEKOWAĆ MOWĘ</span></h2> 
                 <div className={styles.buttonContainer}>

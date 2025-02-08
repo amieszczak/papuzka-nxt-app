@@ -24,7 +24,7 @@ export default function LandingPageAboutComponent() {
             <LandingPageMarkup category='O NAS' side='right'/>
             <div className={styles.photoContainer} data-aos='fade-right'>
                 <div className={styles.photo}>
-                    <Image src='/landingPage/about.png' width={896} height={695}/>
+                    <Image src='/landingPage/about.png' alt="papużka zespół" width={896} height={695}/>
                 </div>
                 <div className={styles.photoLineTop}></div>
                 <div className={styles.photoLineBottom}></div>

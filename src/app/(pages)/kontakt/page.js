@@ -26,19 +26,19 @@ export default function Contact() {
                     <div className={styles.contactDataContainer}>
                         <Link className={styles.link} href='#'>
                             <div className={styles.iconContainer}>
-                                <Image layout='fill' src='/contact/phone.svg' />
+                                <Image layout='fill' alt="" src='/contact/phone.svg' />
                             </div>                            
                             <p className={classes.paragraphTertiary}>+48 111222333</p>
                         </Link>
                         <Link className={styles.link} href='#'>
                             <div className={styles.iconContainer}>
-                                <Image layout='fill' src='/contact/message.svg' />
+                                <Image layout='fill' alt="" src='/contact/message.svg' />
                             </div>                            
                             <p className={classes.paragraphTertiary}>papuzka@papuzka.com</p>
                         </Link>
                         <Link className={styles.link} href='#'>
                             <div className={styles.iconContainer}>
-                                <Image layout='fill' src='/contact/location.svg' />
+                                <Image layout='fill' alt="" src='/contact/location.svg' />
                             </div>                            
                             <p className={classes.paragraphTertiary}>Kraków, ul.Adres 1/1</p>
                         </Link>

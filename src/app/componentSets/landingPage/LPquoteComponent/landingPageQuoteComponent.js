@@ -21,7 +21,7 @@ export default function LandingPageQuoteComponent() {
                 <p>Peggy O Mara</p>
             </div>
             <div className={styles.parrot}>
-                <Image src='/landingPage/parrot.svg' width={690} height={542}/>
+                <Image src='/landingPage/parrot.svg' alt="papużka profil grafika" width={690} height={542}/>
             </div>
             <div className={styles.bottomLine}></div>
         </div>

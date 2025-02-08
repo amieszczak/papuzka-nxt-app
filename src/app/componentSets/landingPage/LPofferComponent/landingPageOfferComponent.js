@@ -120,12 +120,12 @@ export default function LandingPageOfferComponent() {
               {landingPageOfferData.map((item) => {
                 return (
                   <SwiperSlide key={item.id}>
-                    <Image
+                    <Image                      
                       src={item.photoSrc}
                       className={styles.photo}
                       width={1000}
                       height={737}
-                      alt={item.alt}
+                      alt={item.title}
                     />
                   </SwiperSlide>
                 );

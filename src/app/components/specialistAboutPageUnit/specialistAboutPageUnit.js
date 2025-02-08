@@ -26,7 +26,7 @@ const reversedClasses = {
 }
 
 
-export default function SpecialistAboutPageUnit({name, description, photoSrc, variant}) {
+export default function SpecialistAboutPageUnit({name, description, photoSrc, alt, variant}) {
 
     useEffect(() => {
         Aos.init();
@@ -49,7 +49,7 @@ export default function SpecialistAboutPageUnit({name, description, photoSrc, va
                 <p className={globalClasses.paragraphSecondary}>{description}</p>
             </div>
             <div className={classNames({[styles.photoContainer]: true, [classes.photoClass]:true})}>
-                <Image src={photoSrc} width={660} height={510}/>
+                <Image alt={alt} src={photoSrc} width={660} height={510}/>
                 <div className={classNames({[styles.photoBlinder]:true, [classes.photoBlinderClass]:true})}></div>
             </div>
         </div>

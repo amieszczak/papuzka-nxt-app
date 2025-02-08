@@ -25,6 +25,7 @@ export default function LandingPageArticlesComponent() {
                 <div className={styles.photoContainer}>
                     <div className={styles.photo}>
                         <Image
+                            alt="telefon w ręku"
                             src='/articles.png'
                             width={100}
                             height={100}

@@ -1,9 +1,15 @@
-import { Inter } from "next/font/google";
+/* import { Inter } from "next/font/google"; */
+import { Lato } from "next/font/google";
 import "./globals.css";
 import Header from "./componentSets/header/header";
 import Footer from "./componentSets/footer/footer.js";
 
-const inter = Inter({ subsets: ["latin"] });
+/* const inter = Inter({ subsets: ["latin"] }); */
+
+const lato = Lato({
+  weight: ['100', '300', '400', '700', '900'],
+  subsets: ['latin'],
+})
 
 export const metadata = {
   title: "Papuzka",
@@ -13,7 +19,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={lato.className}>
       <Header/>{children}
       <Footer/>
       </body>

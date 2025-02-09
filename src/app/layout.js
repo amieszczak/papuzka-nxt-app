@@ -1,10 +1,8 @@
-/* import { Inter } from "next/font/google"; */
 import { Lato } from "next/font/google";
 import "./globals.css";
 import Header from "./componentSets/header/header";
 import Footer from "./componentSets/footer/footer.js";
 
-/* const inter = Inter({ subsets: ["latin"] }); */
 
 const lato = Lato({
   weight: ['100', '300', '400', '700', '900'],

@@ -41,6 +41,7 @@
   --object-position-responsive-primary: 50% 30%;
     /* PADDINGS */
   --unit-padding-primary: calc(min(3.3vw, 64px));
+  --padding-article-preview-article: clamp(16px, 2.6vw, 50px);
 
 }
 

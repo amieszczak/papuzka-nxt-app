@@ -8,6 +8,17 @@ query NewQuery {
         excerpt
         title
         slug
+        featuredImage {
+          node {
+            id
+            sourceUrl
+          }
+        }
+        author {
+          node {
+            name
+          }
+        }
       }
     }
   }

@@ -1,13 +1,10 @@
 import fetchAPI from './callout.js';
-
-import allPostsQuery from '@/integrations/wordpress/graph-ql-queries/all-posts';
+import allPosts from './graph-ql-queries/all-posts.js';
 
 
 const getAllPosts = async (first = 1000) => {
-    const response = await fetchAPI(allPostsQuery, { first });
-    const posts = response?.posts?.nodes;
-
-    console.log('posts:', posts)
+    const response = await fetchAPI(allPosts, { first });
+    const posts = response?.posts?.edges;
 
     return posts;
 };

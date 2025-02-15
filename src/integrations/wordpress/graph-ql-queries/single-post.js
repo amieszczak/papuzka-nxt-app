@@ -9,6 +9,11 @@ query SinglePost($id: ID!){
     modified
     excerpt
     slug
+    featuredImage {
+      node {
+        link
+      }
+    }
     categories {
       nodes {
         name

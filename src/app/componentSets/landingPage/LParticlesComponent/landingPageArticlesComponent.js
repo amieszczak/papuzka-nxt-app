@@ -10,9 +10,10 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css/autoplay";
 import "swiper/css/pagination";
 //
-import ArticlePreview from '@/app/components/articlePreview/articlePreview';
+import ArticlePreview from '@/app/components/articlePreview/articles/articlePreviewArticles';
 import { articlesData } from '@/app/data/articlesData/articlesData';
 import LandingPageMarkup from '@/app/components/landingPageMarkup/landingPageMarkup';
+import ArticlePreviewLandingPage from '@/app/components/articlePreview/landingPage/articlePreviewLandingPage';
 
 
 export default function LandingPageArticlesComponent() {
@@ -82,7 +83,7 @@ export default function LandingPageArticlesComponent() {
                 {articlesData.map((item) => {
                     return (
                     <SwiperSlide key={item.id} className={styles.swiperSlide}>
-                       <ArticlePreview {...item} title={item.title} content={item.content} refference={item.refference} styleProp='landingPage'/>
+                       <ArticlePreviewLandingPage {...item} title={item.title} content={item.content} refference={item.refference}/>
                     </SwiperSlide>
                     );
                 })}

@@ -1,7 +1,7 @@
 /* 'use client'; */
 import styles from './page.module.css';
 //
-import ArticlePreview from '../../components/articlePreview/articlePreview.js';
+import ArticlePreview from '../../components/articlePreview/articles/articlePreviewArticles.js';
 //
 /* import { articlesData } from '../../data/articlesData/articlesData.js'; */
 import getAllPosts from '@/integrations/wordpress/getAllPosts';
@@ -25,7 +25,7 @@ export default async function Articles() {
                         author={item?.node?.author?.node?.name} 
                         date={item?.node?.date} 
                         refference={item?.node?.slug}
-                        styleProp={'articles'}/>
+                        />
                 )
             })}
         </div>

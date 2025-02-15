@@ -1,0 +1,20 @@
+.container {
+    border-radius: clamp(12px, 2.6vw, 50px) clamp(12px, 2.6vw, 50px) 0 0;
+    padding: var(--padding-article-preview-article) 0 var(--padding-article-preview-article) var(--padding-article-preview-article);
+    border-left: 1px solid var(--color-text-light);
+    border-top: 1px solid var(--color-text-light);
+    border-right: 1px solid var(--color-text-light);
+    overflow: hidden;
+    position: relative;
+}
+
+
+.containerLandingPage {
+    background-color: #FFDAB9;
+    width: 100%;
+    height: clamp(150px, 26vw, 500px); 
+}
+
+.containerLandingPage h2 {
+    margin-bottom: calc(min(2vw, 40px));
+}

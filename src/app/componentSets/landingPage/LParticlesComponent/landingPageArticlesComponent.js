@@ -15,7 +15,8 @@ import { articlesData } from '@/app/data/articlesData/articlesData';
 import LandingPageMarkup from '@/app/components/landingPageMarkup/landingPageMarkup';
 import ArticlePreviewLandingPage from '@/app/components/articlePreview/landingPage/articlePreviewLandingPage';
 import getAllPosts from '@/integrations/wordpress/getAllPosts';
-
+/* import ArticlePreviewLandingPage from '@/app/components/articlePreview/landingPage/articlePreviewLandingPage';
+ */
 export default function LandingPageArticlesComponent() {
 
     const posts = getAllPosts();
@@ -41,7 +42,8 @@ export default function LandingPageArticlesComponent() {
                 </div>
             </div>
             <div className={styles.sliderContainer}>
-                <Swiper
+                <ArticlePreviewLandingPage/>
+               {/*  <Swiper
                 modules={[Autoplay]}
                 loop={true}
                 autoplay={{
@@ -89,7 +91,7 @@ export default function LandingPageArticlesComponent() {
                     </SwiperSlide>
                     );
                 })}
-                </Swiper>
+                </Swiper> */}
             </div>
             <div className={styles.bottomBlinder}></div>
         </div>

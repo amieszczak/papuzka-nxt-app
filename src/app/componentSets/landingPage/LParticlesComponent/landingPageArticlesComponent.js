@@ -14,9 +14,11 @@ import ArticlePreview from '@/app/components/articlePreview/articles/articlePrev
 import { articlesData } from '@/app/data/articlesData/articlesData';
 import LandingPageMarkup from '@/app/components/landingPageMarkup/landingPageMarkup';
 import ArticlePreviewLandingPage from '@/app/components/articlePreview/landingPage/articlePreviewLandingPage';
-
+import getAllPosts from '@/integrations/wordpress/getAllPosts';
 
 export default function LandingPageArticlesComponent() {
+
+    const posts = getAllPosts();
 
     return(
         <div className={styles.container}>
@@ -83,7 +85,7 @@ export default function LandingPageArticlesComponent() {
                 {articlesData.map((item) => {
                     return (
                     <SwiperSlide key={item.id} className={styles.swiperSlide}>
-                       <ArticlePreviewLandingPage {...item} title={item.title} content={item.content} refference={item.refference}/>
+                       <ArticlePreviewLandingPage {...item} title={item.title} content={item.content} refference={item.refference}/>        
                     </SwiperSlide>
                     );
                 })}

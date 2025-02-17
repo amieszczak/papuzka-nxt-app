@@ -1,6 +1,4 @@
-'use client';
 import styles from "./page.module.css";
-import dynamic from "next/dynamic";
 import LandingPageVideoComponent from "./componentSets/landingPage/LPvideoComponent/landingPageVideoComponent";
 import LandingPageOfferComponent from "./componentSets/landingPage/LPofferComponent/landingPageOfferComponent";
 import LandingPageQuoteComponent from "./componentSets/landingPage/LPquoteComponent/landingPageQuoteComponent";

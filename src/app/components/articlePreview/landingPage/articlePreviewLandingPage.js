@@ -3,110 +3,46 @@ import classes from '../../../page.module.css';
 import classNames from 'classnames';
 import Image from 'next/image';
 import Link from 'next/link';
-///
-import { Swiper, SwiperSlide} from "swiper/react";
-import "swiper/css";
-import { Autoplay, Pagination, Navigation } from "swiper/modules";
-import "swiper/css/autoplay";
-import "swiper/css/pagination";
-///
-import getAllPosts from '@/integrations/wordpress/getAllPosts';
+import { useState } from 'react';
 
-export default async function ArticlePreviewLandingPage({title, content, imageSrc, refference}) {
+export default function ArticlePreviewLandingPage({title, content, imageSrc, refference}) {
 
-    const posts = await getAllPosts();
+    const [hover, setHover] = useState(null);
 
     return(
-        <Swiper
-            modules={[Autoplay]}
-            loop={true}
-            autoplay={{
-                delay: 5000,
-                disableOnInteraction: true,
-            }}
-            centeredSlides={true}
-            slidesPerView={2}
-            breakpoints={{
-                1200: {
-                    spaceBetween: 40,
-                },
-                
-                992: {
-                    spaceBetween: 30,
-                },
-                
-                768: {
-                    spaceBetween: 20,
-                },
-                
-                576: {
-                    spaceBetween: 10,
-                    slidesPerView: 2,
-                },
-                
-                450: {
-                    slidesPerView: 1.75,
-                },
-
-                400: {
-                    slidesPerview: 1.5, 
-                },
-
-                0: {
-                    spaceBetween: 5,
-                    slidesPerView: 1.25,
-                }
-            }}
-            >
-                {posts?.map((item,index) => {
-                    return(
-                        <SwiperSlide key={index} className={styles.swiperSlide}>
-                            <Link href={item.refference}>
-                                <div className={styles.container}>
-                                    <h2 className={classes.paragraphSecondary}>{item.title}</h2>
-                                    <div className={styles.contentContainer}>
-                                        {imageSrc != null
-                                            &&
-                                            <>
-                                            <p className={classNames({[classes.paragraphTertiary]:true, [styles.paragraph]:true})}>{content}</p>
-                                                <div className={styles.photoContainer}>
-                                                        <Image 
-                                                            width={500} 
-                                                            height={250} 
-                                                            className={styles.photo} 
-                                                            src={item.imageSrc}/>
-                                                </div>
-                                            </>
-                                        }                                
-                                    </div>
-                                    <div className={styles.bottomBlinder}></div>
-                                </div>
-                            </Link>
-                        </SwiperSlide>
-                    )
-                })}
-            </Swiper>
-    )
-}
-
-{/* <Link href={refference}>
+        <Link 
+         href={'artykuly/' + refference}
+         onMouseEnter={() => setHover(title)}
+         onMouseLeave={() => setHover(null)}>
             <div className={styles.container}>
                 <h2 className={classes.paragraphSecondary}>{title}</h2>
                 <div className={styles.contentContainer}>
                     {imageSrc != null
-                        &&
-                        <>
-                        <p className={classNames({[classes.paragraphTertiary]:true, [styles.paragraph]:true})}>{content}</p>
-                            <div className={styles.photoContainer}>
-                                    <Image 
-                                        width={500} 
-                                        height={250} 
-                                        className={styles.photo} 
-                                        src={imageSrc}/>
-                            </div>
-                        </>
-                    }                                
+                        ?   <>
+                                <div className={classNames({
+                                    [classes.paragraphTertiary]:true, 
+                                    [styles.paragraph]:true})} dangerouslySetInnerHTML={{__html: content}}/>
+                                <div className={styles.photoLinkContainer}>
+                                    <div className={styles.photoContainer}>
+                                            <Image 
+                                                width={500} 
+                                                height={250} 
+                                                className={styles.photo} 
+                                                src={imageSrc}/>
+                                    </div>
+                                    <span className={classNames({
+                                        [classes.paragraphSecondary]:true, 
+                                        [styles.link]:true, 
+                                        [styles.linkHover]: hover == title})}>Czytaj dalej</span>
+                                </div>                                
+                            </>
+                        :   <div className={classNames({
+                            [classes.paragraphTertiary]:true, 
+                            [styles.paragraphFull]:true})} dangerouslySetInnerHTML={{__html: content}}/>
+                    }       
                 </div>
                 <div className={styles.bottomBlinder}></div>
             </div>
-        </Link>     */}
+        </Link>  
+    )
+}

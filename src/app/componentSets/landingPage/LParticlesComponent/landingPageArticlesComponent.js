@@ -10,16 +10,10 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css/autoplay";
 import "swiper/css/pagination";
 //
-import ArticlePreview from '@/app/components/articlePreview/articles/articlePreviewArticles';
-import { articlesData } from '@/app/data/articlesData/articlesData';
 import LandingPageMarkup from '@/app/components/landingPageMarkup/landingPageMarkup';
 import ArticlePreviewLandingPage from '@/app/components/articlePreview/landingPage/articlePreviewLandingPage';
-import getAllPosts from '@/integrations/wordpress/getAllPosts';
-/* import ArticlePreviewLandingPage from '@/app/components/articlePreview/landingPage/articlePreviewLandingPage';
- */
-export default function LandingPageArticlesComponent() {
 
-    const posts = getAllPosts();
+export default function LandingPageArticlesComponent({posts}) {
 
     return(
         <div className={styles.container}>
@@ -42,8 +36,7 @@ export default function LandingPageArticlesComponent() {
                 </div>
             </div>
             <div className={styles.sliderContainer}>
-                <ArticlePreviewLandingPage/>
-               {/*  <Swiper
+                <Swiper
                 modules={[Autoplay]}
                 loop={true}
                 autoplay={{
@@ -84,14 +77,18 @@ export default function LandingPageArticlesComponent() {
                     }
                 }}
                 >
-                {articlesData.map((item) => {
+                {posts?.map((item, index) => { 
                     return (
-                    <SwiperSlide key={item.id} className={styles.swiperSlide}>
-                       <ArticlePreviewLandingPage {...item} title={item.title} content={item.content} refference={item.refference}/>        
+                    <SwiperSlide key={index} className={styles.swiperSlide}>
+                       <ArticlePreviewLandingPage 
+                        title={item?.node?.title} 
+                        content={item?.node?.content} 
+                        imageSrc={item?.node?.featuredImage?.node?.sourceUrl} 
+                        refference={item?.node?.slug}/>        
                     </SwiperSlide>
                     );
                 })}
-                </Swiper> */}
+                </Swiper>
             </div>
             <div className={styles.bottomBlinder}></div>
         </div>

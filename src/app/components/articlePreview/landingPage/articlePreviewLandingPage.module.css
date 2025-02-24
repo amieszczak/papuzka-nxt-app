@@ -16,6 +16,7 @@
 }
 
 .contentContainer {
+    height: 100%;
     display: flex;
     gap: var(--padding-article-preview-article);
 }
@@ -24,8 +25,23 @@
     width: 50%;
 }
 
-.photoContainer {
+.paragraphFull {
+    width: 100%;
+    padding-right: var(--padding-article-preview-article);
+}
+
+.photoLinkContainer {
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: calc(min(25px, 1.3vw));
+}
+
+.photoContainer {
+    width: 100%;
+    height: clamp(70px, 15.6vw, 300px);
     overflow: hidden; 
 }
 
@@ -33,4 +49,17 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.link {
+    padding: calc(min(10px, 0.5vw)) 0 calc(min(10px, 0.5vw)) 0;
+    text-align: center;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.linkHover {
+    color: var(--color-background-light);
+    background-color: var(--color-text-light);
+    transition: 0.5s;
 }

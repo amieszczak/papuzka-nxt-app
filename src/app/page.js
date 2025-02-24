@@ -5,8 +5,11 @@ import LandingPageQuoteComponent from "./componentSets/landingPage/LPquoteCompon
 import LandingPageAboutComponent from "./componentSets/landingPage/LPaboutComponent/landingPageAboutComponent";
 import LandingPageTeamComponent from "./componentSets/landingPage/LPteamComponent/landingPageTeamComponent";
 import LandingPageArticlesComponent from "./componentSets/landingPage/LParticlesComponent/landingPageArticlesComponent";
+import getAllPosts from "@/integrations/wordpress/getAllPosts";
 
-export default function Home() {
+export default async function Home() {
+
+  const posts = await getAllPosts();
 
   return (
     <>
@@ -16,7 +19,7 @@ export default function Home() {
         <LandingPageQuoteComponent/>
         <LandingPageAboutComponent/>
         <LandingPageTeamComponent/>
-        <LandingPageArticlesComponent/>
+        <LandingPageArticlesComponent posts={posts}/>
       </main>
     </>
   );

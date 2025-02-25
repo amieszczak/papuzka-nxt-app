@@ -14,7 +14,7 @@ export default function ArticlePreviewLandingPage({title, content, imageSrc, ref
          href={'artykuly/' + refference}
          onMouseEnter={() => setHover(title)}
          onMouseLeave={() => setHover(null)}>
-            <div className={styles.container}>
+            <div className={classNames({[styles.container]:true, [styles.containerHover]: hover == title})}>
                 <h2 className={classes.paragraphSecondary}>{title}</h2>
                 <div className={styles.contentContainer}>
                     {imageSrc != null
@@ -22,19 +22,15 @@ export default function ArticlePreviewLandingPage({title, content, imageSrc, ref
                                 <div className={classNames({
                                     [classes.paragraphTertiary]:true, 
                                     [styles.paragraph]:true})} dangerouslySetInnerHTML={{__html: content}}/>
-                                <div className={styles.photoLinkContainer}>
                                     <div className={styles.photoContainer}>
                                             <Image 
                                                 width={500} 
                                                 height={250} 
-                                                className={styles.photo} 
+                                                className={classNames({
+                                                    [styles.photo]:true, 
+                                                    [styles.photoHover]: hover == title})} 
                                                 src={imageSrc}/>
-                                    </div>
-                                    <span className={classNames({
-                                        [classes.paragraphSecondary]:true, 
-                                        [styles.link]:true, 
-                                        [styles.linkHover]: hover == title})}>Czytaj dalej</span>
-                                </div>                                
+                                    </div>                                                        
                             </>
                         :   <div className={classNames({
                             [classes.paragraphTertiary]:true, 

@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    gap: 25px;
+    margin-right: auto;
+    margin-left: var(--unit-padding-primary);
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.link span {
+    font-style: italic;
+}
+
+.link:last-child span {
+    color: var(--color-text-dark) !important;
+    font-weight: 700;
+}
+
+.link:last-child img {
+    display: none;
+}

@@ -3,6 +3,7 @@ import styles from './page.module.css';
 import ArticlePreviewArticles from '../../components/articlePreview/articles/articlePreviewArticles.js';
 //
 import getAllPosts from '@/integrations/wordpress/getAllPosts';
+import Breadcrumbs from '@/app/components/breadcrumbs/breadcrumbs';
 
 
 
@@ -12,6 +13,7 @@ export default async function Articles() {
 
     return (
         <div className={styles.container}>
+            <Breadcrumbs location={'artykuly'}/>
             {posts?.map((item, index) => {
                 return(
                     <ArticlePreviewArticles 

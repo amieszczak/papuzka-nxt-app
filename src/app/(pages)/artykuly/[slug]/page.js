@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import classNames from 'classnames';
 import getSinglePost from '@/integrations/wordpress/getSinglePost';
+import Breadcrumbs from '@/app/components/breadcrumbs/breadcrumbs';
 
 export default async function Post({params}) {
 
@@ -13,6 +14,7 @@ export default async function Post({params}) {
 
    return(
         <div className={styles.container}>
+            <Breadcrumbs location={'artykul'}/>
             {post?.featuredImage != null 
                 ?   <div className={styles.photoContainer}>
                         <Image width={1000} height={1000} className={styles.photo} src={post?.featuredImage?.node?.link}/>                   

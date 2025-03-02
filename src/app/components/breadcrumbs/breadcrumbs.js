@@ -5,8 +5,12 @@ import styles from './breadcrumbs.module.css';
 import classes from '../../page.module.css';
 import chevron from '../../../../public/chevron_breadcrumbs.svg';
 import Image from "next/image";
+import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 
-export default function Breadcrumbs({location}) {
+export default function Breadcrumbs() {
+
+    const pathname = usePathname();
 
     const params = useParams();
     
@@ -17,7 +21,63 @@ export default function Breadcrumbs({location}) {
     if(slug != undefined) {
         titleFromSlug = slug.charAt(0).toUpperCase() + slug.split('-').join(' ').slice(1);
     }
+
+    //////////
     
+    const [location, setLocation] = useState(null);
+    const [offer, setOffer] = useState(null);
+
+    function titleFromOffer(){
+       return offer.charAt(0).toUpperCase() + offer.split('-').join(' ').slice(1);
+    }
+
+    useEffect(() => {
+         
+        if(window.location.href.includes('oferta')) {
+            setLocation('oferta');
+            if(pathname.includes('konsultacja-logopedyczna')){
+                setOffer('Konsultacja logopedyczna');
+            }
+            if(pathname.includes('terapia-logopedyczna')){
+                setOffer('Terapia logopedyczna');
+            }
+            if(pathname.includes('trening-umiejetnosci-spolecznych')) {
+                setOffer('Trening umiejętności społecznych');
+            }
+            if(pathname.includes('terapia-reki')) {
+                setOffer('Terapia ręki');
+            }
+            if(pathname.includes('wystawienie-pisemnej-opinii')) {
+                setOffer('Wystawienie pisemnej opinii');
+            }
+        } 
+
+        if(window.location.href.includes('o-nas')) {
+            setLocation('o-nas');
+        } 
+        
+        if(window.location.href.includes('kontakt')) {
+            setLocation('kontakt');
+        } 
+
+        if(window.location.href.includes('artykuly') && slug != undefined) {
+            setLocation('artykul');
+        } else if(window.location.href.includes('artykuly')) {
+            setLocation('artykuly');
+        } 
+
+        if(!window.location.href.includes('oferta') 
+            && !window.location.href.includes('o-nas')
+            && !window.location.href.includes('kontakt')
+            && !window.location.href.includes('artykuly')){
+                setLocation(null);
+            }
+            
+    
+
+        
+    },[pathname])
+    //////////
 
     let linkChain;
 
@@ -25,13 +85,26 @@ export default function Breadcrumbs({location}) {
         case 'oferta':
             linkChain = [
                 {name: 'Strona główna', link: '/'},
-                {name: 'oferta', link: '#'}                
+                {name: 'Oferta', link: '#'},   
+                {name: titleFromOffer(), link: '#'}        
+            ]
+        break;
+        case 'o-nas':
+            linkChain = [
+                {name: 'Strona główna', link: '/'},
+                {name: 'O nas', link: '#'}                
+            ]
+        break;
+        case 'kontakt':
+            linkChain = [
+                {name: 'Strona główna', link: '/'},
+                {name: 'Kontakt', link: '#'}                
             ]
         break;
         case 'artykuly':
             linkChain = [
                 {name: 'Strona główna', link: '/'},
-                {name: 'Artykuły', link: '/'}
+                {name: 'Artykuły', link: '#'}
             ]
         break;
         case 'artykul':
@@ -42,27 +115,29 @@ export default function Breadcrumbs({location}) {
             ]           
         break;
         default:
-            linkChain = [
-                {name: 'Strona główna', link: '/'},
-                {name: 'Inne', link: '/'}
-            ]
+            linkChain = null;
         break;
-    }
-    
+    }    
+
 
     return(
-        <div className={styles.container}>
-            {linkChain?.map(item => {
-                return(
-                    <Link className={styles.link} href={item.link}>
-                        <span className={classes.paragraphTertiary}>{item.name}</span>
-                        <Image width={30} height={30} src={chevron}/>
-                    </Link>     
+        <>
+        {linkChain != null 
+            ?
+            <div className={styles.container}>
+                {linkChain?.map((item, index) => {
+                    return(
+                        <Link key={index} className={styles.link} href={item.link}>
+                            <span className={classes.paragraphTertiary}>{item.name}</span>
+                            <Image width={30} height={30} src={chevron}/>
+                        </Link>     
 
-                )
-            })}
-        </div>
-        
-        
+                    )
+                })}
+            </div>
+            :
+            <></>
+        }        
+        </> 
     )
 }

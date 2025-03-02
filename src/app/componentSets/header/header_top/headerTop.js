@@ -7,6 +7,7 @@ import { headerTopData } from "@/app/data/headerTopData/headerTopData.js";
 import { useState } from "react";
 import { useEffect } from "react";
 
+
 export default function HeaderTop({isValue}) {
 
   const [value, setValue] = useState({isValue});

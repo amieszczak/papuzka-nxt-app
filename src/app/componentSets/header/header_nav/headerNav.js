@@ -4,14 +4,15 @@ import classes from "../../../page.module.css";
 import Link from "next/link";
 import classNames from "classnames";
 import { MenuStructure } from "../../../data/menuData/menuData.js";
-import { useState } from "react";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
+
 
 export default function HeaderNav() {
 
   const [isOfferMenuActive, setOfferMenuActive] = useState(false);
   const [isMainMenuMobileActive, setMainMenuMobileActive] = useState(false);
 
+  let page;
 
   const handleDropdownHide = (event) => {
     if(window.innerWidth > 1400 && !event.target.closest('#dropdown') && !event.target.closest('#offer')){
@@ -29,7 +30,6 @@ export default function HeaderNav() {
       setOfferMenuActive(false);
     })
   }, [])
-
 
   return (
     <nav className={styles.navigation}>
@@ -60,7 +60,7 @@ export default function HeaderNav() {
                 <Link className={classes.paragraphPrimary} href={item.href}>{item.title}</Link>
                 <div
                   key={item.subId}
-                  id='dropdown'
+                  id='dropdown'                  
                   className={classNames({
                     [styles.offerDropdown]: true,
                     [styles.offerDropdownActive]: isOfferMenuActive,
@@ -89,7 +89,7 @@ export default function HeaderNav() {
             );
           }
         })}
-      </div>
+      </div>   
     </nav>
   );
 }

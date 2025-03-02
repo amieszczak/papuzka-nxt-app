@@ -27,6 +27,8 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    display: flex;
+    flex-direction: column;
   }
 
   .headerLogo {

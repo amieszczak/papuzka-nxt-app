@@ -1,7 +1,6 @@
 'use client';
 import HeaderTop from "./header_top/headerTop.js";
 import HeaderNav from "./header_nav/headerNav.js";
-/* import './header.css'; */
 import { useState } from 'react';
 import Breadcrumbs from "@/app/components/breadcrumbs/breadcrumbs.js";
 import styles from './header.module.css';
@@ -12,7 +11,7 @@ export default function Header() {
 
     const updateValue = (newValue) => {
         setIsValue(newValue); 
-      };
+    };
 
     return (
         <div className={styles.container}>

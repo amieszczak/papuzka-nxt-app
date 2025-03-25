@@ -15,3 +15,6 @@ Papużka is an app for speech therapy center
 ## Features included
 * Component construction 
 * Module styling
+* Optimized images 
+* Next js 'pages' routing
+* Blog fetched via GraphQl structured implemented with dynamic routes
